@@ -1,0 +1,64 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "88plug",
+  "description": "Curated plugins by 88plug.",
+  "owner": {
+    "name": "88plug",
+    "email": "claude@cryptoandcoffee.com"
+  },
+  "plugins": [
+    {
+      "name": "amnesia",
+      "source": {
+        "source": "github",
+        "repo": "88plug/amnesia"
+      },
+      "description": "Seamless context continuity across compaction. Captures a structured handoff before each compact event and re-injects it after, so the agent resumes without losing its working state.",
+      "category": "productivity",
+      "tags": [
+        "context",
+        "compaction",
+        "memory",
+        "continuity",
+        "hooks"
+      ],
+      "homepage": "https://github.com/88plug/amnesia"
+    },
+    {
+      "name": "caveman-plus",
+      "source": {
+        "source": "github",
+        "repo": "88plug/caveman-plus"
+      },
+      "description": "Talk like caveman. Cut ~75% tokens. Keep all technical accuracy. Default level: full-plus.",
+      "category": "productivity",
+      "tags": [
+        "tokens",
+        "compression",
+        "output-style",
+        "caveman"
+      ],
+      "homepage": "https://github.com/88plug/caveman-plus"
+    },
+    {
+      "name": "total-recall",
+      "source": {
+        "source": "github",
+        "repo": "88plug/total-recall"
+      },
+      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients and surfaces operator identity, standing decisions, bans, goals, and past corrections via 23 MCP tools, 4 hooks, and 15 slash commands. The operator becomes the source of truth; the model stops re-asking what they already told it.",
+      "category": "productivity",
+      "tags": [
+        "memory",
+        "context",
+        "cross-session",
+        "cross-cli",
+        "operator-profile",
+        "mcp",
+        "hooks",
+        "data-mining"
+      ],
+      "homepage": "https://github.com/88plug/total-recall"
+    }
+  ]
+}
