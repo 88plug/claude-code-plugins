@@ -6,7 +6,8 @@
 
   [![marketplace](https://img.shields.io/badge/marketplace-88plug-000?style=for-the-badge)](https://github.com/88plug/claude-code-plugins)
   [![license](https://img.shields.io/badge/license-MIT-000?style=for-the-badge)](./LICENSE)
-  [![plugins](https://img.shields.io/badge/plugins-4%20shipping-000?style=for-the-badge)](#plugins)
+  [![plugins](https://img.shields.io/badge/plugins-5%20shipping-000?style=for-the-badge)](#plugins)
+  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
 </div>
 
@@ -23,6 +24,7 @@
 /plugin install caveman-plus@88plug
 /plugin install total-recall@88plug
 /plugin install searxng@88plug
+/plugin install deepwiki@88plug
 ```
 
 That's the whole install. No environment variables, no API keys — uses your existing AI coding tool setup.
@@ -35,6 +37,7 @@ That's the whole install. No environment variables, no API keys — uses your ex
 | [**caveman-plus**](https://github.com/88plug/caveman-plus) | Talk like caveman. Cut ~75% tokens. Keep all technical accuracy | `1 output style` | `/plugin install caveman-plus@88plug` |
 | [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v0.6.1` | Cross-session, cross-CLI memory. Mines transcripts from 8 CLI clients; surfaces operator identity, standing decisions, bans, goals, and past corrections so the model stops re-asking | `4 hooks` · `2 skills` · `15 commands` · `23 MCP tools` | `/plugin install total-recall@88plug` |
 | [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v0.2.0` | Privacy-respecting metasearch over 70+ engines via a self-hosted SearXNG instance. Token-efficient tool responses, stdio + streamable-http, optional rendered (Playwright) fetch for JS-heavy pages | `1 MCP server` | `/plugin install searxng@88plug` |
+| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v0.1.0` | Chat with any public GitHub repo's auto-generated documentation. Thin wrapper around Cognition AI's hosted DeepWiki MCP — read-only research into codebases without cloning | `1 MCP (remote)` | `/plugin install deepwiki@88plug` |
 
 ## Philosophy
 
@@ -44,8 +47,9 @@ Plugins should be invisible until you need them. Each one in this marketplace ea
 - **caveman-plus** — the model spends 4× more tokens than the answer needs
 - **total-recall** — the model keeps relearning who the operator is and what they've already decided
 - **searxng** — the model can't do real web research without leaking queries to surveillance-capitalism search engines
+- **deepwiki** — the model can't navigate an unfamiliar GitHub repo without cloning, grepping, and burning context
 
-All four are local-first and respect your privacy by default.
+The first four are local-first. **deepwiki** is a thin wrapper around a hosted third-party service (Cognition AI) — included for the productivity win, with the dependency disclosed up-front.
 
 ## License
 

@@ -77,6 +77,23 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp"
+    },
+    {
+      "name": "deepwiki",
+      "source": {
+        "source": "github",
+        "repo": "88plug/deepwiki"
+      },
+      "description": "Talk to any public GitHub repo's auto-generated documentation via Cognition AI's hosted DeepWiki MCP. Read-only research into codebases without cloning. Thin plugin wrapping a third-party service operated by Cognition.",
+      "category": "research",
+      "tags": [
+        "deepwiki",
+        "documentation",
+        "github",
+        "research",
+        "mcp"
+      ],
+      "homepage": "https://github.com/88plug/deepwiki"
     }
   ]
 }
