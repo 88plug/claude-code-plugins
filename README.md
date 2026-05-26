@@ -31,13 +31,22 @@ That's the whole install. No environment variables, no API keys — uses your ex
 
 ## Plugins
 
+Two structural categories. Both install the same way.
+
+### Plugins — Claude Code UX surfaces (hooks, skills, commands, output styles)
+
 | Plugin | What it does | Surfaces | Install |
 | :--- | :--- | :--- | :--- |
-| [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v0.2.3` | Seamless context continuity across compaction — capture and restore the agent's working state on every `/compact` and resume, invisible to you | `5 hooks` · `1 skill` · `4 commands` · `1 agent` | `/plugin install amnesia@88plug` |
-| [**caveman-plus**](https://github.com/88plug/caveman-plus) | Talk like caveman. Cut ~75% tokens. Keep all technical accuracy | `1 output style` | `/plugin install caveman-plus@88plug` |
+| [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v0.3.1` | Seamless context continuity across compaction — capture and restore the agent's working state on every `/compact` and resume, invisible to you | `5 hooks` · `1 skill` · `4 commands` · `1 agent` · `1 MCP (embedded)` | `/plugin install amnesia@88plug` |
 | [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v0.6.1` | Cross-session, cross-CLI memory. Mines transcripts from 8 CLI clients; surfaces operator identity, standing decisions, bans, goals, and past corrections so the model stops re-asking | `4 hooks` · `2 skills` · `15 commands` · `23 MCP tools` | `/plugin install total-recall@88plug` |
-| [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v0.2.0` | Privacy-respecting metasearch over 70+ engines via a self-hosted SearXNG instance. Token-efficient tool responses, stdio + streamable-http, optional rendered (Playwright) fetch for JS-heavy pages | `1 MCP server` | `/plugin install searxng@88plug` |
-| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v0.1.0` | Chat with any public GitHub repo's auto-generated documentation. Thin wrapper around Cognition AI's hosted DeepWiki MCP — read-only research into codebases without cloning | `1 MCP (remote)` | `/plugin install deepwiki@88plug` |
+| [**caveman-plus**](https://github.com/88plug/caveman-plus) | Talk like caveman. Cut ~75% tokens. Keep all technical accuracy | `1 output style` | `/plugin install caveman-plus@88plug` |
+
+### MCP wrappers — single MCP server, one-command install
+
+| Plugin | What it does | Backend | Install |
+| :--- | :--- | :--- | :--- |
+| [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v0.2.0` | Privacy-respecting metasearch over 70+ engines via a self-hosted SearXNG instance. Token-efficient tool responses, stdio + streamable-http, optional rendered (Playwright) fetch | local (uvx) | `/plugin install searxng@88plug` |
+| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v0.1.0` | Chat with any public GitHub repo's auto-generated documentation — read-only research into codebases without cloning | remote (Cognition AI) | `/plugin install deepwiki@88plug` |
 
 ## Philosophy
 
@@ -57,10 +66,14 @@ MIT. See [LICENSE](./LICENSE).
 
 ## Contributing
 
-PRs welcome. New plugin submissions should:
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, naming
+convention, quality bar, and CLA terms. Short version:
 
-1. Live in their own `88plug/<plugin-name>` repository.
-2. Ship a valid `.claude-plugin/plugin.json` at repo root.
-3. Open a PR here that adds an entry to `.claude-plugin/marketplace.json` (github source).
+1. Build your plugin in its own `88plug/<plugin>` repo with a valid
+   `.claude-plugin/plugin.json`.
+2. PR an entry to this hub's `.claude-plugin/marketplace.json` (github
+   source).
+3. Sign the [CLA](https://gist.github.com/88plug/de8629bdb714949a9ea9a47323d8468e)
+   on your first PR (CLA Assistant gates merge).
 
 Plugin code itself never lives in this repo — only the marketplace index.

@@ -16,6 +16,7 @@
       "description": "Seamless context continuity across compaction. Captures a structured handoff before each compact event and re-injects it after, so the agent resumes without losing its working state.",
       "category": "productivity",
       "tags": [
+        "type:plugin",
         "context",
         "compaction",
         "memory",
@@ -33,6 +34,7 @@
       "description": "Talk like caveman. Cut ~75% tokens. Keep all technical accuracy. Default level: full-plus.",
       "category": "productivity",
       "tags": [
+        "type:plugin",
         "tokens",
         "compression",
         "output-style",
@@ -49,6 +51,7 @@
       "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients and surfaces operator identity, standing decisions, bans, goals, and past corrections via 23 MCP tools, 4 hooks, and 15 slash commands. The operator becomes the source of truth; the model stops re-asking what they already told it.",
       "category": "productivity",
       "tags": [
+        "type:plugin",
         "memory",
         "context",
         "cross-session",
@@ -69,6 +72,7 @@
       "description": "Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable.",
       "category": "search",
       "tags": [
+        "type:mcp",
         "search",
         "searxng",
         "metasearch",
@@ -87,6 +91,7 @@
       "description": "Talk to any public GitHub repo's auto-generated documentation via Cognition AI's hosted DeepWiki MCP. Read-only research into codebases without cloning. Thin plugin wrapping a third-party service operated by Cognition.",
       "category": "research",
       "tags": [
+        "type:mcp",
         "deepwiki",
         "documentation",
         "github",
