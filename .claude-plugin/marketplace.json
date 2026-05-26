@@ -59,6 +59,24 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall"
+    },
+    {
+      "name": "searxng",
+      "source": {
+        "source": "github",
+        "repo": "88plug/searxng-mcp"
+      },
+      "description": "Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable.",
+      "category": "search",
+      "tags": [
+        "search",
+        "searxng",
+        "metasearch",
+        "mcp",
+        "privacy",
+        "self-hosted"
+      ],
+      "homepage": "https://github.com/88plug/searxng-mcp"
     }
   ]
 }
