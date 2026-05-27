@@ -38,7 +38,7 @@ Two structural categories. Both install the same way.
 | Plugin | What it does | Surfaces | Install |
 | :--- | :--- | :--- | :--- |
 | [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v0.3.1` | Seamless context continuity across compaction — capture and restore the agent's working state on every `/compact` and resume, invisible to you | `5 hooks` · `1 skill` · `4 commands` · `1 agent` · `1 MCP (embedded)` | `/plugin install amnesia@88plug` |
-| [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v0.6.1` | Cross-session, cross-CLI memory. Mines transcripts from 8 CLI clients; surfaces operator identity, standing decisions, bans, goals, and past corrections so the model stops re-asking | `4 hooks` · `2 skills` · `15 commands` · `23 MCP tools` | `/plugin install total-recall@88plug` |
+| [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v0.7.0` | Cross-session, cross-CLI memory. Mines transcripts from 8 CLI clients; surfaces operator identity, standing decisions, bans, goals, and past corrections so the model stops re-asking. Zero host-python prereq — bootstraps its own `uv` + python in `$CLAUDE_PLUGIN_DATA` on first run | `4 hooks` · `2 skills` · `15 commands` · `23 MCP tools` | `/plugin install total-recall@88plug` |
 | [**caveman-plus**](https://github.com/88plug/caveman-plus) | Talk like caveman. Cut ~75% tokens. Keep all technical accuracy | `1 output style` | `/plugin install caveman-plus@88plug` |
 
 ### MCP wrappers — single MCP server, one-command install
