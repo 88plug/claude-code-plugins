@@ -13,7 +13,7 @@
         "source": "github",
         "repo": "88plug/amnesia"
       },
-      "description": "Seamless context continuity across compaction. Captures a structured handoff before each compact event and re-injects it after, so the agent resumes without losing its working state.",
+      "description": "Seamless context continuity across Claude Code compaction. Four background layers (continuous tool-call capture, mechanical PostCompact handoff, async Opus 4.7 enrichment at --effort max, async Stop-hook refinement, and preemptive snapshot before the next compact) keep the agent's working state intact across every compaction and resume. All summarization is isolated from CLAUDE.md/auto-memory and invisible to the user.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -23,7 +23,8 @@
         "continuity",
         "hooks"
       ],
-      "homepage": "https://github.com/88plug/amnesia"
+      "homepage": "https://github.com/88plug/amnesia",
+      "version": "0.3.0"
     },
     {
       "name": "caveman-plus",

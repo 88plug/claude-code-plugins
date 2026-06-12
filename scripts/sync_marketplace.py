@@ -15,17 +15,22 @@ MKT = Path(__file__).resolve().parent.parent / ".claude-plugin" / "marketplace.j
 REFS = ("HEAD", "main", "master")
 
 
-def _fetch_plugin_manifest(repo: str) -> dict | None:
+def _fetch_plugin_manifest(repo: str, name: str) -> dict | None:
+    # Try the plugin at the repo root first, then at a monorepo subpath
+    # (plugins/<name>/.claude-plugin/plugin.json) so single-plugin repos AND
+    # multi-plugin monorepos (e.g. amnesia) both sync.
+    paths = (".claude-plugin/plugin.json", f"plugins/{name}/.claude-plugin/plugin.json")
     for ref in REFS:
-        url = f"https://raw.githubusercontent.com/{repo}/{ref}/.claude-plugin/plugin.json"
-        try:
-            with urllib.request.urlopen(url, timeout=20) as r:
-                return json.loads(r.read().decode())
-        except urllib.error.HTTPError as e:
-            if e.code in (404,):
+        for path in paths:
+            url = f"https://raw.githubusercontent.com/{repo}/{ref}/{path}"
+            try:
+                with urllib.request.urlopen(url, timeout=20) as r:
+                    return json.loads(r.read().decode())
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    continue
+            except Exception:
                 continue
-        except Exception:
-            continue
     return None
 
 
@@ -36,7 +41,7 @@ def main() -> int:
         src = entry.get("source", {})
         if src.get("source") != "github" or not src.get("repo"):
             continue
-        man = _fetch_plugin_manifest(src["repo"])
+        man = _fetch_plugin_manifest(src["repo"], entry["name"])
         if not man:
             print(f"  WARN  {entry['name']}: could not fetch source manifest ({src['repo']})", file=sys.stderr)
             continue
