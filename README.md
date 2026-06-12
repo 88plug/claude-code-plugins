@@ -53,8 +53,9 @@ catalog first, then update:
 ```
 
 (Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
-in managed settings.) Every plugin here carries an explicit `version`, so an update lands
-exactly when its version is bumped.
+in managed settings.) Plugins tagged **`rolling`** ship on every commit; **versioned**
+plugins update when their version is bumped. Either way, with auto-update on you always
+get the latest.
 
 ## Plugins
 
