@@ -22,6 +22,8 @@ jobs:
       - name: Sync marketplace metadata from each plugin source
         run: python scripts/sync_marketplace.py
       - name: Regenerate README from the catalog
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/build_readme.py
       - name: Commit if changed
         run: |

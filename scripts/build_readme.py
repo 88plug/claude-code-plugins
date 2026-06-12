@@ -13,17 +13,28 @@ restructuring a plugin updates the README with zero hand edits.
 Run order in CI: sync_marketplace.py  ->  build_readme.py  ->  commit both.
 """
 from __future__ import annotations
-import json, sys, urllib.request, urllib.error
+import json, os, sys, urllib.request, urllib.error
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MKT = ROOT / ".claude-plugin" / "marketplace.json"
 README = ROOT / "README.md"
 REFS = ("HEAD", "main", "master")
+# Authenticate API calls when a token is present (GITHUB_TOKEN in CI). The GitHub
+# trees API is rate-limited to 60/hr unauthenticated — on a shared CI runner IP
+# that exhausts instantly and surfaces come back empty. With the token it's 5000/hr.
+_TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+
+
+def _headers():
+    h = {"User-Agent": "88plug-readme-builder"}
+    if _TOKEN:
+        h["Authorization"] = f"Bearer {_TOKEN}"
+    return h
 
 
 def _get(url: str):
-    req = urllib.request.Request(url, headers={"User-Agent": "88plug-readme-builder"})
+    req = urllib.request.Request(url, headers=_headers())
     try:
         with urllib.request.urlopen(req, timeout=25) as r:
             return json.loads(r.read().decode())
@@ -64,7 +75,7 @@ def _manifest(repo: str, root: str):
 def _get_raw(repo: str, ref: str, path: str):
     req = urllib.request.Request(
         f"https://raw.githubusercontent.com/{repo}/{ref}/{path}",
-        headers={"User-Agent": "88plug-readme-builder"},
+        headers=_headers(),
     )
     try:
         with urllib.request.urlopen(req, timeout=25) as r:
@@ -203,6 +214,7 @@ def main() -> int:
     data = json.loads(MKT.read_text())
     plugins = data.get("plugins", [])
     plugin_rows, mcp_rows, philo, installs = [], [], [], []
+    n_repo = n_surfaced = 0
     for e in plugins:
         name = e["name"]
         repo = e.get("source", {}).get("repo", "")
@@ -211,11 +223,21 @@ def main() -> int:
         desc = (e.get("description") or "").replace("\n", " ").strip()
         tag0 = (e.get("tags") or [""])[0]
         surfaces = _surfaces(repo, name) if repo else ""
+        if repo:
+            n_repo += 1
+            n_surfaced += 1 if surfaces else 0
         row = _row(homepage, name, ver, desc, surfaces)
         (mcp_rows if tag0 == "type:mcp" else plugin_rows).append(row)
         installs.append(f"/plugin install {name}@88plug")
         philo.append(f"- **{name}** — {_first_clause(desc)}")
         print(f"  {name}: v{ver or '—'} [{tag0}] surfaces='{surfaces}'", file=sys.stderr)
+
+    # Abort rather than commit a degraded README: if every repo-backed plugin
+    # came back with empty surfaces, the GitHub API was unreachable/rate-limited.
+    if n_repo >= 2 and n_surfaced == 0:
+        print("ERROR: derived 0 surfaces for all plugins — GitHub API likely "
+              "rate-limited/unreachable. Refusing to overwrite README.", file=sys.stderr)
+        return 1
 
     out = HEADER.format(
         count=len(plugins),
