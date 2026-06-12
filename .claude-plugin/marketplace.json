@@ -120,8 +120,7 @@
         "falsification",
         "reasoning"
       ],
-      "homepage": "https://github.com/88plug/scientific-method",
-      "version": "1.7.2"
+      "homepage": "https://github.com/88plug/scientific-method"
     },
     {
       "name": "drive-remote-terminal",
@@ -140,8 +139,7 @@
         "remote",
         "automation"
       ],
-      "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "1.0.0"
+      "homepage": "https://github.com/88plug/drive-remote-terminal"
     },
     {
       "name": "project-prospector",
@@ -160,8 +158,7 @@
         "novelty",
         "multi-agent"
       ],
-      "homepage": "https://github.com/88plug/project-prospector",
-      "version": "1.0.0"
+      "homepage": "https://github.com/88plug/project-prospector"
     },
     {
       "name": "screen-mcp",
@@ -180,8 +177,7 @@
         "ocr",
         "portal"
       ],
-      "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "1.3.2"
+      "homepage": "https://github.com/88plug/screen-mcp"
     }
   ]
 }

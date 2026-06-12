@@ -50,11 +50,17 @@ def main() -> int:
             if new and entry.get(field) != new:
                 entry[field] = new
                 changed.append(f"{entry['name']}.{field}")
-        # surface the latest declared version for visibility (does not pin install)
+        # Track the source's declared version. If the source has NO version, the
+        # plugin is in the commit-SHA regime (every commit ships); strip any stale
+        # entry version so resolution falls through to the source commit SHA.
         ver = man.get("version")
-        if ver and entry.get("version") != ver:
-            entry["version"] = ver
-            changed.append(f"{entry['name']}.version->{ver}")
+        if ver:
+            if entry.get("version") != ver:
+                entry["version"] = ver
+                changed.append(f"{entry['name']}.version->{ver}")
+        elif "version" in entry:
+            del entry["version"]
+            changed.append(f"{entry['name']}.version removed (rolling / commit-SHA)")
     if changed:
         MKT.write_text(json.dumps(data, indent=2) + "\n")
         print("synced:", ", ".join(changed))

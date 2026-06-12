@@ -227,7 +227,7 @@ Plugin code itself never lives in this repo — only the marketplace index.
 
 
 def _row(p: str, name: str, ver, desc, surfaces) -> str:
-    vtag = f"&nbsp;`v{ver}`" if ver else ""
+    vtag = f"&nbsp;`v{ver}`" if ver else "&nbsp;`rolling`"
     s = surfaces or "—"
     return (f"| [**{name}**]({p})" + vtag + f" | {desc} | `{s}` | "
             f"`/plugin install {name}@88plug` |")
