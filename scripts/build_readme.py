@@ -159,6 +159,29 @@ HEADER = """<div align="center">
 
 That's the whole install. No environment variables, no API keys — uses your existing AI coding tool setup.
 
+## Staying up to date
+
+Third-party marketplaces have auto-update **off by default**, so turn it on once to
+receive new plugin versions automatically at startup:
+
+```sh
+/plugin            # → Marketplaces → select 88plug → Enable auto-update
+```
+
+With it on, Claude Code refreshes this catalog and updates installed plugins at
+startup, then prompts you to `/reload-plugins`. Prefer to do it by hand? Refresh the
+catalog first, then update:
+
+```sh
+/plugin marketplace update 88plug
+/plugin update <name>@88plug
+/reload-plugins
+```
+
+(Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
+in managed settings.) Every plugin here carries an explicit `version`, so an update lands
+exactly when its version is bumped.
+
 ## Plugins
 
 Two structural categories. Both install the same way.
