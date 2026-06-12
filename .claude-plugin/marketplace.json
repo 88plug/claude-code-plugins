@@ -31,7 +31,7 @@
         "source": "github",
         "repo": "88plug/caveman-plus"
       },
-      "description": "Talk like caveman. Cut ~75% tokens. Keep all technical accuracy. Default level: full-plus.",
+      "description": "Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like a caveman.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -48,7 +48,7 @@
         "source": "github",
         "repo": "88plug/total-recall"
       },
-      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients and surfaces operator identity, standing decisions, bans, goals, and past corrections via 23 MCP tools, 4 hooks, and 15 slash commands. The operator becomes the source of truth; the model stops re-asking what they already told it.",
+      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -61,7 +61,8 @@
         "hooks",
         "data-mining"
       ],
-      "homepage": "https://github.com/88plug/total-recall"
+      "homepage": "https://github.com/88plug/total-recall",
+      "version": "2.1.0"
     },
     {
       "name": "searxng",
@@ -69,7 +70,7 @@
         "source": "github",
         "repo": "88plug/searxng-mcp"
       },
-      "description": "Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable.",
+      "description": "Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable. The underlying server is also usable independently of Claude Code via `uvx --from git+https://github.com/88plug/searxng-mcp searxng-mcp`.",
       "category": "search",
       "tags": [
         "type:mcp",
@@ -80,7 +81,8 @@
         "privacy",
         "self-hosted"
       ],
-      "homepage": "https://github.com/88plug/searxng-mcp"
+      "homepage": "https://github.com/88plug/searxng-mcp",
+      "version": "0.2.0"
     },
     {
       "name": "deepwiki",
@@ -88,7 +90,7 @@
         "source": "github",
         "repo": "88plug/deepwiki"
       },
-      "description": "Talk to any public GitHub repo's auto-generated documentation via Cognition AI's hosted DeepWiki MCP. Read-only research into codebases without cloning. Thin plugin wrapping a third-party service operated by Cognition.",
+      "description": "Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP. Read-only research into codebases without cloning. Note: this plugin wraps a remote MCP server hosted by Cognition AI at mcp.deepwiki.com; 88plug does not operate the underlying service.",
       "category": "research",
       "tags": [
         "type:mcp",
@@ -98,7 +100,8 @@
         "research",
         "mcp"
       ],
-      "homepage": "https://github.com/88plug/deepwiki"
+      "homepage": "https://github.com/88plug/deepwiki",
+      "version": "0.1.0"
     },
     {
       "name": "scientific-method",
@@ -106,7 +109,7 @@
         "source": "github",
         "repo": "88plug/scientific-method"
       },
-      "description": "Drive debugging, performance campaigns, claim validation, and invention with the scientific method: falsifiable hypotheses, prediction-before-measurement, controlled experiments, REFUTE-first verification, and persistent falsification ledgers.",
+      "description": "Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify findings adversarially (REFUTE-first), and persist verdicts in a hypothesis ledger so killed ideas are never re-attacked",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -116,7 +119,8 @@
         "falsification",
         "reasoning"
       ],
-      "homepage": "https://github.com/88plug/scientific-method"
+      "homepage": "https://github.com/88plug/scientific-method",
+      "version": "1.7.2"
     }
   ]
 }
