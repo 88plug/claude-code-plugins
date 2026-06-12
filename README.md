@@ -23,11 +23,11 @@
 /plugin install amnesia@88plug
 /plugin install caveman-plus@88plug
 /plugin install total-recall@88plug
+/plugin install searxng@88plug
+/plugin install deepwiki@88plug
 /plugin install scientific-method@88plug
 /plugin install drive-remote-terminal@88plug
 /plugin install project-prospector@88plug
-/plugin install searxng@88plug
-/plugin install deepwiki@88plug
 /plugin install screen-mcp@88plug
 ```
 
@@ -41,36 +41,34 @@ Two structural categories. Both install the same way.
 
 | Plugin | What it does | Surfaces | Install |
 | :--- | :--- | :--- | :--- |
-| [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v0.3.0` | Seamless context continuity across compaction — capture and restore the agent's working state on every `/compact` and resume, invisible to you | `5 hooks` · `1 skill` · `4 commands` · `1 agent` · `1 MCP (embedded)` | `/plugin install amnesia@88plug` |
-| [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v2.1.0` | Cross-session, cross-CLI memory. Mines transcripts from 8 CLI clients; surfaces operator identity, standing decisions, bans, goals, and past corrections so the model stops re-asking. Zero host-python prereq — bootstraps its own `uv` + python in `$CLAUDE_PLUGIN_DATA` on first run | `4 hooks` · `2 skills` · `15 commands` · `23 MCP tools` | `/plugin install total-recall@88plug` |
-| [**caveman-plus**](https://github.com/88plug/caveman-plus) | Talk like caveman. Cut ~75% tokens. Keep all technical accuracy | `1 output style` | `/plugin install caveman-plus@88plug` |
-| [**scientific-method**](https://github.com/88plug/scientific-method)&nbsp;`v1.7.2` | Falsification-first investigation + invention — turn every claim into a labeled hypothesis, predict before measuring, run controlled experiments, REFUTE-first verification, and a persistent ledger so killed ideas stay killed | `1 skill` · `7 commands` · `5 agents` · `1 hook` | `/plugin install scientific-method@88plug` |
-| [**drive-remote-terminal**](https://github.com/88plug/drive-remote-terminal)&nbsp;`v1.0.0` | Operate an interactive full-screen TUI on a remote machine over tmux/screen + SSH like a human: type with send-keys, screenshot with capture-pane, in a type-wait-screenshot-read loop | `1 skill` | `/plugin install drive-remote-terminal@88plug` |
-| [**project-prospector**](https://github.com/88plug/project-prospector)&nbsp;`v1.0.0` | Discover, catalog, and rank everything you've built or sketched on a machine — a two-pass parallel read-only sweep into a tiered novelty/leverage ranking with idea/live/dormant tags | `1 skill` | `/plugin install project-prospector@88plug` |
+| [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v0.3.0` | Seamless context continuity across Claude Code compaction. Four background layers (continuous tool-call capture, mechanical PostCompact handoff, async Opus 4.7 enrichment at --effort max, async Stop-hook refinement, and preemptive snapshot before the next compact) keep the agent's working state intact across every compaction and resume. All summarization is isolated from CLAUDE.md/auto-memory and invisible to the user. | `MCP server · 1 skill · 8 commands · 1 agent · hooks` | `/plugin install amnesia@88plug` |
+| [**caveman-plus**](https://github.com/88plug/caveman-plus) | Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like a caveman. | `7 skills · 3 agents` | `/plugin install caveman-plus@88plug` |
+| [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v2.1.0` | Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it. | `MCP server · 3 skills · 15 commands · hooks` | `/plugin install total-recall@88plug` |
+| [**scientific-method**](https://github.com/88plug/scientific-method)&nbsp;`v1.7.2` | Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify findings adversarially (REFUTE-first), and persist verdicts in a hypothesis ledger so killed ideas are never re-attacked | `1 skill · 7 commands · 5 agents · hooks` | `/plugin install scientific-method@88plug` |
+| [**drive-remote-terminal**](https://github.com/88plug/drive-remote-terminal)&nbsp;`v1.0.0` | Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with capture-pane, in a type-wait-screenshot-read loop. For the Claude Code TUI, vim, top, curses installers, REPLs, or any program that needs a real PTY over SSH. | `1 skill` | `/plugin install drive-remote-terminal@88plug` |
+| [**project-prospector**](https://github.com/88plug/project-prospector)&nbsp;`v1.0.0` | Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents (transcripts, other agent CLIs, running services, research artifacts, beyond-home), synthesized into a tiered novelty/leverage ranking with idea/live/dormant tags and evidence-anchored rationale. | `1 skill` | `/plugin install project-prospector@88plug` |
 
 ### MCP wrappers — single MCP server, one-command install
 
-| Plugin | What it does | Backend | Install |
+| Plugin | What it does | Surfaces | Install |
 | :--- | :--- | :--- | :--- |
-| [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v0.2.0` | Privacy-respecting metasearch over 70+ engines via a self-hosted SearXNG instance. Token-efficient tool responses, stdio + streamable-http, optional rendered (Playwright) fetch | local (uvx) | `/plugin install searxng@88plug` |
-| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v0.1.0` | Chat with any public GitHub repo's auto-generated documentation — read-only research into codebases without cloning | remote (Cognition AI) | `/plugin install deepwiki@88plug` |
-| [**screen-mcp**](https://github.com/88plug/screen-mcp)&nbsp;`v1.3.2` | Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click/type/scroll/drag/read any visible app over xdg-desktop-portal, with optional OCR + icon grounding. Ships the MCP server + a drive-screen skill. CPU-only | local (Wayland/GNOME) | `/plugin install screen-mcp@88plug` |
+| [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v0.2.0` | Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable. The underlying server is also usable independently of Claude Code via `uvx --from git+https://github.com/88plug/searxng-mcp searxng-mcp`. | `MCP server` | `/plugin install searxng@88plug` |
+| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v0.1.0` | Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP. Read-only research into codebases without cloning. Note: this plugin wraps a remote MCP server hosted by Cognition AI at mcp.deepwiki.com; 88plug does not operate the underlying service. | `MCP server` | `/plugin install deepwiki@88plug` |
+| [**screen-mcp**](https://github.com/88plug/screen-mcp)&nbsp;`v1.3.2` | Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop + ScreenCast), with optional OCR + OmniParser icon grounding. Pure-Python, CPU-only. GNOME/Wayland only. Ships the MCP server plus a drive-screen skill that encodes the locate-ground-act-confirm loop. | `MCP server · 1 skill` | `/plugin install screen-mcp@88plug` |
 
 ## Philosophy
 
 Plugins should be invisible until you need them. Each one in this marketplace earns its slot by closing a specific failure mode in long-horizon AI-assisted work:
 
-- **amnesia** — the model forgets what it was doing across compaction
-- **caveman-plus** — the model spends 4× more tokens than the answer needs
-- **total-recall** — the model keeps relearning who the operator is and what they've already decided
-- **scientific-method** — the model asserts ceilings, root causes, and "novel" inventions without ever proving them
-- **drive-remote-terminal** — the model can't operate an interactive TUI (Claude Code, vim, installers, REPLs) over SSH
-- **project-prospector** — you lose track of everything you've half-built, and which ideas are worth resuming
-- **searxng** — the model can't do real web research without leaking queries to surveillance-capitalism search engines
-- **deepwiki** — the model can't navigate an unfamiliar GitHub repo without cloning, grepping, and burning context
-- **screen-mcp** — the model can't see or act on what's actually on your screen
-
-All are local-first except **deepwiki**, a thin wrapper around a hosted third-party service (Cognition AI) — included for the productivity win, with the dependency disclosed up-front.
+- **amnesia** — Seamless context continuity across Claude Code compaction
+- **caveman-plus** — Ultra-compressed communication mode
+- **total-recall** — Cross-session, cross-CLI memory for AI coding assistants
+- **searxng** — Fast, token-efficient MCP for SearXNG metasearch
+- **deepwiki** — Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP
+- **scientific-method** — Falsification-first investigation workflow
+- **drive-remote-terminal** — Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human
+- **project-prospector** — Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep
+- **screen-mcp** — Eyes and hands on a Linux Wayland desktop
 
 ## License
 
@@ -89,3 +87,5 @@ convention, quality bar, and CLA terms. Short version:
    on your first PR (CLA Assistant gates merge).
 
 Plugin code itself never lives in this repo — only the marketplace index.
+
+<sub>This README is generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Do not edit by hand — edit the catalog (or the plugin's own manifest) and the sync action regenerates it.</sub>

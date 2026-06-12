@@ -5,7 +5,10 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: [".claude-plugin/marketplace.json", "scripts/sync_marketplace.py"]
+    paths:
+      - ".claude-plugin/marketplace.json"
+      - "scripts/sync_marketplace.py"
+      - "scripts/build_readme.py"
 permissions:
   contents: write
 jobs:
@@ -18,13 +21,15 @@ jobs:
           python-version: "3.12"
       - name: Sync marketplace metadata from each plugin source
         run: python scripts/sync_marketplace.py
+      - name: Regenerate README from the catalog
+        run: python scripts/build_readme.py
       - name: Commit if changed
         run: |
-          if ! git diff --quiet -- .claude-plugin/marketplace.json; then
+          if ! git diff --quiet -- .claude-plugin/marketplace.json README.md; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add .claude-plugin/marketplace.json
-            git commit -m "chore: auto-sync marketplace metadata from plugin sources"
+            git add .claude-plugin/marketplace.json README.md
+            git commit -m "chore: auto-sync catalog + regenerate README from sources"
             git push
           else
             echo "already in sync"
