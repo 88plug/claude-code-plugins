@@ -99,6 +99,24 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki"
+    },
+    {
+      "name": "scientific-method",
+      "source": {
+        "source": "github",
+        "repo": "88plug/scientific-method"
+      },
+      "description": "Drive debugging, performance campaigns, claim validation, and invention with the scientific method: falsifiable hypotheses, prediction-before-measurement, controlled experiments, REFUTE-first verification, and persistent falsification ledgers.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "scientific-method",
+        "investigation",
+        "verification",
+        "falsification",
+        "reasoning"
+      ],
+      "homepage": "https://github.com/88plug/scientific-method"
     }
   ]
 }
