@@ -128,7 +128,7 @@
         "source": "github",
         "repo": "88plug/drive-remote-terminal"
       },
-      "description": "Drive an interactive full-screen TUI on a remote machine over tmux/screen + SSH like a human: type with send-keys, screenshot with capture-pane, loop. For the Claude Code TUI, vim, top, installers, REPLs, curses menus over SSH.",
+      "description": "Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with capture-pane, in a type-wait-screenshot-read loop. For the Claude Code TUI, vim, top, curses installers, REPLs, or any program that needs a real PTY over SSH.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -139,7 +139,8 @@
         "remote",
         "automation"
       ],
-      "homepage": "https://github.com/88plug/drive-remote-terminal"
+      "homepage": "https://github.com/88plug/drive-remote-terminal",
+      "version": "1.0.0"
     },
     {
       "name": "project-prospector",
@@ -147,7 +148,7 @@
         "source": "github",
         "repo": "88plug/project-prospector"
       },
-      "description": "Discover, catalog, and rank everything you've built or sketched on a machine — two-pass parallel read-only sweep, blind-spot agents, tiered novelty/leverage ranking with idea/live/dormant tags.",
+      "description": "Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents (transcripts, other agent CLIs, running services, research artifacts, beyond-home), synthesized into a tiered novelty/leverage ranking with idea/live/dormant tags and evidence-anchored rationale.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -158,7 +159,8 @@
         "novelty",
         "multi-agent"
       ],
-      "homepage": "https://github.com/88plug/project-prospector"
+      "homepage": "https://github.com/88plug/project-prospector",
+      "version": "1.0.0"
     },
     {
       "name": "screen-mcp",
@@ -166,7 +168,7 @@
         "source": "github",
         "repo": "88plug/screen-mcp"
       },
-      "description": "Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click/type/scroll/drag/read any visible app over xdg-desktop-portal, with optional OCR + icon grounding. Pure-Python, CPU-only. GNOME/Wayland only. Ships the MCP server + a drive-screen skill.",
+      "description": "Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop + ScreenCast), with optional OCR + OmniParser icon grounding. Pure-Python, CPU-only. GNOME/Wayland only. Ships the MCP server plus a drive-screen skill that encodes the locate-ground-act-confirm loop.",
       "category": "productivity",
       "tags": [
         "type:mcp",
@@ -177,7 +179,8 @@
         "ocr",
         "portal"
       ],
-      "homepage": "https://github.com/88plug/screen-mcp"
+      "homepage": "https://github.com/88plug/screen-mcp",
+      "version": "1.3.2"
     }
   ]
 }
