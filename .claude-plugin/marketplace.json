@@ -25,7 +25,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "0.3.1"
+      "version": "0.3.2"
     },
     {
       "name": "caveman-plus",
@@ -64,7 +64,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2.1.1"
+      "version": "2.1.2"
     },
     {
       "name": "searxng",
@@ -84,7 +84,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "0.2.0"
+      "version": "0.2.1"
     },
     {
       "name": "deepwiki",
@@ -103,7 +103,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "scientific-method",
