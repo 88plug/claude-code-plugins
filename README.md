@@ -36,7 +36,7 @@ No environment variables, no API keys — it uses your existing setup.
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.6.23`](https://github.com/88plug/amnesia/commit/4c25cef5bf40 "commit 4c25cef") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.6.24`](https://github.com/88plug/amnesia/commit/58c6ca1ecb2f "commit 58c6ca1") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
