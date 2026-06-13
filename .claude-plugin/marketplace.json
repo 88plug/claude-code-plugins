@@ -24,8 +24,7 @@
         "continuity",
         "hooks"
       ],
-      "homepage": "https://github.com/88plug/amnesia",
-      "version": "0.3.2"
+      "homepage": "https://github.com/88plug/amnesia"
     },
     {
       "name": "caveman-plus",
@@ -83,8 +82,7 @@
         "privacy",
         "self-hosted"
       ],
-      "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "0.2.1"
+      "homepage": "https://github.com/88plug/searxng-mcp"
     },
     {
       "name": "deepwiki",
