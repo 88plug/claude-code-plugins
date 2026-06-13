@@ -62,8 +62,7 @@
         "hooks",
         "data-mining"
       ],
-      "homepage": "https://github.com/88plug/total-recall",
-      "version": "2.1.2"
+      "homepage": "https://github.com/88plug/total-recall"
     },
     {
       "name": "searxng",
@@ -100,8 +99,7 @@
         "research",
         "mcp"
       ],
-      "homepage": "https://github.com/88plug/deepwiki",
-      "version": "0.1.2"
+      "homepage": "https://github.com/88plug/deepwiki"
     },
     {
       "name": "scientific-method",
