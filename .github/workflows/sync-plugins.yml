@@ -1,7 +1,7 @@
 name: sync-marketplace-from-sources
 on:
   schedule:
-    - cron: "17 6 * * *"   # daily, always track latest
+    - cron: "17 */6 * * *"   # every 6h, always track latest source HEAD
   workflow_dispatch: {}
   push:
     branches: [main]
