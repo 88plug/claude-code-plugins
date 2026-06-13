@@ -51,6 +51,16 @@ def _get(url: str):
         return None
 
 
+def _latest_sha(repo: str):
+    """Latest commit SHA on the source repo's default branch — the real version a
+    rolling (version-less) plugin resolves to. Refreshed on every catalog sync."""
+    for ref in REFS:
+        c = _get(f"https://api.github.com/repos/{repo}/commits/{ref}")
+        if c and c.get("sha"):
+            return c["sha"][:12]
+    return None
+
+
 def _repo_tree(repo: str) -> list[str]:
     for ref in REFS:
         t = _get(f"https://api.github.com/repos/{repo}/git/trees/{ref}?recursive=1")
@@ -188,9 +198,10 @@ catalog first, then update:
 ```
 
 (Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
-in managed settings.) Plugins tagged **`rolling`** ship on every commit; **versioned**
-plugins update when their version is bumped. Either way, with auto-update on you always
-get the latest.
+in managed settings.) A plugin showing a commit hash (e.g. `a1b2c3d`) is **rolling** — every
+commit ships, and that hash is the exact latest version you get (the catalog refreshes it
+automatically); a plugin showing **`v1.2.3`** updates when that version is bumped. Either way,
+with auto-update on you always get the latest.
 
 ## Plugins
 
@@ -236,8 +247,15 @@ Plugin code itself never lives in this repo — only the marketplace index.
 """
 
 
-def _row(p: str, name: str, ver, desc, surfaces) -> str:
-    vtag = f"&nbsp;`v{ver}`" if ver else "&nbsp;`rolling`"
+def _row(p: str, name: str, ver, desc, surfaces, repo=None, sha=None) -> str:
+    if ver:
+        vtag = f"&nbsp;`v{ver}`"
+    elif sha and repo:
+        # Rolling: show the real latest version — the commit users resolve to —
+        # linked to that commit. Refreshed automatically on every sync.
+        vtag = f'&nbsp;[`{sha}`](https://github.com/{repo}/commit/{sha} "latest rolling commit")&nbsp;<sub>rolling</sub>'
+    else:
+        vtag = "&nbsp;`rolling`"
     s = surfaces or "—"
     return (f"| [**{name}**]({p})" + vtag + f" | {desc} | `{s}` | "
             f"`/plugin install {name}@88plug` |")
@@ -256,14 +274,15 @@ def main() -> int:
         desc = (e.get("description") or "").replace("\n", " ").strip()
         tag0 = (e.get("tags") or [""])[0]
         surfaces = _surfaces(repo, name) if repo else ""
+        sha = _latest_sha(repo) if (repo and not ver) else None
         if repo:
             n_repo += 1
             n_surfaced += 1 if surfaces else 0
-        row = _row(homepage, name, ver, desc, surfaces)
+        row = _row(homepage, name, ver, desc, surfaces, repo=repo, sha=sha)
         (mcp_rows if tag0 == "type:mcp" else plugin_rows).append(row)
         installs.append(f"/plugin install {name}@88plug")
         philo.append(f"- **{name}** — {_first_clause(desc)}")
-        print(f"  {name}: v{ver or '—'} [{tag0}] surfaces='{surfaces}'", file=sys.stderr)
+        print(f"  {name}: {('v'+ver) if ver else (sha or 'rolling')} [{tag0}] surfaces='{surfaces}'", file=sys.stderr)
 
     # Abort rather than commit a degraded README: if every repo-backed plugin
     # came back with empty surfaces, the GitHub API was unreachable/rate-limited.

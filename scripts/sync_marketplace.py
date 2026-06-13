@@ -54,7 +54,7 @@ def main() -> int:
             continue
         man = _fetch_plugin_manifest(repo, entry["name"])
         if not man:
-            print(f"  WARN  {entry['name']}: could not fetch source manifest ({src['repo']})", file=sys.stderr)
+            print(f"  WARN  {entry['name']}: could not fetch source manifest ({repo})", file=sys.stderr)
             continue
         for field in ("description", "homepage"):
             new = man.get(field)

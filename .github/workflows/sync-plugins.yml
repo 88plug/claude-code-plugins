@@ -1,7 +1,7 @@
 name: sync-marketplace-from-sources
 on:
   schedule:
-    - cron: "17 */6 * * *"   # every 6h, always track latest source HEAD
+    - cron: "*/10 * * * *"   # every 10 min — keep rolling commit hashes fresh
   workflow_dispatch: {}
   push:
     branches: [main]
