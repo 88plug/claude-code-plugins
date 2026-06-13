@@ -2,12 +2,13 @@
 
 # 88plug
 
-  <h3>Curated plugins for AI coding assistants. One marketplace. Two commands.</h3>
+**Curated plugins for AI coding assistants. One marketplace. Two commands.**
 
-  [![marketplace](https://img.shields.io/badge/marketplace-88plug-000?style=for-the-badge)](https://github.com/88plug/claude-code-plugins)
-  [![license](https://img.shields.io/badge/license-MIT-000?style=for-the-badge)](./LICENSE)
-  [![plugins](https://img.shields.io/badge/plugins-9%20shipping-000?style=for-the-badge)](#plugins)
-  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
+[![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
+[![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
+[![plugins](https://img.shields.io/badge/plugins-9-1f2328?style=flat-square)](#plugins)
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
 </div>
 
@@ -19,32 +20,114 @@
 # 1. Add the marketplace (once per machine)
 /plugin marketplace add 88plug/claude-code-plugins
 
-# 2. Install any plugin from the catalog
+# 2. Install any plugin below
+/plugin install <name>@88plug
+```
+
+No environment variables, no API keys — it uses your existing setup.
+
+> [!TIP]
+> Enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and you always get the latest at startup.
+
+## Plugins
+
+*Claude Code UX surfaces — hooks, skills, commands, output styles. Each version is
+`YEAR.MONTH.BUILD`, auto-stamped and linked to the exact commit; it's what
+`claude plugin list` shows, so you can tell at a glance if you're current.*
+
+### [amnesia](https://github.com/88plug/amnesia)
+[`v2026.6.23`](https://github.com/88plug/amnesia/commit/4c25cef5bf40 "commit 4c25cef") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+
+Seamless context continuity across Claude Code compaction.
+
+```sh
 /plugin install amnesia@88plug
+```
+
+### [caveman-plus](https://github.com/88plug/caveman-plus)
+[`v2026.6.190`](https://github.com/88plug/caveman-plus/commit/e5210f8c1555 "commit e5210f8") · 7 skills · 3 agents
+
+Ultra-compressed communication mode.
+
+```sh
 /plugin install caveman-plus@88plug
+```
+
+### [total-recall](https://github.com/88plug/total-recall)
+[`v2026.6.79`](https://github.com/88plug/total-recall/commit/f500d7044458 "commit f500d70") · MCP server · 3 skills · 15 commands · hooks
+
+Cross-session, cross-CLI memory for AI coding assistants.
+
+```sh
 /plugin install total-recall@88plug
-/plugin install searxng@88plug
-/plugin install deepwiki@88plug
+```
+
+### [scientific-method](https://github.com/88plug/scientific-method)
+[`v2026.6.8`](https://github.com/88plug/scientific-method/commit/4aa3dfae9565 "commit 4aa3dfa") · 1 skill · 7 commands · 5 agents · hooks
+
+Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
+
+```sh
 /plugin install scientific-method@88plug
+```
+
+### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
+[`v2026.6.3`](https://github.com/88plug/drive-remote-terminal/commit/6ec7b7522c15 "commit 6ec7b75") · 1 skill
+
+Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
+
+```sh
 /plugin install drive-remote-terminal@88plug
+```
+
+### [project-prospector](https://github.com/88plug/project-prospector)
+[`v2026.6.3`](https://github.com/88plug/project-prospector/commit/e4c697271962 "commit e4c6972") · 1 skill
+
+Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
+
+```sh
 /plugin install project-prospector@88plug
+```
+
+## MCP servers
+
+*A single MCP server, one-command install.*
+
+### [searxng](https://github.com/88plug/searxng-mcp)
+[`v2026.6.11`](https://github.com/88plug/searxng-mcp/commit/2a1389975549 "commit 2a13899") · MCP server
+
+Fast, token-efficient MCP for SearXNG metasearch.
+
+```sh
+/plugin install searxng@88plug
+```
+
+### [deepwiki](https://github.com/88plug/deepwiki)
+[`v2026.6.5`](https://github.com/88plug/deepwiki/commit/68220f837186 "commit 68220f8") · MCP server
+
+Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
+
+```sh
+/plugin install deepwiki@88plug
+```
+
+### [screen-mcp](https://github.com/88plug/screen-mcp)
+[`v2026.6.4`](https://github.com/88plug/screen-mcp/commit/8a975cbbe964 "commit 8a975cb") · MCP server · 1 skill
+
+Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
+
+```sh
 /plugin install screen-mcp@88plug
 ```
 
-That's the whole install. No environment variables, no API keys — uses your existing AI coding tool setup.
+<details>
+<summary><b>Updating &amp; versioning</b></summary>
 
-## Staying up to date
+Third-party marketplaces have auto-update **off by default**. Turn it on once
+(`/plugin` → Marketplaces → **88plug** → Enable auto-update) and Claude Code refreshes
+the catalog and updates installed plugins at startup, then prompts `/reload-plugins`.
 
-Third-party marketplaces have auto-update **off by default**, so turn it on once to
-receive new plugin versions automatically at startup:
-
-```sh
-/plugin            # → Marketplaces → select 88plug → Enable auto-update
-```
-
-With it on, Claude Code refreshes this catalog and updates installed plugins at
-startup, then prompts you to `/reload-plugins`. Prefer to do it by hand? Refresh the
-catalog first, then update:
+Prefer to do it by hand:
 
 ```sh
 /plugin marketplace update 88plug
@@ -52,65 +135,29 @@ catalog first, then update:
 /reload-plugins
 ```
 
-(Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
-in managed settings.) Each plugin shows its **version** (e.g. `v2026.6.144` — `YEAR.MONTH.BUILD`,
-auto-stamped and increasing on every release) next to the **exact commit** it points at. That
-version is what `claude plugin list` shows locally, so you can tell at a glance whether you're
-on the latest. With auto-update on you always get the latest.
+Org-wide, an admin can add `88plug` to `extraKnownMarketplaces` with auto-update enabled
+in managed settings. Versions are `YEAR.MONTH.BUILD` (auto-stamped, increasing every
+release); the linked hash is the exact commit. If your installed version differs from the
+one here, you're behind — update it.
 
-## Plugins
-
-Two structural categories. Both install the same way.
-
-### Plugins — Claude Code UX surfaces (hooks, skills, commands, output styles)
-
-| Plugin | What it does | Surfaces | Install |
-| :--- | :--- | :--- | :--- |
-| [**amnesia**](https://github.com/88plug/amnesia)&nbsp;`v2026.6.23`&nbsp;[<sub>`4c25cef`</sub>](https://github.com/88plug/amnesia/commit/4c25cef5bf40 "latest commit") | Seamless context continuity across Claude Code compaction. Four background layers (continuous tool-call capture, mechanical PostCompact handoff, async Opus 4.7 enrichment at --effort max, async Stop-hook refinement, and preemptive snapshot before the next compact) keep the agent's working state intact across every compaction and resume. All summarization is isolated from CLAUDE.md/auto-memory and invisible to the user. | `MCP server · 1 skill · 8 commands · 1 agent · hooks` | `/plugin install amnesia@88plug` |
-| [**caveman-plus**](https://github.com/88plug/caveman-plus)&nbsp;`v2026.6.190`&nbsp;[<sub>`e5210f8`</sub>](https://github.com/88plug/caveman-plus/commit/e5210f8c1555 "latest commit") | Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like a caveman. | `7 skills · 3 agents` | `/plugin install caveman-plus@88plug` |
-| [**total-recall**](https://github.com/88plug/total-recall)&nbsp;`v2026.6.79`&nbsp;[<sub>`f500d70`</sub>](https://github.com/88plug/total-recall/commit/f500d7044458 "latest commit") | Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it. | `MCP server · 3 skills · 15 commands · hooks` | `/plugin install total-recall@88plug` |
-| [**scientific-method**](https://github.com/88plug/scientific-method)&nbsp;`v2026.6.8`&nbsp;[<sub>`4aa3dfa`</sub>](https://github.com/88plug/scientific-method/commit/4aa3dfae9565 "latest commit") | Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify findings adversarially (REFUTE-first), and persist verdicts in a hypothesis ledger so killed ideas are never re-attacked | `1 skill · 7 commands · 5 agents · hooks` | `/plugin install scientific-method@88plug` |
-| [**drive-remote-terminal**](https://github.com/88plug/drive-remote-terminal)&nbsp;`v2026.6.3`&nbsp;[<sub>`6ec7b75`</sub>](https://github.com/88plug/drive-remote-terminal/commit/6ec7b7522c15 "latest commit") | Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with capture-pane, in a type-wait-screenshot-read loop. For the Claude Code TUI, vim, top, curses installers, REPLs, or any program that needs a real PTY over SSH. | `1 skill` | `/plugin install drive-remote-terminal@88plug` |
-| [**project-prospector**](https://github.com/88plug/project-prospector)&nbsp;`v2026.6.3`&nbsp;[<sub>`e4c6972`</sub>](https://github.com/88plug/project-prospector/commit/e4c697271962 "latest commit") | Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents (transcripts, other agent CLIs, running services, research artifacts, beyond-home), synthesized into a tiered novelty/leverage ranking with idea/live/dormant tags and evidence-anchored rationale. | `1 skill` | `/plugin install project-prospector@88plug` |
-
-### MCP wrappers — single MCP server, one-command install
-
-| Plugin | What it does | Surfaces | Install |
-| :--- | :--- | :--- | :--- |
-| [**searxng**](https://github.com/88plug/searxng-mcp)&nbsp;`v2026.6.11`&nbsp;[<sub>`2a13899`</sub>](https://github.com/88plug/searxng-mcp/commit/2a1389975549 "latest commit") | Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable. The underlying server is also usable independently of Claude Code via `uvx --from git+https://github.com/88plug/searxng-mcp searxng-mcp`. | `MCP server` | `/plugin install searxng@88plug` |
-| [**deepwiki**](https://github.com/88plug/deepwiki)&nbsp;`v2026.6.5`&nbsp;[<sub>`68220f8`</sub>](https://github.com/88plug/deepwiki/commit/68220f837186 "latest commit") | Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP. Read-only research into codebases without cloning. Note: this plugin wraps a remote MCP server hosted by Cognition AI at mcp.deepwiki.com; 88plug does not operate the underlying service. | `MCP server` | `/plugin install deepwiki@88plug` |
-| [**screen-mcp**](https://github.com/88plug/screen-mcp)&nbsp;`v2026.6.4`&nbsp;[<sub>`8a975cb`</sub>](https://github.com/88plug/screen-mcp/commit/8a975cbbe964 "latest commit") | Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop + ScreenCast), with optional OCR + OmniParser icon grounding. Pure-Python, CPU-only. GNOME/Wayland only. Ships the MCP server plus a drive-screen skill that encodes the locate-ground-act-confirm loop. | `MCP server · 1 skill` | `/plugin install screen-mcp@88plug` |
+</details>
 
 ## Philosophy
 
-Plugins should be invisible until you need them. Each one in this marketplace earns its slot by closing a specific failure mode in long-horizon AI-assisted work:
+Plugins should be invisible until you need them. Each one earns its slot by closing a
+specific failure mode in long-horizon AI-assisted work.
 
-- **amnesia** — Seamless context continuity across Claude Code compaction
-- **caveman-plus** — Ultra-compressed communication mode
-- **total-recall** — Cross-session, cross-CLI memory for AI coding assistants
-- **searxng** — Fast, token-efficient MCP for SearXNG metasearch
-- **deepwiki** — Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP
-- **scientific-method** — Falsification-first investigation workflow
-- **drive-remote-terminal** — Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human
-- **project-prospector** — Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep
-- **screen-mcp** — Eyes and hands on a Linux Wayland desktop
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, naming convention, quality
+bar, and CLA terms. Short version: build your plugin in its own `88plug/<plugin>` repo with
+a valid `.claude-plugin/plugin.json`, PR an entry to this hub's
+`.claude-plugin/marketplace.json`, and sign the
+[CLA](https://gist.github.com/88plug/de8629bdb714949a9ea9a47323d8468e) on your first PR.
+Plugin code never lives in this repo — only the marketplace index.
 
 ## License
 
 MIT. See [LICENSE](./LICENSE).
 
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, naming
-convention, quality bar, and CLA terms. Short version:
-
-1. Build your plugin in its own `88plug/<plugin>` repo with a valid
-   `.claude-plugin/plugin.json`.
-2. PR an entry to this hub's `.claude-plugin/marketplace.json` (github
-   source).
-3. Sign the [CLA](https://gist.github.com/88plug/de8629bdb714949a9ea9a47323d8468e)
-   on your first PR (CLA Assistant gates merge).
-
-Plugin code itself never lives in this repo — only the marketplace index.
-
-<sub>This README is generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Do not edit by hand — edit the catalog (or the plugin's own manifest) and the sync action regenerates it.</sub>
+<sub>Generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Don't edit by hand — edit the catalog (or the plugin's manifest) and the sync action regenerates it.</sub>

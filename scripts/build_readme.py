@@ -142,25 +142,33 @@ def _surfaces(repo: str, name: str) -> str:
     return " · ".join(parts)
 
 
-def _first_clause(desc: str) -> str:
-    d = (desc or "").strip()
-    for sep in (" — ", ". ", ": ", "; "):
-        i = d.find(sep)
-        if 0 < i < 140:
-            return d[:i].rstrip(" .,:;—-")
-    return d[:120].rstrip(" .,:;—-")
+def _short(desc: str, limit: int = 170) -> str:
+    """One-line description for the catalog: first sentence, else a word-boundary
+    truncation. Full text stays in the catalog + each plugin's own repo."""
+    d = (desc or "").replace("\n", " ").strip()
+    first = d.split(". ", 1)[0].rstrip(" .")
+    if first and len(first) <= limit:
+        return first if first.endswith((".", "!", "?")) else first + "."
+    if len(d) <= limit:
+        return d
+    return d[:limit].rsplit(" ", 1)[0].rstrip(" .,:;—-") + "…"
 
 
+# Mobile-first layout (researched 2026): no wide tables — GitHub never reflows
+# them, so they force horizontal scroll and clip columns on a phone. Each plugin
+# is a vertical stanza (heading + metadata line + short description + fenced
+# install block with a copy button). Catalog leads; the update essay collapses.
 HEADER = """<div align="center">
 
 # 88plug
 
-  <h3>Curated plugins for AI coding assistants. One marketplace. Two commands.</h3>
+**Curated plugins for AI coding assistants. One marketplace. Two commands.**
 
-  [![marketplace](https://img.shields.io/badge/marketplace-88plug-000?style=for-the-badge)](https://github.com/88plug/claude-code-plugins)
-  [![license](https://img.shields.io/badge/license-MIT-000?style=for-the-badge)](./LICENSE)
-  [![plugins](https://img.shields.io/badge/plugins-{count}%20shipping-000?style=for-the-badge)](#plugins)
-  [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
+[![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
+[![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
+[![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat-square)](#plugins)
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
 </div>
 
@@ -172,24 +180,37 @@ HEADER = """<div align="center">
 # 1. Add the marketplace (once per machine)
 /plugin marketplace add 88plug/claude-code-plugins
 
-# 2. Install any plugin from the catalog
-{install_lines}
+# 2. Install any plugin below
+/plugin install <name>@88plug
 ```
 
-That's the whole install. No environment variables, no API keys — uses your existing AI coding tool setup.
+No environment variables, no API keys — it uses your existing setup.
 
-## Staying up to date
+> [!TIP]
+> Enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and you always get the latest at startup.
 
-Third-party marketplaces have auto-update **off by default**, so turn it on once to
-receive new plugin versions automatically at startup:
+## Plugins
 
-```sh
-/plugin            # → Marketplaces → select 88plug → Enable auto-update
-```
+*Claude Code UX surfaces — hooks, skills, commands, output styles. Each version is
+`YEAR.MONTH.BUILD`, auto-stamped and linked to the exact commit; it's what
+`claude plugin list` shows, so you can tell at a glance if you're current.*
 
-With it on, Claude Code refreshes this catalog and updates installed plugins at
-startup, then prompts you to `/reload-plugins`. Prefer to do it by hand? Refresh the
-catalog first, then update:
+{plugin_blocks}
+
+## MCP servers
+
+*A single MCP server, one-command install.*
+
+{mcp_blocks}
+
+<details>
+<summary><b>Updating &amp; versioning</b></summary>
+
+Third-party marketplaces have auto-update **off by default**. Turn it on once
+(`/plugin` → Marketplaces → **88plug** → Enable auto-update) and Claude Code refreshes
+the catalog and updates installed plugins at startup, then prompts `/reload-plugins`.
+
+Prefer to do it by hand:
 
 ```sh
 /plugin marketplace update 88plug
@@ -197,77 +218,57 @@ catalog first, then update:
 /reload-plugins
 ```
 
-(Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
-in managed settings.) Each plugin shows its **version** (e.g. `v2026.6.144` — `YEAR.MONTH.BUILD`,
-auto-stamped and increasing on every release) next to the **exact commit** it points at. That
-version is what `claude plugin list` shows locally, so you can tell at a glance whether you're
-on the latest. With auto-update on you always get the latest.
+Org-wide, an admin can add `88plug` to `extraKnownMarketplaces` with auto-update enabled
+in managed settings. Versions are `YEAR.MONTH.BUILD` (auto-stamped, increasing every
+release); the linked hash is the exact commit. If your installed version differs from the
+one here, you're behind — update it.
 
-## Plugins
-
-Two structural categories. Both install the same way.
-
-### Plugins — Claude Code UX surfaces (hooks, skills, commands, output styles)
-
-| Plugin | What it does | Surfaces | Install |
-| :--- | :--- | :--- | :--- |
-{plugin_rows}
-
-### MCP wrappers — single MCP server, one-command install
-
-| Plugin | What it does | Surfaces | Install |
-| :--- | :--- | :--- | :--- |
-{mcp_rows}
+</details>
 
 ## Philosophy
 
-Plugins should be invisible until you need them. Each one in this marketplace earns its slot by closing a specific failure mode in long-horizon AI-assisted work:
+Plugins should be invisible until you need them. Each one earns its slot by closing a
+specific failure mode in long-horizon AI-assisted work.
 
-{philosophy}
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, naming convention, quality
+bar, and CLA terms. Short version: build your plugin in its own `88plug/<plugin>` repo with
+a valid `.claude-plugin/plugin.json`, PR an entry to this hub's
+`.claude-plugin/marketplace.json`, and sign the
+[CLA](https://gist.github.com/88plug/de8629bdb714949a9ea9a47323d8468e) on your first PR.
+Plugin code never lives in this repo — only the marketplace index.
 
 ## License
 
 MIT. See [LICENSE](./LICENSE).
 
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full workflow, naming
-convention, quality bar, and CLA terms. Short version:
-
-1. Build your plugin in its own `88plug/<plugin>` repo with a valid
-   `.claude-plugin/plugin.json`.
-2. PR an entry to this hub's `.claude-plugin/marketplace.json` (github
-   source).
-3. Sign the [CLA](https://gist.github.com/88plug/de8629bdb714949a9ea9a47323d8468e)
-   on your first PR (CLA Assistant gates merge).
-
-Plugin code itself never lives in this repo — only the marketplace index.
-
-<sub>This README is generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Do not edit by hand — edit the catalog (or the plugin's own manifest) and the sync action regenerates it.</sub>
+<sub>Generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Don't edit by hand — edit the catalog (or the plugin's manifest) and the sync action regenerates it.</sub>
 """
 
 
-def _row(p: str, name: str, ver, desc, surfaces, repo=None, sha=None) -> str:
+def _stanza(name, homepage, ver, desc, surfaces, repo=None, sha=None) -> str:
+    head = f"### [{name}]({homepage})" if homepage else f"### {name}"
+    bits = []
     if ver and sha and repo:
-        # Friendly auto-version + the exact commit it points at (linked). The
-        # version is what `claude plugin list` shows, so users compare directly.
-        vtag = (f'&nbsp;`v{ver}`&nbsp;'
-                f'[<sub>`{sha[:7]}`</sub>](https://github.com/{repo}/commit/{sha} "latest commit")')
+        bits.append(f'[`v{ver}`](https://github.com/{repo}/commit/{sha} "commit {sha[:7]}")')
     elif ver:
-        vtag = f"&nbsp;`v{ver}`"
+        bits.append(f"`v{ver}`")
     elif sha and repo:
-        vtag = f'&nbsp;[`{sha}`](https://github.com/{repo}/commit/{sha} "latest commit")&nbsp;<sub>rolling</sub>'
-    else:
-        vtag = "&nbsp;`rolling`"
-    s = surfaces or "—"
-    return (f"| [**{name}**]({p})" + vtag + f" | {desc} | `{s}` | "
-            f"`/plugin install {name}@88plug` |")
+        bits.append(f'[`{sha[:7]}`](https://github.com/{repo}/commit/{sha})&nbsp;rolling')
+    if surfaces:
+        bits.append(surfaces)
+    meta = " · ".join(bits)
+    return (f"{head}\n"
+            f"{meta}\n\n"
+            f"{_short(desc)}\n\n"
+            f"```sh\n/plugin install {name}@88plug\n```")
 
 
 def main() -> int:
     data = json.loads(MKT.read_text())
     plugins = data.get("plugins", [])
-    plugin_rows, mcp_rows, philo, installs = [], [], [], []
+    plugin_blocks, mcp_blocks = [], []
     n_repo = n_surfaced = 0
     for e in plugins:
         name = e["name"]
@@ -281,10 +282,8 @@ def main() -> int:
         if repo:
             n_repo += 1
             n_surfaced += 1 if surfaces else 0
-        row = _row(homepage, name, ver, desc, surfaces, repo=repo, sha=sha)
-        (mcp_rows if tag0 == "type:mcp" else plugin_rows).append(row)
-        installs.append(f"/plugin install {name}@88plug")
-        philo.append(f"- **{name}** — {_first_clause(desc)}")
+        block = _stanza(name, homepage, ver, desc, surfaces, repo=repo, sha=sha)
+        (mcp_blocks if tag0 == "type:mcp" else plugin_blocks).append(block)
         print(f"  {name}: {('v'+ver) if ver else (sha or 'rolling')} [{tag0}] surfaces='{surfaces}'", file=sys.stderr)
 
     # Abort rather than commit a degraded README: if every repo-backed plugin
@@ -296,10 +295,8 @@ def main() -> int:
 
     out = HEADER.format(
         count=len(plugins),
-        install_lines="\n".join(installs),
-        plugin_rows="\n".join(plugin_rows),
-        mcp_rows="\n".join(mcp_rows),
-        philosophy="\n".join(philo),
+        plugin_blocks="\n\n".join(plugin_blocks),
+        mcp_blocks="\n\n".join(mcp_blocks),
     )
     old = README.read_text() if README.exists() else ""
     if out != old:
