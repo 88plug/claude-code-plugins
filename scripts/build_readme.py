@@ -198,10 +198,10 @@ catalog first, then update:
 ```
 
 (Org-wide: an admin can add `88plug` to `extraKnownMarketplaces` with `"autoUpdate": true`
-in managed settings.) A plugin showing a commit hash (e.g. `a1b2c3d`) is **rolling** — every
-commit ships, and that hash is the exact latest version you get (the catalog refreshes it
-automatically); a plugin showing **`v1.2.3`** updates when that version is bumped. Either way,
-with auto-update on you always get the latest.
+in managed settings.) Each plugin shows its **version** (e.g. `v2026.6.144` — `YEAR.MONTH.BUILD`,
+auto-stamped and increasing on every release) next to the **exact commit** it points at. That
+version is what `claude plugin list` shows locally, so you can tell at a glance whether you're
+on the latest. With auto-update on you always get the latest.
 
 ## Plugins
 
@@ -248,12 +248,15 @@ Plugin code itself never lives in this repo — only the marketplace index.
 
 
 def _row(p: str, name: str, ver, desc, surfaces, repo=None, sha=None) -> str:
-    if ver:
+    if ver and sha and repo:
+        # Friendly auto-version + the exact commit it points at (linked). The
+        # version is what `claude plugin list` shows, so users compare directly.
+        vtag = (f'&nbsp;`v{ver}`&nbsp;'
+                f'[<sub>`{sha[:7]}`</sub>](https://github.com/{repo}/commit/{sha} "latest commit")')
+    elif ver:
         vtag = f"&nbsp;`v{ver}`"
     elif sha and repo:
-        # Rolling: show the real latest version — the commit users resolve to —
-        # linked to that commit. Refreshed automatically on every sync.
-        vtag = f'&nbsp;[`{sha}`](https://github.com/{repo}/commit/{sha} "latest rolling commit")&nbsp;<sub>rolling</sub>'
+        vtag = f'&nbsp;[`{sha}`](https://github.com/{repo}/commit/{sha} "latest commit")&nbsp;<sub>rolling</sub>'
     else:
         vtag = "&nbsp;`rolling`"
     s = surfaces or "—"
@@ -274,7 +277,7 @@ def main() -> int:
         desc = (e.get("description") or "").replace("\n", " ").strip()
         tag0 = (e.get("tags") or [""])[0]
         surfaces = _surfaces(repo, name) if repo else ""
-        sha = _latest_sha(repo) if (repo and not ver) else None
+        sha = _latest_sha(repo) if repo else None
         if repo:
             n_repo += 1
             n_surfaced += 1 if surfaces else 0

@@ -20,6 +20,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Sync marketplace metadata from each plugin source
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/sync_marketplace.py
       - name: Regenerate README from the catalog
         env:

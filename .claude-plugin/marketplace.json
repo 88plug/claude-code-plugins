@@ -24,7 +24,8 @@
         "continuity",
         "hooks"
       ],
-      "homepage": "https://github.com/88plug/amnesia"
+      "homepage": "https://github.com/88plug/amnesia",
+      "version": "2026.6.23"
     },
     {
       "name": "caveman-plus",
@@ -41,7 +42,8 @@
         "output-style",
         "caveman"
       ],
-      "homepage": "https://github.com/88plug/caveman-plus"
+      "homepage": "https://github.com/88plug/caveman-plus",
+      "version": "2026.6.190"
     },
     {
       "name": "total-recall",
@@ -62,7 +64,8 @@
         "hooks",
         "data-mining"
       ],
-      "homepage": "https://github.com/88plug/total-recall"
+      "homepage": "https://github.com/88plug/total-recall",
+      "version": "2026.6.79"
     },
     {
       "name": "searxng",
@@ -81,7 +84,8 @@
         "privacy",
         "self-hosted"
       ],
-      "homepage": "https://github.com/88plug/searxng-mcp"
+      "homepage": "https://github.com/88plug/searxng-mcp",
+      "version": "2026.6.11"
     },
     {
       "name": "deepwiki",
@@ -99,7 +103,8 @@
         "research",
         "mcp"
       ],
-      "homepage": "https://github.com/88plug/deepwiki"
+      "homepage": "https://github.com/88plug/deepwiki",
+      "version": "2026.6.5"
     },
     {
       "name": "scientific-method",
@@ -117,7 +122,8 @@
         "falsification",
         "reasoning"
       ],
-      "homepage": "https://github.com/88plug/scientific-method"
+      "homepage": "https://github.com/88plug/scientific-method",
+      "version": "2026.6.7"
     },
     {
       "name": "drive-remote-terminal",
@@ -136,7 +142,8 @@
         "remote",
         "automation"
       ],
-      "homepage": "https://github.com/88plug/drive-remote-terminal"
+      "homepage": "https://github.com/88plug/drive-remote-terminal",
+      "version": "2026.6.3"
     },
     {
       "name": "project-prospector",
@@ -155,7 +162,8 @@
         "novelty",
         "multi-agent"
       ],
-      "homepage": "https://github.com/88plug/project-prospector"
+      "homepage": "https://github.com/88plug/project-prospector",
+      "version": "2026.6.3"
     },
     {
       "name": "screen-mcp",
@@ -174,7 +182,8 @@
         "ocr",
         "portal"
       ],
-      "homepage": "https://github.com/88plug/screen-mcp"
+      "homepage": "https://github.com/88plug/screen-mcp",
+      "version": "2026.6.4"
     }
   ]
 }
