@@ -14,6 +14,16 @@ from pathlib import Path
 MKT = Path(__file__).resolve().parent.parent / ".claude-plugin" / "marketplace.json"
 REFS = ("HEAD", "main", "master")
 
+import re as _re
+def _repo_of(src):
+    """Resolve owner/repo from a github or git-subdir source (None otherwise)."""
+    if src.get("source") == "github" and src.get("repo"):
+        return src["repo"]
+    if src.get("source") == "git-subdir" and src.get("url"):
+        m = _re.search(r"github\.com[:/]+([^/]+/[^/.]+)", src["url"])
+        return m.group(1) if m else None
+    return None
+
 
 def _fetch_plugin_manifest(repo: str, name: str) -> dict | None:
     # Try the plugin at the repo root first, then at a monorepo subpath
@@ -39,9 +49,10 @@ def main() -> int:
     changed = []
     for entry in data.get("plugins", []):
         src = entry.get("source", {})
-        if src.get("source") != "github" or not src.get("repo"):
+        repo = _repo_of(src)
+        if not repo:
             continue
-        man = _fetch_plugin_manifest(src["repo"], entry["name"])
+        man = _fetch_plugin_manifest(repo, entry["name"])
         if not man:
             print(f"  WARN  {entry['name']}: could not fetch source manifest ({src['repo']})", file=sys.stderr)
             continue

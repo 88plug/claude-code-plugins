@@ -20,6 +20,15 @@ ROOT = Path(__file__).resolve().parent.parent
 MKT = ROOT / ".claude-plugin" / "marketplace.json"
 README = ROOT / "README.md"
 REFS = ("HEAD", "main", "master")
+
+def _repo_of(src):
+    if src.get("source") == "github" and src.get("repo"):
+        return src["repo"]
+    if src.get("source") == "git-subdir" and src.get("url"):
+        import re as _re
+        m = _re.search(r"github\.com[:/]+([^/]+/[^/.]+)", src["url"])
+        return m.group(1) if m else ""
+    return ""
 # Authenticate API calls when a token is present (GITHUB_TOKEN in CI). The GitHub
 # trees API is rate-limited to 60/hr unauthenticated — on a shared CI runner IP
 # that exhausts instantly and surfaces come back empty. With the token it's 5000/hr.
@@ -241,7 +250,7 @@ def main() -> int:
     n_repo = n_surfaced = 0
     for e in plugins:
         name = e["name"]
-        repo = e.get("source", {}).get("repo", "")
+        repo = _repo_of(e.get("source", {}))
         homepage = e.get("homepage") or (f"https://github.com/{repo}" if repo else "")
         ver = e.get("version")
         desc = (e.get("description") or "").replace("\n", " ").strip()
