@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Generate README.md entirely from .claude-plugin/marketplace.json.
 
-No plugin data is hand-maintained in the README. The badge count, install list,
-the two category tables (versions + descriptions + derived component "surfaces"),
-and the philosophy list are all rendered from the marketplace catalog — which is
-itself auto-synced from each plugin's source manifest by sync_marketplace.py.
+No plugin data is hand-maintained in the README. The badge count and the two
+category sections — each a vertical per-plugin stanza (name, auto-version linked
+to its commit, derived component "surfaces", a trimmed description, and a fenced
+install command) — are rendered from the marketplace catalog, which
+sync_marketplace.py keeps in step with each plugin's source manifest. Mobile-first
+by design: no wide tables (GitHub never reflows them on a phone).
 
-Component "surfaces" (e.g. "1 skill · 7 commands · 5 agents · 1 hook · MCP") are
-counted live from each plugin's source repo tree via the GitHub API, so adding or
-restructuring a plugin updates the README with zero hand edits.
+Component "surfaces" (e.g. "1 skill · 7 commands · 5 agents · hooks · MCP server")
+are counted live from each plugin's source repo tree via the GitHub API, and each
+rolling plugin's version is YEAR.MONTH.<commit-count>, so adding or updating a
+plugin refreshes the README with zero hand edits.
 
 Run order in CI: sync_marketplace.py  ->  build_readme.py  ->  commit both.
 """
