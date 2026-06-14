@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-9-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-10-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -87,6 +87,15 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 
 ```sh
 /plugin install project-prospector@88plug
+```
+
+### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
+[`v2026.6.1`](https://github.com/88plug/recover-from-false-positive/commit/1a3636261536 "commit 1a36362") · 1 skill
+
+Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
+
+```sh
+/plugin install recover-from-false-positive@88plug
 ```
 
 ## MCP servers
