@@ -90,7 +90,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 ```
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-[`v2026.6.1`](https://github.com/88plug/recover-from-false-positive/commit/1a3636261536 "commit 1a36362") · 1 skill
+[`v2026.6.1`](https://github.com/88plug/recover-from-false-positive/commit/a97f3b365b62 "commit a97f3b3") · 1 skill
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
