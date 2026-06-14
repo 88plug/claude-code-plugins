@@ -65,7 +65,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.82"
+      "version": "2026.6.83"
     },
     {
       "name": "searxng",
@@ -85,7 +85,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.6.14"
+      "version": "2026.6.15"
     },
     {
       "name": "deepwiki",
