@@ -36,7 +36,7 @@ No environment variables, no API keys — it uses your existing setup.
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.6.25`](https://github.com/88plug/amnesia/commit/ba4bbacbcd25 "commit ba4bbac") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.6.26`](https://github.com/88plug/amnesia/commit/d8651a088379 "commit d8651a0") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
@@ -45,7 +45,7 @@ Seamless context continuity across Claude Code compaction.
 ```
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-[`v2026.6.191`](https://github.com/88plug/caveman-plus/commit/c878add69fc8 "commit c878add") · 7 skills · 3 agents
+[`v2026.6.192`](https://github.com/88plug/caveman-plus/commit/bf197cf773fb "commit bf197cf") · 7 skills · 3 agents
 
 Ultra-compressed communication mode.
 
@@ -54,7 +54,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.81`](https://github.com/88plug/total-recall/commit/0cc05c81daef "commit 0cc05c8") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.82`](https://github.com/88plug/total-recall/commit/6a768ad10d09 "commit 6a768ad") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -63,7 +63,7 @@ Cross-session, cross-CLI memory for AI coding assistants.
 ```
 
 ### [scientific-method](https://github.com/88plug/scientific-method)
-[`v2026.6.9`](https://github.com/88plug/scientific-method/commit/754d604940e1 "commit 754d604") · 1 skill · 7 commands · 5 agents · hooks
+[`v2026.6.10`](https://github.com/88plug/scientific-method/commit/b5c4c551b5ab "commit b5c4c55") · 1 skill · 7 commands · 5 agents · hooks
 
 Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
 
@@ -72,7 +72,7 @@ Falsification-first investigation workflow: convert every assertion into a label
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-[`v2026.6.4`](https://github.com/88plug/drive-remote-terminal/commit/37dde3e5f5ec "commit 37dde3e") · 1 skill
+[`v2026.6.5`](https://github.com/88plug/drive-remote-terminal/commit/dbbb1a9335e0 "commit dbbb1a9") · 1 skill
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
@@ -81,7 +81,7 @@ Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux
 ```
 
 ### [project-prospector](https://github.com/88plug/project-prospector)
-[`v2026.6.4`](https://github.com/88plug/project-prospector/commit/9a32b4082ccd "commit 9a32b40") · 1 skill
+[`v2026.6.5`](https://github.com/88plug/project-prospector/commit/7ab48b863465 "commit 7ab48b8") · 1 skill
 
 Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
 
@@ -94,7 +94,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.6.12`](https://github.com/88plug/searxng-mcp/commit/7717b38325b2 "commit 7717b38") · MCP server
+[`v2026.6.14`](https://github.com/88plug/searxng-mcp/commit/71252ec4745d "commit 71252ec") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
@@ -103,7 +103,7 @@ Fast, token-efficient MCP for SearXNG metasearch.
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-[`v2026.6.6`](https://github.com/88plug/deepwiki/commit/ff232452c14a "commit ff23245") · MCP server
+[`v2026.6.7`](https://github.com/88plug/deepwiki/commit/148389e5a2b5 "commit 148389e") · MCP server
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
@@ -112,7 +112,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.5`](https://github.com/88plug/screen-mcp/commit/9a2dc003ceb3 "commit 9a2dc00") · MCP server · 1 skill
+[`v2026.6.6`](https://github.com/88plug/screen-mcp/commit/c8ba05738be9 "commit c8ba057") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 

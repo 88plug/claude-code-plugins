@@ -25,7 +25,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.6.25"
+      "version": "2026.6.26"
     },
     {
       "name": "caveman-plus",
@@ -43,7 +43,7 @@
         "caveman"
       ],
       "homepage": "https://github.com/88plug/caveman-plus",
-      "version": "2026.6.191"
+      "version": "2026.6.192"
     },
     {
       "name": "total-recall",
@@ -65,7 +65,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.81"
+      "version": "2026.6.82"
     },
     {
       "name": "searxng",
@@ -85,7 +85,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.6.12"
+      "version": "2026.6.14"
     },
     {
       "name": "deepwiki",
@@ -104,7 +104,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "2026.6.6"
+      "version": "2026.6.7"
     },
     {
       "name": "scientific-method",
@@ -123,7 +123,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/scientific-method",
-      "version": "2026.6.9"
+      "version": "2026.6.10"
     },
     {
       "name": "drive-remote-terminal",
@@ -143,7 +143,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.6.4"
+      "version": "2026.6.5"
     },
     {
       "name": "project-prospector",
@@ -163,7 +163,7 @@
         "multi-agent"
       ],
       "homepage": "https://github.com/88plug/project-prospector",
-      "version": "2026.6.4"
+      "version": "2026.6.5"
     },
     {
       "name": "screen-mcp",
@@ -183,7 +183,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.6.5"
+      "version": "2026.6.6"
     }
   ]
 }
