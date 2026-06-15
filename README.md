@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.91`](https://github.com/88plug/total-recall/commit/1c06705ff239 "commit 1c06705") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.92`](https://github.com/88plug/total-recall/commit/bb9785765bab "commit bb97857") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -103,7 +103,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.6.22`](https://github.com/88plug/searxng-mcp/commit/519b4ea93de9 "commit 519b4ea") · MCP server
+[`v2026.6.23`](https://github.com/88plug/searxng-mcp/commit/da300e2230e8 "commit da300e2") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
