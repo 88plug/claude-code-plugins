@@ -35,6 +35,15 @@ No environment variables, no API keys — it uses your existing setup.
 `YEAR.MONTH.BUILD`, auto-stamped and linked to the exact commit; it's what
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
+### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
+[`v2026.6.2`](https://github.com/88plug/recover-from-false-positive/commit/1356ac4051b3 "commit 1356ac4") · 1 skill · hooks
+
+Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
+
+```sh
+/plugin install recover-from-false-positive@88plug
+```
+
 ### [amnesia](https://github.com/88plug/amnesia)
 [`v2026.6.28`](https://github.com/88plug/amnesia/commit/0603a0f7114a "commit 0603a0f") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
@@ -87,15 +96,6 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 
 ```sh
 /plugin install project-prospector@88plug
-```
-
-### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-[`v2026.6.2`](https://github.com/88plug/recover-from-false-positive/commit/99f6d7437df5 "commit 99f6d74") · 1 skill · hooks
-
-Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
-
-```sh
-/plugin install recover-from-false-positive@88plug
 ```
 
 ## MCP servers
