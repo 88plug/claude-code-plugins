@@ -36,7 +36,7 @@ No environment variables, no API keys — it uses your existing setup.
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-[`v2026.6.2`](https://github.com/88plug/recover-from-false-positive/commit/1356ac4051b3 "commit 1356ac4") · 1 skill · hooks
+[`v2026.6.3`](https://github.com/88plug/recover-from-false-positive/commit/60a77b803c6c "commit 60a77b8") · 1 skill · hooks
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
