@@ -103,7 +103,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.6.17`](https://github.com/88plug/searxng-mcp/commit/7a21c172615e "commit 7a21c17") · MCP server
+[`v2026.6.18`](https://github.com/88plug/searxng-mcp/commit/62ba38a1341b "commit 62ba38a") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
