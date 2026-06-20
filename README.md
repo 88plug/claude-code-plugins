@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-11-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-12-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -98,6 +98,15 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 /plugin install project-prospector@88plug
 ```
 
+### [deepwiki-index](https://github.com/88plug/deepwiki-index)
+[`v2026.6.1`](https://github.com/88plug/deepwiki-index/commit/de6a11375f3e "commit de6a113") · 1 skill
+
+Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
+
+```sh
+/plugin install deepwiki-index@88plug
+```
+
 ## MCP servers
 
 *A single MCP server, one-command install.*
@@ -121,7 +130,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.10`](https://github.com/88plug/screen-mcp/commit/e90ed7b36843 "commit e90ed7b") · MCP server · 1 skill
+[`v2026.6.11`](https://github.com/88plug/screen-mcp/commit/81dc1e36f3e5 "commit 81dc1e3") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -130,7 +139,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-[`v2026.6.21`](https://github.com/88plug/use-latest-version-mcp/commit/5bd7afb3ebd1 "commit 5bd7afb") · MCP server
+[`v2026.6.22`](https://github.com/88plug/use-latest-version-mcp/commit/f859ac81fac8 "commit f859ac8") · MCP server
 
 Stop suggesting stale package versions from training data.
 

@@ -203,7 +203,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.6.10"
+      "version": "2026.6.11"
     },
     {
       "name": "use-latest-version",
@@ -225,7 +225,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.6.21"
+      "version": "2026.6.22"
     },
     {
       "name": "deepwiki-index",
@@ -233,7 +233,7 @@
         "source": "github",
         "repo": "88plug/deepwiki-index"
       },
-      "description": "Index a public GitHub repo's DeepWiki (the 'Ask DeepWiki' badge target) hands-free and autonomously — no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) plus the trusted-browser path (drive the real desktop via screen-mcp, or the bundled Playwright helper with a real Chrome profile) so the captcha passes silently, then polls the public status API to completed.",
+      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
       "tags": [
         "type:plugin",
