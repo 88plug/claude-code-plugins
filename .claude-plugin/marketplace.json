@@ -45,7 +45,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.6.30"
+      "version": "2026.6.31"
     },
     {
       "name": "caveman-plus",
@@ -63,7 +63,7 @@
         "caveman"
       ],
       "homepage": "https://github.com/88plug/caveman-plus",
-      "version": "2026.6.196"
+      "version": "2026.6.197"
     },
     {
       "name": "total-recall",
@@ -85,7 +85,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.92"
+      "version": "2026.6.93"
     },
     {
       "name": "searxng",
@@ -105,7 +105,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.6.23"
+      "version": "2026.6.24"
     },
     {
       "name": "deepwiki",
@@ -124,7 +124,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "2026.6.11"
+      "version": "2026.6.12"
     },
     {
       "name": "scientific-method",
@@ -143,7 +143,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/scientific-method",
-      "version": "2026.6.13"
+      "version": "2026.6.14"
     },
     {
       "name": "drive-remote-terminal",
@@ -163,7 +163,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.6.8"
+      "version": "2026.6.9"
     },
     {
       "name": "project-prospector",
@@ -183,7 +183,7 @@
         "multi-agent"
       ],
       "homepage": "https://github.com/88plug/project-prospector",
-      "version": "2026.6.8"
+      "version": "2026.6.9"
     },
     {
       "name": "screen-mcp",
@@ -203,7 +203,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.6.9"
+      "version": "2026.6.10"
     },
     {
       "name": "use-latest-version",
@@ -225,7 +225,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.6.17"
+      "version": "2026.6.21"
     }
   ]
 }
