@@ -211,7 +211,7 @@
         "source": "github",
         "repo": "88plug/use-latest-version-mcp"
       },
-      "description": "Stop suggesting stale package versions from training data. 15 MCP tools over 39 package registries: latest-version + package-info lookups, semver compare, install-command generation, batch checks, project dependency scanning, outdated reports, conflict detection, compatibility checks, and a scan -> optimize -> validate -> apply upgrade pipeline that edits manifests with dry-run + automatic backups by default. Local-first, no API key required.",
+      "description": "Stop suggesting stale package versions from training data. 15 MCP tools over 39 package registries (npm, PyPI, Maven, crates.io, Go, RubyGems, NuGet, Packagist, Docker/GHCR/Quay/GCR, Hex, pub.dev, CRAN, Homebrew, and more): latest-version + package-info lookups, semver compare, install-command generation, batch checks, project dependency scanning, outdated reports, conflict detection, compatibility checks, and a scan -> optimize -> validate -> apply upgrade pipeline that edits manifests with dry-run + automatic backups by default. Local-first, no API key required (an optional GITHUB_TOKEN raises GitHub rate limits).",
       "category": "productivity",
       "tags": [
         "type:mcp",

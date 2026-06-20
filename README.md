@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-10-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-11-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -127,6 +127,15 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 
 ```sh
 /plugin install screen-mcp@88plug
+```
+
+### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
+[`v2026.6.17`](https://github.com/88plug/use-latest-version-mcp/commit/3f9e5104783d "commit 3f9e510") · MCP server
+
+Stop suggesting stale package versions from training data.
+
+```sh
+/plugin install use-latest-version@88plug
 ```
 
 <details>
