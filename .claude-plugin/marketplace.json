@@ -233,7 +233,7 @@
         "source": "github",
         "repo": "88plug/deepwiki-index"
       },
-      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
+      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -245,6 +245,28 @@
       ],
       "homepage": "https://github.com/88plug/deepwiki-index",
       "version": "2026.6.1"
+    },
+    {
+      "name": "addlightness",
+      "source": {
+        "source": "github",
+        "repo": "88plug/addlightness"
+      },
+      "description": "Simplify, then add lightness. Removes AI-generated code fat while preserving behavior, then benchmarks the speedup -- multi-pass measure/trim/verify/benchmark with zero npm dependencies. Python metrics via stdlib ast (accurate); JS/TS approximated; every trim equivalence-gated and every speedup Welch-significance-gated.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "code-quality",
+        "refactoring",
+        "performance",
+        "benchmarking",
+        "dead-code",
+        "complexity",
+        "code-weight",
+        "ai-code-cleanup"
+      ],
+      "homepage": "https://github.com/88plug/addlightness",
+      "version": "2026.6.21"
     }
   ]
 }
