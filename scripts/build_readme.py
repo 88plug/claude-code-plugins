@@ -168,7 +168,7 @@ HEADER = """<div align="center">
 **Curated plugins for AI coding assistants. One marketplace. Two commands.**
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
-[![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
+[![license](https://img.shields.io/badge/license-FSL--1.1--ALv2-1f2328?style=flat-square)](./LICENSE)
 [![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
@@ -244,7 +244,7 @@ Plugin code never lives in this repo — only the marketplace index.
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+FSL-1.1-ALv2. See [LICENSE](./LICENSE).
 
 <sub>Generated from <code>.claude-plugin/marketplace.json</code> by <code>scripts/build_readme.py</code>. Don't edit by hand — edit the catalog (or the plugin's manifest) and the sync action regenerates it.</sub>
 """
