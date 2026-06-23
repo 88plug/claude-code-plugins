@@ -45,7 +45,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.6.31"
+      "version": "2026.6.23"
     },
     {
       "name": "caveman-plus",
@@ -85,7 +85,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.23"
+      "version": "2026.6.96"
     },
     {
       "name": "searxng",

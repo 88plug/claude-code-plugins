@@ -45,7 +45,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.6.31`](https://github.com/88plug/amnesia/commit/1e58a10d74a5 "commit 1e58a10") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.6.23`](https://github.com/88plug/amnesia/commit/39034deb8825 "commit 39034de") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.23`](https://github.com/88plug/total-recall/commit/c8653201f07f "commit c865320") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.96`](https://github.com/88plug/total-recall/commit/8e338b09995f "commit 8e338b0") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -166,7 +166,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-[`v2026.6.23`](https://github.com/88plug/use-latest-version-mcp/commit/51f48b8721b7 "commit 51f48b8") · MCP server
+[`v2026.6.23`](https://github.com/88plug/use-latest-version-mcp/commit/cfbe30a2103c "commit cfbe30a") · MCP server
 
 Stop suggesting stale package versions from training data.
 
