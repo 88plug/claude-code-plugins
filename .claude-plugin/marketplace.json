@@ -63,7 +63,7 @@
         "caveman"
       ],
       "homepage": "https://github.com/88plug/caveman-plus",
-      "version": "2026.6.197"
+      "version": "2026.6.23"
     },
     {
       "name": "total-recall",
@@ -85,7 +85,7 @@
         "data-mining"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.93"
+      "version": "2026.6.23"
     },
     {
       "name": "searxng",
@@ -105,7 +105,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.6.24"
+      "version": "2026.6.23"
     },
     {
       "name": "deepwiki",
@@ -124,7 +124,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "2026.6.12"
+      "version": "2026.6.23"
     },
     {
       "name": "scientific-method",
@@ -143,7 +143,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/scientific-method",
-      "version": "2026.6.14"
+      "version": "2026.6.23"
     },
     {
       "name": "drive-remote-terminal",
@@ -163,7 +163,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.6.9"
+      "version": "2026.6.23"
     },
     {
       "name": "project-prospector",
@@ -183,7 +183,7 @@
         "multi-agent"
       ],
       "homepage": "https://github.com/88plug/project-prospector",
-      "version": "2026.6.9"
+      "version": "2026.6.23"
     },
     {
       "name": "screen-mcp",
@@ -203,7 +203,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.6.11"
+      "version": "2026.6.23"
     },
     {
       "name": "use-latest-version",
@@ -225,7 +225,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.6.22"
+      "version": "2026.6.23"
     },
     {
       "name": "deepwiki-index",
@@ -244,7 +244,7 @@
         "github"
       ],
       "homepage": "https://github.com/88plug/deepwiki-index",
-      "version": "2026.6.1"
+      "version": "2026.6.23"
     },
     {
       "name": "addlightness",
@@ -274,7 +274,7 @@
         "source": "github",
         "repo": "88plug/drift-detector"
       },
-      "description": "Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back. Deterministic per-turn scoring, live status-line badge, one-shot correction nudge. Real-corpus F1=0.9973 (fp=0, n=1283). 190-session synthetic eval: 100% accuracy, FP=0. Adversarial test suite included.",
+      "description": "Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back. Each assistant turn is scored by a deterministic, dependency-free engine; a status-line badge shows live drift and the next prompt gets a one-shot correction nudge when the previous reply broke contract.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -285,7 +285,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.6.20"
+      "version": "2026.6.23"
     },
     {
       "name": "trigger-my-training",
@@ -305,7 +305,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.6.3"
+      "version": "2026.6.23"
     }
   ]
 }
