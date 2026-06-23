@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-14-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-15-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -123,6 +123,15 @@ Detects when Claude drifts away from your active output contract (a terse person
 
 ```sh
 /plugin install drift-detector@88plug
+```
+
+### [trigger-my-training](https://github.com/88plug/trigger-my-training)
+[`v2026.6.3`](https://github.com/88plug/trigger-my-training/commit/c0198da1c8fd "commit c0198da") · 1 skill · 6 commands · 1 agent · hooks
+
+A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
+
+```sh
+/plugin install trigger-my-training@88plug
 ```
 
 ## MCP servers

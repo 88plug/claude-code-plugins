@@ -293,7 +293,7 @@
         "source": "github",
         "repo": "88plug/trigger-my-training"
       },
-      "description": "A ground-first reflex for coding agents: the agent judges (from its own training, any domain) when a request is complex or irreversible, grounds before acting (split what it KNOWS from what it ASSUMES, verify the riskiest assumptions), and is hard-blocked from the destructive step until grounding is recorded. Model-driven trigger (precision 1.0 / recall 0.92 across infra + non-infra domains vs a keyword detector's 0.28); deterministic self-arming gate (100% interception of destructive actions, 0 false-blocks).",
+      "description": "A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the destructive step until it has.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -305,7 +305,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.6.23"
+      "version": "2026.6.3"
     }
   ]
 }
