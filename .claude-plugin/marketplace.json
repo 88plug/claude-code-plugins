@@ -267,6 +267,25 @@
       ],
       "homepage": "https://github.com/88plug/addlightness",
       "version": "2026.6.21"
+    },
+    {
+      "name": "drift-detector",
+      "source": {
+        "source": "github",
+        "repo": "88plug/drift-detector"
+      },
+      "description": "Detects when Claude drifts from your output contract (persona, format, length rules) and steers it back. Deterministic scoring engine, live statusline badge, one-shot correction nudge. Real-corpus F1=0.9973 (fp=0, n=1283). 190-session synthetic eval: 100% accuracy, FP=0. Adversarial test suite included.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "drift-detection",
+        "guardrails",
+        "instruction-following",
+        "llm-monitoring",
+        "persona"
+      ],
+      "homepage": "https://github.com/88plug/drift-detector",
+      "version": "2026.6.23"
     }
   ]
 }
