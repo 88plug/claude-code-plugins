@@ -36,7 +36,7 @@ No environment variables, no API keys — it uses your existing setup.
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-[`v2026.6.3`](https://github.com/88plug/recover-from-false-positive/commit/92ce2148d57c "commit 92ce214") · 1 skill · hooks
+[`v2026.6.13`](https://github.com/88plug/recover-from-false-positive/commit/f65845fe2890 "commit f65845f") · 1 skill · hooks
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
@@ -45,7 +45,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.6.23`](https://github.com/88plug/amnesia/commit/39034deb8825 "commit 39034de") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.6.36`](https://github.com/88plug/amnesia/commit/fbc840650e16 "commit fbc8406") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
@@ -54,7 +54,7 @@ Seamless context continuity across Claude Code compaction.
 ```
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-[`v2026.6.23`](https://github.com/88plug/caveman-plus/commit/16fd8a1684dd "commit 16fd8a1") · 7 skills · 3 agents
+[`v2026.6.199`](https://github.com/88plug/caveman-plus/commit/5e69d32fdf35 "commit 5e69d32") · 7 skills · 3 agents
 
 Ultra-compressed communication mode.
 
@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.96`](https://github.com/88plug/total-recall/commit/8e338b09995f "commit 8e338b0") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.98`](https://github.com/88plug/total-recall/commit/434ded3c5584 "commit 434ded3") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -72,7 +72,7 @@ Cross-session, cross-CLI memory for AI coding assistants.
 ```
 
 ### [scientific-method](https://github.com/88plug/scientific-method)
-[`v2026.6.23`](https://github.com/88plug/scientific-method/commit/0532d99e5013 "commit 0532d99") · 1 skill · 7 commands · 5 agents · hooks
+[`v2026.6.16`](https://github.com/88plug/scientific-method/commit/23e8bc0f6300 "commit 23e8bc0") · 1 skill · 7 commands · 5 agents · hooks
 
 Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
 
@@ -81,7 +81,7 @@ Falsification-first investigation workflow: convert every assertion into a label
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-[`v2026.6.23`](https://github.com/88plug/drive-remote-terminal/commit/3a361ec5b39b "commit 3a361ec") · 1 skill
+[`v2026.6.11`](https://github.com/88plug/drive-remote-terminal/commit/0ab0515235c2 "commit 0ab0515") · 1 skill
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
@@ -90,7 +90,7 @@ Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux
 ```
 
 ### [project-prospector](https://github.com/88plug/project-prospector)
-[`v2026.6.23`](https://github.com/88plug/project-prospector/commit/06b56f96ddd6 "commit 06b56f9") · 1 skill
+[`v2026.6.11`](https://github.com/88plug/project-prospector/commit/bc039d38505c "commit bc039d3") · 1 skill
 
 Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
 
@@ -99,7 +99,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 ```
 
 ### [deepwiki-index](https://github.com/88plug/deepwiki-index)
-[`v2026.6.23`](https://github.com/88plug/deepwiki-index/commit/d6759eef524c "commit d6759ee") · 1 skill
+[`v2026.6.3`](https://github.com/88plug/deepwiki-index/commit/c61fd0c6801c "commit c61fd0c") · 1 skill
 
 Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
 
@@ -108,7 +108,7 @@ Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links t
 ```
 
 ### [addlightness](https://github.com/88plug/addlightness)
-[`v2026.6.21`](https://github.com/88plug/addlightness/commit/34dee7a487a5 "commit 34dee7a") · 3 skills · 2 agents
+[`v2026.6.4`](https://github.com/88plug/addlightness/commit/4bb9e4d3992b "commit 4bb9e4d") · 3 skills · 2 agents
 
 Simplify, then add lightness.
 
@@ -117,7 +117,7 @@ Simplify, then add lightness.
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-[`v2026.6.23`](https://github.com/88plug/drift-detector/commit/63984c086a44 "commit 63984c0") · MCP server · 1 skill · 6 commands · hooks
+[`v2026.6.23`](https://github.com/88plug/drift-detector/commit/1d9f4131de76 "commit 1d9f413") · MCP server · 1 skill · 6 commands · hooks
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -126,7 +126,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-[`v2026.6.23`](https://github.com/88plug/trigger-my-training/commit/69853258d812 "commit 6985325") · 1 skill · 6 commands · 1 agent · hooks
+[`v2026.6.5`](https://github.com/88plug/trigger-my-training/commit/8e28444609d7 "commit 8e28444") · 1 skill · 6 commands · 1 agent · hooks
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
@@ -139,7 +139,7 @@ A ground-first reflex: the agent judges (from its own training, any domain) when
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.6.23`](https://github.com/88plug/searxng-mcp/commit/841691222e59 "commit 8416912") · MCP server
+[`v2026.6.27`](https://github.com/88plug/searxng-mcp/commit/ab735747f967 "commit ab73574") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
@@ -148,7 +148,7 @@ Fast, token-efficient MCP for SearXNG metasearch.
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-[`v2026.6.23`](https://github.com/88plug/deepwiki/commit/7a99f0db0348 "commit 7a99f0d") · MCP server
+[`v2026.6.14`](https://github.com/88plug/deepwiki/commit/2e1d25fc61ac "commit 2e1d25f") · MCP server
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
@@ -157,7 +157,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.23`](https://github.com/88plug/screen-mcp/commit/d9e519dd916c "commit d9e519d") · MCP server · 1 skill
+[`v2026.6.16`](https://github.com/88plug/screen-mcp/commit/158714654106 "commit 1587146") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -166,7 +166,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-[`v2026.6.23`](https://github.com/88plug/use-latest-version-mcp/commit/cfbe30a2103c "commit cfbe30a") · MCP server
+[`v2026.6.25`](https://github.com/88plug/use-latest-version-mcp/commit/fb8420f36d97 "commit fb8420f") · MCP server
 
 Stop suggesting stale package versions from training data.
 
