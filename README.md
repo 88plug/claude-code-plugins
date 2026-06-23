@@ -117,7 +117,7 @@ Simplify, then add lightness.
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-[`v2026.6.17`](https://github.com/88plug/drift-detector/commit/6a546f976b28 "commit 6a546f9") · 1 skill · 6 commands · hooks
+[`v2026.6.20`](https://github.com/88plug/drift-detector/commit/a5a650155301 "commit a5a6501") · 1 skill · 6 commands · hooks
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
