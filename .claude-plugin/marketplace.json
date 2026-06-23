@@ -274,7 +274,7 @@
         "source": "github",
         "repo": "88plug/drift-detector"
       },
-      "description": "Detects when Claude drifts from your output contract (persona, format, length rules) and steers it back. Deterministic scoring engine, live statusline badge, one-shot correction nudge. Real-corpus F1=0.9973 (fp=0, n=1283). 190-session synthetic eval: 100% accuracy, FP=0. Adversarial test suite included.",
+      "description": "Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back. Deterministic per-turn scoring, live status-line badge, one-shot correction nudge. Real-corpus F1=0.9973 (fp=0, n=1283). 190-session synthetic eval: 100% accuracy, FP=0. Adversarial test suite included.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -285,7 +285,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.6.23"
+      "version": "2026.6.15"
     }
   ]
 }

@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-MIT-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-13-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-14-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -114,6 +114,15 @@ Simplify, then add lightness.
 
 ```sh
 /plugin install addlightness@88plug
+```
+
+### [drift-detector](https://github.com/88plug/drift-detector)
+[`v2026.6.15`](https://github.com/88plug/drift-detector/commit/c44f1dd568b7 "commit c44f1dd") · 1 skill · 6 commands · hooks
+
+Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
+
+```sh
+/plugin install drift-detector@88plug
 ```
 
 ## MCP servers
