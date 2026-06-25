@@ -211,7 +211,7 @@
         "source": "github",
         "repo": "88plug/os-control-mcp"
       },
-      "description": "The sanctioned OS motor cortex for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power — via systemctl/loginctl/journalctl/busctl, never raw PID hacks. Pure-stdlib, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on. Ships the MCP server + a control-os skill.",
+      "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) \u2014 all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
       "category": "productivity",
       "tags": [
         "type:mcp",
@@ -224,7 +224,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.6.25"
+      "version": "2026.6.1"
     },
     {
       "name": "use-latest-version",
@@ -254,7 +254,7 @@
         "source": "github",
         "repo": "88plug/deepwiki-index"
       },
-      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
+      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
       "tags": [
         "type:plugin",

@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-FSL--1.1--ALv2-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-15-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-16-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -163,6 +163,15 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 
 ```sh
 /plugin install screen-mcp@88plug
+```
+
+### [os-control-mcp](https://github.com/88plug/os-control-mcp)
+[`v2026.6.1`](https://github.com/88plug/os-control-mcp/commit/03618a7e66e3 "commit 03618a7") · MCP server · 1 skill
+
+The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
+
+```sh
+/plugin install os-control-mcp@88plug
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
