@@ -166,7 +166,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-[`v2026.6.1`](https://github.com/88plug/os-control-mcp/commit/03618a7e66e3 "commit 03618a7") · MCP server · 1 skill
+[`v0.2.0`](https://github.com/88plug/os-control-mcp/commit/9fca4317deb9 "commit 9fca431") · MCP server · 1 skill
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 

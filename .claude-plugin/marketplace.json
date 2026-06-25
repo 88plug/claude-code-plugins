@@ -224,7 +224,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.6.1"
+      "version": "0.2.0"
     },
     {
       "name": "use-latest-version",
