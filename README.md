@@ -157,7 +157,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.16`](https://github.com/88plug/screen-mcp/commit/158714654106 "commit 1587146") · MCP server · 1 skill
+[`v2026.6.17`](https://github.com/88plug/screen-mcp/commit/19f0311c4c26 "commit 19f0311") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -166,7 +166,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-[`v0.2.0`](https://github.com/88plug/os-control-mcp/commit/9fca4317deb9 "commit 9fca431") · MCP server · 1 skill
+[`v2026.6.25`](https://github.com/88plug/os-control-mcp/commit/b070b3bb6794 "commit b070b3b") · MCP server · 1 skill
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 
