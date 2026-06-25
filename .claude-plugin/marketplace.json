@@ -82,7 +82,9 @@
         "operator-profile",
         "mcp",
         "hooks",
-        "data-mining"
+        "data-mining",
+        "goose",
+        "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
       "version": "2026.6.98"
