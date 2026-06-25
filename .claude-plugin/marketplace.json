@@ -71,7 +71,7 @@
         "source": "github",
         "repo": "88plug/total-recall"
       },
-      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 8 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it.",
+      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 10 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -87,7 +87,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.6.102"
+      "version": "2026.6.106"
     },
     {
       "name": "searxng",
@@ -205,7 +205,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.6.17"
+      "version": "2026.6.18"
     },
     {
       "name": "os-control-mcp",

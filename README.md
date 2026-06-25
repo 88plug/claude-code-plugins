@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.102`](https://github.com/88plug/total-recall/commit/9b911ea469ed "commit 9b911ea") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.106`](https://github.com/88plug/total-recall/commit/fb54826bf79d "commit fb54826") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -157,7 +157,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.17`](https://github.com/88plug/screen-mcp/commit/19f0311c4c26 "commit 19f0311") · MCP server · 1 skill
+[`v2026.6.18`](https://github.com/88plug/screen-mcp/commit/c68d2f109d5e "commit c68d2f1") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
