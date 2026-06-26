@@ -16,7 +16,7 @@ import re
 import subprocess
 from pathlib import Path
 
-CLUADE_MKT = Path(".claude-plugin/marketplace.json")
+CLAUDE_MKT = Path(".claude-plugin/marketplace.json")
 GROK_DIR = Path(".grok-plugin")
 GROK_MKT = GROK_DIR / "marketplace.json"
 
@@ -33,7 +33,7 @@ def resolve_sha(repo: str) -> str:
         return "HEAD"
 
 def main() -> int:
-    claude = json.loads(CLUADE_MKT.read_text(encoding="utf-8"))
+    claude = json.loads(CLAUDE_MKT.read_text(encoding="utf-8"))
     grok_plugins = []
 
     for entry in claude.get("plugins", []):

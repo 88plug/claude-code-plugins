@@ -10,15 +10,16 @@ on:
       - ".grok-plugin/marketplace.json"
       - "scripts/sync_marketplace.py"
       - "scripts/build_readme.py"
+      - "scripts/generate-grok-catalog.py"
       - "scripts/generate-grok-plugin-index.py"
 permissions:
   contents: write
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7.0.0
-      - uses: actions/setup-python@v6.2.0
+      - uses: actions/setup-python@v6.3.0
         with:
           python-version: "3.13"
       - name: Sync marketplace metadata from each plugin source
