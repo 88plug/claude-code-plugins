@@ -1,0 +1,595 @@
+{
+  "version": 1,
+  "plugins": {
+    "addlightness": {
+      "sha": "4bb9e4d3992b3f1fc85f5f019d7448b27f9f6234",
+      "components": {
+        "agents": [
+          {
+            "name": "code-trimmer",
+            "description": "Removes AI-generated code fat from a single file while preserving every observable behavior, then verifies functional e…"
+          },
+          {
+            "name": "weight-analyst",
+            "description": "Measures code weight (LOC, cyclomatic complexity, imports, functions, nesting depth) and lists removable fat candidates…"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "Stop"
+          }
+        ],
+        "skills": [
+          {
+            "name": "addlightness",
+            "description": "Simplify, then add lightness. Analyzes one or more source files for AI-generated 'code fat', removes it while preservin…"
+          },
+          {
+            "name": "addlightness-bench",
+            "description": "Benchmark before/after code snapshots and report the performance delta with statistical significance. Runs N=10 timed r…"
+          },
+          {
+            "name": "addlightness-review",
+            "description": "Read-only code-weight report. Measures LOC, cyclomatic complexity, import count, function count, and nesting depth for…"
+          }
+        ]
+      }
+    },
+    "amnesia": {
+      "sha": "fbc840650e16b7051f3e4ec748dac026edf8ed0a",
+      "components": {
+        "agents": [
+          {
+            "name": "summarizer",
+            "description": "Internal amnesia subagent for producing a high-fidelity session handoff. Invoke via the Agent tool when the user wants…"
+          }
+        ],
+        "commands": [
+          {
+            "name": "diff",
+            "description": "Show what changed between the previous and current handoff (or between two specific versions)."
+          },
+          {
+            "name": "migrate",
+            "description": "Consolidate amnesia state from orphaned data roots into the active one."
+          },
+          {
+            "name": "promote",
+            "description": "Promote a fact from the current conversation into project CLAUDE.md or auto-memory so it survives compaction natively —…"
+          },
+          {
+            "name": "recall",
+            "description": "Recall detail the current handoff doesn't cover by reading the on-disk JSONL transcript. Use when context feels thin or…"
+          },
+          {
+            "name": "sessions",
+            "description": "List or search across archived handoffs for this project (and optionally all projects)."
+          },
+          {
+            "name": "snapshot",
+            "description": "Force an amnesia handoff snapshot of the current context now, without waiting for a compaction. Useful at natural pause…"
+          },
+          {
+            "name": "status",
+            "description": "Show amnesia's current state for this project — last handoff, working-state size, recent compaction events, hook health."
+          },
+          {
+            "name": "why",
+            "description": "Trace a claim in the current handoff back to the JSONL transcript line that produced it."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "PostCompact"
+          },
+          {
+            "name": "PostToolUse",
+            "description": "Read|Write|Edit|MultiEdit|Bash|Glob|Grep|WebFetch"
+          },
+          {
+            "name": "PreCompact"
+          },
+          {
+            "name": "SessionEnd"
+          },
+          {
+            "name": "SessionStart",
+            "description": "compact|resume|startup"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "SubagentStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "amnesia",
+            "description": "stdio"
+          }
+        ],
+        "skills": [
+          {
+            "name": "continuity-protocol",
+            "description": "How to silently use the amnesia handoff after a compaction, resume, or fresh-session restart. Use ONLY in recovery mome…"
+          }
+        ]
+      }
+    },
+    "caveman-plus": {
+      "sha": "5e69d32fdf35b211a9405631a0e94b02c1403784",
+      "components": {
+        "agents": [
+          {
+            "name": "cavecrew-builder",
+            "description": "Surgical 1-2 file edit. Typo fixes, single-function rewrites, mechanical renames, comment removal, format-preserving tw…"
+          },
+          {
+            "name": "cavecrew-investigator",
+            "description": "Read-only code locator. Returns file:line table for \"where is X defined\", \"what calls Y\", \"list all uses of Z\", \"map th…"
+          },
+          {
+            "name": "cavecrew-reviewer",
+            "description": "Diff/branch/file reviewer. One line per finding, severity-tagged, no praise, no scope creep. Output format `path:line:…"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "cavecrew",
+            "description": "Decision guide for delegating to caveman-style subagents. Tells the main thread WHEN to spawn `cavecrew-investigator` (…"
+          },
+          {
+            "name": "caveman",
+            "description": "Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman while keeping full technical accura…"
+          },
+          {
+            "name": "caveman-commit",
+            "description": "Ultra-compressed commit message generator. Cuts noise from commit messages while preserving intent and reasoning. Conve…"
+          },
+          {
+            "name": "caveman-compress",
+            "description": "Compress natural language memory files (CLAUDE.md, todos, preferences) into caveman format to save input tokens. Preser…"
+          },
+          {
+            "name": "caveman-help",
+            "description": "Quick-reference card for all caveman modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /ca…"
+          },
+          {
+            "name": "caveman-review",
+            "description": "Ultra-compressed code review comments. Cuts noise from PR feedback while preserving the actionable signal. Each comment…"
+          },
+          {
+            "name": "caveman-stats",
+            "description": "Show real token usage and estimated savings for the current session. Reads directly from the Claude Code session log —…"
+          }
+        ]
+      }
+    },
+    "deepwiki": {
+      "sha": "2e1d25fc61ac8b4e14bb2f321bc8052ed07cd579",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "deepwiki",
+            "description": "http"
+          }
+        ]
+      }
+    },
+    "deepwiki-index": {
+      "sha": "c61fd0c6801c9798af3fa487b81d8d9f6aff89b7",
+      "components": {
+        "skills": [
+          {
+            "name": "deepwiki-index",
+            "description": "Trigger DeepWiki indexing for a public GitHub repo — the page its \"Ask DeepWiki\" badge links to (deepwiki.com/<owner>/<…"
+          }
+        ]
+      }
+    },
+    "drift-detector": {
+      "sha": "1d9f4131de76227407e9e50ae5d09d014fbc80a6",
+      "components": {
+        "commands": [
+          {
+            "name": "calibrate",
+            "description": "Analyse drift history and update this project's CLAUDE.md with data-driven anti-drift guidance"
+          },
+          {
+            "name": "debug",
+            "description": "Toggle drift-detector debug logging — /drift:debug [on | off]."
+          },
+          {
+            "name": "profile",
+            "description": "Manage the active drift profile — /drift:profile [name | list | show]."
+          },
+          {
+            "name": "report",
+            "description": "Detailed drift report for this session — recent turns, offenders, and trend."
+          },
+          {
+            "name": "reset",
+            "description": "Reset drift state — /drift:reset [session | all]."
+          },
+          {
+            "name": "status",
+            "description": "Show the current drift status for this session (live score, trend, drift rate)."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "drift-detector",
+            "description": "stdio"
+          }
+        ],
+        "skills": [
+          {
+            "name": "drift-detector",
+            "description": "Consult live drift state to check whether your recent replies have wandered from the user's active output contract (a t…"
+          }
+        ]
+      }
+    },
+    "drive-remote-terminal": {
+      "sha": "0ab0515235c27d79152099773a2cac216d5adb15",
+      "components": {
+        "skills": [
+          {
+            "name": "drive-remote-terminal",
+            "description": "Operate and observe an interactive, full-screen terminal program (a TUI) on a REMOTE machine over SSH by hosting it in…"
+          }
+        ]
+      }
+    },
+    "os-control-mcp": {
+      "sha": "b070b3bb67941c24f43aecfc984ccee2ab19590a",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "os",
+            "description": "stdio"
+          }
+        ],
+        "skills": [
+          {
+            "name": "control-os",
+            "description": "Control and inspect the local Linux host through systemd, journald, logind, and D-Bus via the os-control MCP. Use this…"
+          }
+        ]
+      }
+    },
+    "project-prospector": {
+      "sha": "bc039d38505cba25a66472d09d555aabb050a909",
+      "components": {
+        "skills": [
+          {
+            "name": "project-prospector",
+            "description": "Discover, catalog, and rank everything a person has built or sketched on a machine by fanning out parallel read-only in…"
+          }
+        ]
+      }
+    },
+    "recover-from-false-positive": {
+      "sha": "f65845fe2890d439e5246dabed62dce9d55d910a",
+      "components": {
+        "hooks": [
+          {
+            "name": "StopFailure"
+          },
+          {
+            "name": "SubagentStart",
+            "description": "Explore|Plan"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "recover-from-false-positive",
+            "description": "Recover Claude Code session logs after an Anthropic API output-classifier false positive — the \"cyber-related safeguard…"
+          }
+        ]
+      }
+    },
+    "scientific-method": {
+      "sha": "23e8bc0f6300a4fd629d03b6676133dd59b87b5f",
+      "components": {
+        "agents": [
+          {
+            "name": "council-member",
+            "description": "Use this agent as one independent seat in a model council — the same question is posed to several seats, each running o…"
+          },
+          {
+            "name": "experiment-designer",
+            "description": "Use this agent to turn one asserted limit, claim, or candidate root cause into a rigorously designed experiment — witho…"
+          },
+          {
+            "name": "meta-reviewer",
+            "description": "Use this agent as the area chair who closes a peer-review round. It receives the submission packet, all independent rev…"
+          },
+          {
+            "name": "peer-reviewer",
+            "description": "Use this agent as one independent reviewer in a peer-review round for an invention, design, finding, or paper-style wri…"
+          },
+          {
+            "name": "refuter",
+            "description": "Use this agent to evaluate a finding, claimed root cause, performance claim, invention, or research result by attemptin…"
+          }
+        ],
+        "commands": [
+          {
+            "name": "council",
+            "description": "Convene a model council: the same question answered independently across different models, dissent surfaced, cruxes rou…"
+          },
+          {
+            "name": "falsify",
+            "description": "Attack an asserted limit, ceiling, or claim with designed experiments"
+          },
+          {
+            "name": "invent",
+            "description": "Run a full invention campaign: ideate past a limit, refute, build, measure against acceptance criteria, provenance-sear…"
+          },
+          {
+            "name": "investigate",
+            "description": "Run a full scientific investigation: hypotheses, controlled experiments, verdicts, ledger"
+          },
+          {
+            "name": "ledger",
+            "description": "Create or update the persistent hypothesis ledger (EXPERIMENTS.md) for this project"
+          },
+          {
+            "name": "peer-review",
+            "description": "True peer review of an invention/finding/design: blind lensed reviewers, rebuttal, revision, area-chair decision"
+          },
+          {
+            "name": "verdict",
+            "description": "Adversarial REFUTE-first review of current findings/claims before they are trusted"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart",
+            "description": "startup|resume|clear|compact"
+          }
+        ],
+        "skills": [
+          {
+            "name": "scientific-method",
+            "description": "Use this skill whenever someone doubts a number, demands rigorous proof of a cause, or wants something invented and pro…"
+          }
+        ]
+      }
+    },
+    "screen-mcp": {
+      "sha": "c68d2f109d5ee57558343e117ee3069b3650b53e",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "screen",
+            "description": "stdio"
+          }
+        ],
+        "skills": [
+          {
+            "name": "drive-screen",
+            "description": "See and operate the user's real, physical Linux desktop through the mcp-screen MCP — screenshot any monitor and click/t…"
+          }
+        ]
+      }
+    },
+    "searxng": {
+      "sha": "ab735747f967a6a8f7a376b637ba164e3f66f130",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "searxng",
+            "description": "stdio"
+          }
+        ]
+      }
+    },
+    "total-recall": {
+      "sha": "fb54826bf79d7a83e032ceddb84d3d9a7c3fea30",
+      "components": {
+        "commands": [
+          {
+            "name": "recall",
+            "description": "Search past Claude Code sessions for prior decisions, corrections, preferences, and progress on a topic."
+          },
+          {
+            "name": "recall-check-banned",
+            "description": "Check if a provider, tool, or pattern is on the operator ban list before suggesting it."
+          },
+          {
+            "name": "recall-corrections",
+            "description": "Surface recent operator corrections on a topic — what Claude got wrong, what was demanded."
+          },
+          {
+            "name": "recall-cost",
+            "description": "Estimate Anthropic cost from total-recall's index — per-model token breakdown over a window."
+          },
+          {
+            "name": "recall-decisions",
+            "description": "Show standing decisions the operator has made (e.g. provider-a > provider-b, billing-a > billing-b). Useful before reco…"
+          },
+          {
+            "name": "recall-escalation",
+            "description": "Assess the operator's current frustration level from their last turn — calm/mild/escalated/high/breaking_point."
+          },
+          {
+            "name": "recall-goal",
+            "description": "Show the active project goal stack — status, age, blocker."
+          },
+          {
+            "name": "recall-health",
+            "description": "Show total-recall index health — last ingest age, hook fire rate, p95 latency, error count, DB size."
+          },
+          {
+            "name": "recall-inspect",
+            "description": "Inspect a single past session — print ai-title, message count, branches, top extractions."
+          },
+          {
+            "name": "recall-metrics",
+            "description": "Show total-recall metrics summary — sessions, tokens, top corrections, busiest project, longest session — over a window."
+          },
+          {
+            "name": "recall-operator-context",
+            "description": "One-shot operator briefing for this cwd — identity, active goal, top decisions, bans, voice cheats, recent corrections."
+          },
+          {
+            "name": "recall-promote",
+            "description": "Promote a recall finding (correction/preference/domain fact) into project auto-memory so it survives without needing re…"
+          },
+          {
+            "name": "recall-rebuild",
+            "description": "Rebuild the total-recall index from scratch (drops then full re-ingest). Destructive."
+          },
+          {
+            "name": "recall-status",
+            "description": "Show total-recall index health — DB size, session count, last ingest, top topics for this cwd."
+          },
+          {
+            "name": "recall-topics",
+            "description": "List most-extracted topics from past Claude Code sessions — corrections, decisions, recurring preferences."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "PostCompact"
+          },
+          {
+            "name": "PreCompact"
+          },
+          {
+            "name": "SessionStart",
+            "description": "startup|clear, compact"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "total-recall",
+            "description": "stdio"
+          }
+        ],
+        "skills": [
+          {
+            "name": "recall",
+            "description": "Orient Claude on mining past Claude Code session logs via the total-recall plugin. Use when the user references prior w…"
+          },
+          {
+            "name": "speak-like-operator",
+            "description": "Match the operator's communication cadence (lowercase, terse, no preambles, \"we\" framing, no emojis). Use when respondi…"
+          },
+          {
+            "name": "total-recall:llm-setup",
+            "description": "One-time setup for total-recall's optional local-LLM refinement layer — installs ollama (if missing) and pulls the conf…"
+          }
+        ]
+      }
+    },
+    "trigger-my-training": {
+      "sha": "8e28444609d7ac9336a27b0676fb424838431cb1",
+      "components": {
+        "agents": [
+          {
+            "name": "grounding-investigator",
+            "description": "Isolated grounding pass for a blast-radius-CRITICAL task. Reconstructs the domain's reality as a labelled hypothesis, r…"
+          }
+        ],
+        "commands": [
+          {
+            "name": "brief",
+            "description": "Emit a full Grounding Brief for the current task without waiting for the gate"
+          },
+          {
+            "name": "doctor",
+            "description": "Health-check the trigger-my-training plugin (python, bin scripts, hooks, gate mode)"
+          },
+          {
+            "name": "explain",
+            "description": "Explain what the trigger-my-training grounding gate is and how to use it"
+          },
+          {
+            "name": "ground",
+            "description": "Manually run the ground-first reflex and release the gate"
+          },
+          {
+            "name": "reset",
+            "description": "Disarm the trigger-my-training grounding gate for this session"
+          },
+          {
+            "name": "status",
+            "description": "Show the trigger-my-training grounding gate state for this session"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "PostToolUse",
+            "description": "Bash"
+          },
+          {
+            "name": "PostToolUseFailure",
+            "description": "Bash|Write|Edit|MultiEdit|NotebookEdit"
+          },
+          {
+            "name": "PreToolUse",
+            "description": "Bash|Write|Edit|MultiEdit|NotebookEdit"
+          },
+          {
+            "name": "SessionStart"
+          }
+        ],
+        "skills": [
+          {
+            "name": "ground-first",
+            "description": "Use BEFORE acting whenever getting it wrong has real cost — in ANY domain, not just infra. Fire for complex or multi-st…"
+          }
+        ]
+      }
+    },
+    "use-latest-version": {
+      "sha": "fb8420f36d97fef97d3d7081ed22af320a439eb5",
+      "components": {
+        "mcpServers": [
+          {
+            "name": "use-latest-version",
+            "description": "stdio"
+          }
+        ]
+      }
+    }
+  }
+}

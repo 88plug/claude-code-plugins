@@ -7,8 +7,10 @@ on:
     branches: [main]
     paths:
       - ".claude-plugin/marketplace.json"
+      - ".grok-plugin/marketplace.json"
       - "scripts/sync_marketplace.py"
       - "scripts/build_readme.py"
+      - "scripts/generate-grok-plugin-index.py"
 permissions:
   contents: write
 jobs:
@@ -27,13 +29,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/build_readme.py
+      - name: Generate Grok catalog (shas + metadata from Claude catalog)
+        run: python scripts/generate-grok-catalog.py
+      - name: Generate Grok plugin index (rich components for TUI Marketplace)
+        run: python scripts/generate-grok-plugin-index.py
       - name: Commit if changed
         run: |
-          if ! git diff --quiet -- .claude-plugin/marketplace.json README.md; then
+          if ! git diff --quiet -- .claude-plugin/marketplace.json .grok-plugin/ README.md; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add .claude-plugin/marketplace.json README.md
-            git commit -m "chore: auto-sync catalog + regenerate README from sources"
+            git add .claude-plugin/marketplace.json .grok-plugin/ README.md
+            git commit -m "chore: auto-sync catalog + regenerate README + Grok plugin-index"
             git push
           else
             echo "already in sync"
