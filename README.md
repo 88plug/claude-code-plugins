@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.6.109`](https://github.com/88plug/total-recall/commit/1a4d5978093f "commit 1a4d597") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.6.110`](https://github.com/88plug/total-recall/commit/541a77fa22d7 "commit 541a77f") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
