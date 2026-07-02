@@ -157,7 +157,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.6.18`](https://github.com/88plug/screen-mcp/commit/c68d2f109d5e "commit c68d2f1") · MCP server · 1 skill
+[`v2026.7.22`](https://github.com/88plug/screen-mcp/commit/7651fb2cec55 "commit 7651fb2") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
