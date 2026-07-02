@@ -94,7 +94,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/searxng-mcp.git",
-        "sha": "ab735747f967a6a8f7a376b637ba164e3f66f130"
+        "sha": "592de54b15851c39b838f1100354f38d5e2c4cb7"
       },
       "homepage": "https://github.com/88plug/searxng-mcp",
       "tags": [

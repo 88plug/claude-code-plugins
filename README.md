@@ -139,7 +139,7 @@ A ground-first reflex: the agent judges (from its own training, any domain) when
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.6.27`](https://github.com/88plug/searxng-mcp/commit/ab735747f967 "commit ab73574") · MCP server
+[`v2026.7.28`](https://github.com/88plug/searxng-mcp/commit/592de54b1585 "commit 592de54") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
