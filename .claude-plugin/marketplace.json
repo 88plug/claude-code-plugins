@@ -25,7 +25,7 @@
         "usage-policy"
       ],
       "homepage": "https://github.com/88plug/recover-from-false-positive",
-      "version": "2026.7.20"
+      "version": "2026.7.21"
     },
     {
       "name": "amnesia",
@@ -87,7 +87,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.7.111"
+      "version": "2026.7.112"
     },
     {
       "name": "searxng",
@@ -205,7 +205,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.23"
+      "version": "2026.7.24"
     },
     {
       "name": "os-control-mcp",
