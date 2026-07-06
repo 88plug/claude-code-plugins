@@ -10,8 +10,8 @@
     {
       "name": "recover-from-false-positive",
       "source": {
-        "source": "github",
-        "repo": "88plug/recover-from-false-positive"
+        "source": "url",
+        "url": "https://github.com/88plug/recover-from-false-positive.git"
       },
       "description": "Recover Claude Code sessions after an Anthropic API output-classifier false positive (the \"cyber-related safeguards\" / \"appears to violate our Usage Policy\" hard failure). A JSON-aware .jsonl log surgeon that surgically removes the triggering message + refusal turn and re-stitches the parentUuid chain so the session resumes cleanly, cleans accumulated refusals across old sessions, and installs a per-repo CLAUDE.md framing guard to stop recurrence.",
       "category": "productivity",
@@ -50,8 +50,8 @@
     {
       "name": "caveman-plus",
       "source": {
-        "source": "github",
-        "repo": "88plug/caveman-plus"
+        "source": "url",
+        "url": "https://github.com/88plug/caveman-plus.git"
       },
       "description": "Ultra-compressed communication mode. Cuts ~75% of tokens while keeping full technical accuracy by speaking like a caveman.",
       "category": "productivity",
@@ -68,8 +68,8 @@
     {
       "name": "total-recall",
       "source": {
-        "source": "github",
-        "repo": "88plug/total-recall"
+        "source": "url",
+        "url": "https://github.com/88plug/total-recall.git"
       },
       "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 10 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. gte-modernbert hybrid recall; worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement ([llm] extra, ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it.",
       "category": "productivity",
@@ -92,8 +92,8 @@
     {
       "name": "searxng",
       "source": {
-        "source": "github",
-        "repo": "88plug/searxng-mcp"
+        "source": "url",
+        "url": "https://github.com/88plug/searxng-mcp.git"
       },
       "description": "Fast, token-efficient MCP for SearXNG metasearch. Privacy-respecting search across 70+ engines with stdio + streamable-http transports, Docker, and optional rendered (Playwright) fetch for JS-heavy pages. Self-hostable. The underlying server is also usable independently of Claude Code via `uvx --from git+https://github.com/88plug/searxng-mcp searxng-mcp`.",
       "category": "search",
@@ -112,8 +112,8 @@
     {
       "name": "deepwiki",
       "source": {
-        "source": "github",
-        "repo": "88plug/deepwiki"
+        "source": "url",
+        "url": "https://github.com/88plug/deepwiki.git"
       },
       "description": "Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP. Read-only research into codebases without cloning. Note: this plugin wraps a remote MCP server hosted by Cognition AI at mcp.deepwiki.com; 88plug does not operate the underlying service.",
       "category": "research",
@@ -131,8 +131,8 @@
     {
       "name": "scientific-method",
       "source": {
-        "source": "github",
-        "repo": "88plug/scientific-method"
+        "source": "url",
+        "url": "https://github.com/88plug/scientific-method.git"
       },
       "description": "Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify findings adversarially (REFUTE-first), and persist verdicts in a hypothesis ledger so killed ideas are never re-attacked",
       "category": "productivity",
@@ -150,8 +150,8 @@
     {
       "name": "drive-remote-terminal",
       "source": {
-        "source": "github",
-        "repo": "88plug/drive-remote-terminal"
+        "source": "url",
+        "url": "https://github.com/88plug/drive-remote-terminal.git"
       },
       "description": "Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with capture-pane, in a type-wait-screenshot-read loop. For the Claude Code TUI, vim, top, curses installers, REPLs, or any program that needs a real PTY over SSH.",
       "category": "productivity",
@@ -170,8 +170,8 @@
     {
       "name": "project-prospector",
       "source": {
-        "source": "github",
-        "repo": "88plug/project-prospector"
+        "source": "url",
+        "url": "https://github.com/88plug/project-prospector.git"
       },
       "description": "Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents (transcripts, other agent CLIs, running services, research artifacts, beyond-home), synthesized into a tiered novelty/leverage ranking with idea/live/dormant tags and evidence-anchored rationale.",
       "category": "productivity",
@@ -190,8 +190,8 @@
     {
       "name": "screen-mcp",
       "source": {
-        "source": "github",
-        "repo": "88plug/screen-mcp"
+        "source": "url",
+        "url": "https://github.com/88plug/screen-mcp.git"
       },
       "description": "Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop + ScreenCast), with optional OCR + OmniParser icon grounding. Pure-Python, CPU-only. GNOME/Wayland only. Ships the MCP server plus a drive-screen skill that encodes the locate-ground-act-confirm loop.",
       "category": "productivity",
@@ -210,8 +210,8 @@
     {
       "name": "os-control-mcp",
       "source": {
-        "source": "github",
-        "repo": "88plug/os-control-mcp"
+        "source": "url",
+        "url": "https://github.com/88plug/os-control-mcp.git"
       },
       "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) \u2014 all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
       "category": "productivity",
@@ -231,8 +231,8 @@
     {
       "name": "use-latest-version",
       "source": {
-        "source": "github",
-        "repo": "88plug/use-latest-version-mcp"
+        "source": "url",
+        "url": "https://github.com/88plug/use-latest-version-mcp.git"
       },
       "description": "Stop suggesting stale package versions from training data. 15 MCP tools over 39 package registries (npm, PyPI, Maven, crates.io, Go, RubyGems, NuGet, Packagist, Docker/GHCR/Quay/GCR, Hex, pub.dev, CRAN, Homebrew, and more): latest-version + package-info lookups, semver compare, install-command generation, batch checks, project dependency scanning, outdated reports, conflict detection, compatibility checks, and a scan -> optimize -> validate -> apply upgrade pipeline that edits manifests with dry-run + automatic backups by default. Local-first, no API key required (an optional GITHUB_TOKEN raises GitHub rate limits).",
       "category": "productivity",
@@ -253,8 +253,8 @@
     {
       "name": "deepwiki-index",
       "source": {
-        "source": "github",
-        "repo": "88plug/deepwiki-index"
+        "source": "url",
+        "url": "https://github.com/88plug/deepwiki-index.git"
       },
       "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
@@ -272,8 +272,8 @@
     {
       "name": "addlightness",
       "source": {
-        "source": "github",
-        "repo": "88plug/addlightness"
+        "source": "url",
+        "url": "https://github.com/88plug/addlightness.git"
       },
       "description": "Simplify, then add lightness. Removes AI-generated code fat while preserving functionality, then benchmarks the speedup. Multi-pass: measure weight -> trim -> verify equivalence -> benchmark.",
       "category": "productivity",
@@ -294,8 +294,8 @@
     {
       "name": "drift-detector",
       "source": {
-        "source": "github",
-        "repo": "88plug/drift-detector"
+        "source": "url",
+        "url": "https://github.com/88plug/drift-detector.git"
       },
       "description": "Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back. Each assistant turn is scored by a deterministic, dependency-free engine; a status-line badge shows live drift and the next prompt gets a one-shot correction nudge when the previous reply broke contract.",
       "category": "productivity",
@@ -313,8 +313,8 @@
     {
       "name": "trigger-my-training",
       "source": {
-        "source": "github",
-        "repo": "88plug/trigger-my-training"
+        "source": "url",
+        "url": "https://github.com/88plug/trigger-my-training.git"
       },
       "description": "A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the destructive step until it has.",
       "category": "productivity",

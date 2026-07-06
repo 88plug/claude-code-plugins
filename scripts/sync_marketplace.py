@@ -50,10 +50,10 @@ def _auto_version(repo):
     count = int(m.group(1)) if m else len(items)
     return f"{date[:4]}.{int(date[5:7])}.{count}"
 def _repo_of(src):
-    """Resolve owner/repo from a github or git-subdir source (None otherwise)."""
+    """Resolve owner/repo from a github, git-subdir, or url source (None otherwise)."""
     if src.get("source") == "github" and src.get("repo"):
         return src["repo"]
-    if src.get("source") == "git-subdir" and src.get("url"):
+    if src.get("source") in ("git-subdir", "url") and src.get("url"):
         m = _re.search(r"github\.com[:/]+([^/]+/[^/.]+)", src["url"])
         return m.group(1) if m else None
     return None
