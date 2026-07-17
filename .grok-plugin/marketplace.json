@@ -12,7 +12,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/recover-from-false-positive.git",
-        "sha": "71b05c714ec6f7200336f6141c8400d9f6362526"
+        "sha": "94935efc866504f9774ed65e5742bbf438ecaa67"
       },
       "homepage": "https://github.com/88plug/recover-from-false-positive",
       "tags": [
@@ -52,7 +52,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/caveman-plus.git",
-        "sha": "6f72ecdacb3721a8f39305888ed25fced1f3e80b"
+        "sha": "895a4ae4cb8969a934a47243cbdfc06a396864dc"
       },
       "homepage": "https://github.com/88plug/caveman-plus",
       "tags": [
@@ -70,7 +70,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/total-recall.git",
-        "sha": "ca736a85c291a57c4b88b5fa513de5a91265a038"
+        "sha": "8900a4eb037393e682618d35f33b1901d996a77b"
       },
       "homepage": "https://github.com/88plug/total-recall",
       "tags": [
@@ -94,7 +94,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/searxng-mcp.git",
-        "sha": "36cfa01b90a77ae81307d9ce6134d6c457274d70"
+        "sha": "d4950711c8c66aa70b555dfa03825a1093a5e1a9"
       },
       "homepage": "https://github.com/88plug/searxng-mcp",
       "tags": [
@@ -114,7 +114,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki.git",
-        "sha": "41314e23378a13f30bad6ff541eeaddf494fc0dc"
+        "sha": "31e68bf3244a3f6aeb8ab31f19c1af8c1038284a"
       },
       "homepage": "https://github.com/88plug/deepwiki",
       "tags": [
@@ -133,7 +133,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/scientific-method.git",
-        "sha": "d5c79e3b4b09f4f9e35110b030219708b2fac25b"
+        "sha": "7bc41c99800088019506a6f4227e77178e71ab8c"
       },
       "homepage": "https://github.com/88plug/scientific-method",
       "tags": [
@@ -152,7 +152,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drive-remote-terminal.git",
-        "sha": "8f10a47939dae14d48db62fec6eccbb45e53e413"
+        "sha": "a2771782ab5b02f14061b4950188979c3978ffe4"
       },
       "homepage": "https://github.com/88plug/drive-remote-terminal",
       "tags": [
@@ -172,7 +172,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/project-prospector.git",
-        "sha": "bc84f7c6c6eed8f4094e6cbee15050ef23928b5c"
+        "sha": "e1811114f835bf7453a594f4c4658d9219e909d8"
       },
       "homepage": "https://github.com/88plug/project-prospector",
       "tags": [
@@ -192,7 +192,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/screen-mcp.git",
-        "sha": "7563d94960558019416fccdbe899f061ec33a4be"
+        "sha": "8cebd069525bfac5e89c10edce65d24b44b26aae"
       },
       "homepage": "https://github.com/88plug/screen-mcp",
       "tags": [
@@ -212,7 +212,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git",
-        "sha": "05fb951b251983bfd1fa5fb9ff95ce5630705893"
+        "sha": "6a9ba656e1fb20b8bc5b7bd8096af0150131dc09"
       },
       "homepage": "https://github.com/88plug/os-control-mcp",
       "tags": [
@@ -233,7 +233,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/use-latest-version-mcp.git",
-        "sha": "48c89481592ccef93fa9cac879730445646fcd3a"
+        "sha": "ed7fe982cadc06e8d78c9bb6707d74d8abf7c53b"
       },
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
       "tags": [
@@ -255,7 +255,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git",
-        "sha": "4658cf1c6b1a46421a31d7562cc588d2a2071e2f"
+        "sha": "febb2c7272c5b648023718d4faa805bd3846efea"
       },
       "homepage": "https://github.com/88plug/deepwiki-index",
       "tags": [
@@ -274,7 +274,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/addlightness.git",
-        "sha": "d4086d0689bd00d6e4a50fb425f2e8ce87ea108f"
+        "sha": "34d613b9491b4dc9be9bb48ce92ee04df744ed8e"
       },
       "homepage": "https://github.com/88plug/addlightness",
       "tags": [
@@ -296,7 +296,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drift-detector.git",
-        "sha": "89ed4144ee38a00bc3584b51228ab1d59b62bd28"
+        "sha": "2620cb3020f3396db3ab55d6df0ab5359a0d20da"
       },
       "homepage": "https://github.com/88plug/drift-detector",
       "tags": [
@@ -315,7 +315,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/trigger-my-training.git",
-        "sha": "4445fb85469ad3af7e20dfb968adc121c615ddb5"
+        "sha": "f6bbe5bdfd2eaa6314553ec11061f2c1c47ec0e1"
       },
       "homepage": "https://github.com/88plug/trigger-my-training",
       "tags": [

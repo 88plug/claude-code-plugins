@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "addlightness": {
-      "sha": "d4086d0689bd00d6e4a50fb425f2e8ce87ea108f",
+      "sha": "34d613b9491b4dc9be9bb48ce92ee04df744ed8e",
       "components": {
         "agents": [
           {
@@ -124,7 +124,7 @@
       }
     },
     "caveman-plus": {
-      "sha": "6f72ecdacb3721a8f39305888ed25fced1f3e80b",
+      "sha": "895a4ae4cb8969a934a47243cbdfc06a396864dc",
       "components": {
         "agents": [
           {
@@ -181,7 +181,7 @@
       }
     },
     "deepwiki": {
-      "sha": "41314e23378a13f30bad6ff541eeaddf494fc0dc",
+      "sha": "31e68bf3244a3f6aeb8ab31f19c1af8c1038284a",
       "components": {
         "mcpServers": [
           {
@@ -192,7 +192,7 @@
       }
     },
     "deepwiki-index": {
-      "sha": "4658cf1c6b1a46421a31d7562cc588d2a2071e2f",
+      "sha": "febb2c7272c5b648023718d4faa805bd3846efea",
       "components": {
         "skills": [
           {
@@ -203,7 +203,7 @@
       }
     },
     "drift-detector": {
-      "sha": "89ed4144ee38a00bc3584b51228ab1d59b62bd28",
+      "sha": "2620cb3020f3396db3ab55d6df0ab5359a0d20da",
       "components": {
         "commands": [
           {
@@ -212,11 +212,11 @@
           },
           {
             "name": "debug",
-            "description": "Toggle drift-detector debug logging — /drift:debug [on | off]."
+            "description": "Toggle drift-detector debug logging — /drift-detector:debug [on | off]."
           },
           {
             "name": "profile",
-            "description": "Manage the active drift profile — /drift:profile [name | list | show]."
+            "description": "Manage the active drift profile — /drift-detector:profile [name | list | show]."
           },
           {
             "name": "report",
@@ -224,7 +224,7 @@
           },
           {
             "name": "reset",
-            "description": "Reset drift state — /drift:reset [session | all]."
+            "description": "Reset drift state — /drift-detector:reset [session | all]."
           },
           {
             "name": "status",
@@ -257,7 +257,7 @@
       }
     },
     "drive-remote-terminal": {
-      "sha": "8f10a47939dae14d48db62fec6eccbb45e53e413",
+      "sha": "a2771782ab5b02f14061b4950188979c3978ffe4",
       "components": {
         "skills": [
           {
@@ -268,7 +268,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "05fb951b251983bfd1fa5fb9ff95ce5630705893",
+      "sha": "6a9ba656e1fb20b8bc5b7bd8096af0150131dc09",
       "components": {
         "mcpServers": [
           {
@@ -285,7 +285,7 @@
       }
     },
     "project-prospector": {
-      "sha": "bc84f7c6c6eed8f4094e6cbee15050ef23928b5c",
+      "sha": "e1811114f835bf7453a594f4c4658d9219e909d8",
       "components": {
         "skills": [
           {
@@ -296,7 +296,7 @@
       }
     },
     "recover-from-false-positive": {
-      "sha": "71b05c714ec6f7200336f6141c8400d9f6362526",
+      "sha": "94935efc866504f9774ed65e5742bbf438ecaa67",
       "components": {
         "hooks": [
           {
@@ -319,7 +319,7 @@
       }
     },
     "scientific-method": {
-      "sha": "d5c79e3b4b09f4f9e35110b030219708b2fac25b",
+      "sha": "7bc41c99800088019506a6f4227e77178e71ab8c",
       "components": {
         "agents": [
           {
@@ -388,7 +388,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "7563d94960558019416fccdbe899f061ec33a4be",
+      "sha": "8cebd069525bfac5e89c10edce65d24b44b26aae",
       "components": {
         "mcpServers": [
           {
@@ -405,7 +405,7 @@
       }
     },
     "searxng": {
-      "sha": "36cfa01b90a77ae81307d9ce6134d6c457274d70",
+      "sha": "d4950711c8c66aa70b555dfa03825a1093a5e1a9",
       "components": {
         "mcpServers": [
           {
@@ -416,7 +416,7 @@
       }
     },
     "total-recall": {
-      "sha": "ca736a85c291a57c4b88b5fa513de5a91265a038",
+      "sha": "8900a4eb037393e682618d35f33b1901d996a77b",
       "components": {
         "commands": [
           {
@@ -521,7 +521,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "4445fb85469ad3af7e20dfb968adc121c615ddb5",
+      "sha": "f6bbe5bdfd2eaa6314553ec11061f2c1c47ec0e1",
       "components": {
         "agents": [
           {
@@ -581,7 +581,7 @@
       }
     },
     "use-latest-version": {
-      "sha": "48c89481592ccef93fa9cac879730445646fcd3a",
+      "sha": "ed7fe982cadc06e8d78c9bb6707d74d8abf7c53b",
       "components": {
         "mcpServers": [
           {
