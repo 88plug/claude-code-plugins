@@ -135,7 +135,7 @@ A ground-first reflex: the agent judges (from its own training, any domain) when
 ```
 
 ### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
-`v2026.7.11`
+`v2026.7.22`
 
 Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
 
@@ -144,7 +144,7 @@ Enforce full agent authority on reversible work: run commands yourself, never yi
 ```
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-`v2026.7.11`
+`v2026.7.19`
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 

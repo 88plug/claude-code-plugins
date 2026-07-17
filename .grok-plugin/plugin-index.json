@@ -124,7 +124,7 @@
       }
     },
     "be-the-whole-bitch": {
-      "sha": "87c047f5f61baa8c472f3cb1803efbf46fe0bc2d",
+      "sha": "9c4b7793bec8fcafdebfed03a3127c1bd2f3e842",
       "components": {
         "commands": [
           {
@@ -240,7 +240,7 @@
       }
     },
     "dehumanize": {
-      "sha": "742145e361cd7ac8f002d9ef05300e83cf414409",
+      "sha": "ca896aac897a33c409ec997faf94fefbb46f03b8",
       "components": {
         "commands": [
           {
@@ -274,7 +274,7 @@
         "skills": [
           {
             "name": "dehumanize",
-            "description": "Strip human-shaped framing from AI work. Invoke when responses drift into man-hours/sprints/EOD time estimates, asking…"
+            "description": "Strip human-shaped framing from AI work. Invoke when responses drift into man-hours/sprints/EOD/\"hours of work\"/\"aftern…"
           }
         ]
       }
