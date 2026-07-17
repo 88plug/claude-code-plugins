@@ -42,13 +42,20 @@ def main() -> int:
         repo = None
         subdir_path = None
 
+        # Claude catalog uses github | git-subdir | url (url preferred since
+        # 2026-07 switch away from ambiguous github-type sources). All three
+        # must resolve; skipping url left the Grok marketplace at 1 plugin.
         if src.get("source") == "github" and src.get("repo"):
             repo = src["repo"]
-        elif src.get("source") == "git-subdir" and src.get("url"):
+        elif src.get("source") in ("git-subdir", "url") and src.get("url"):
             m = re.search(r"github\.com[:/]+([^/]+/[^/.]+)", src["url"])
             if m:
                 repo = m.group(1)
-            subdir_path = src.get("path")
+            if src.get("source") == "git-subdir":
+                subdir_path = src.get("path")
+            elif src.get("path"):
+                # url + optional path (same shape as git-subdir)
+                subdir_path = src.get("path")
 
         if not repo:
             print(f"Skipping {name}: no github repo")
