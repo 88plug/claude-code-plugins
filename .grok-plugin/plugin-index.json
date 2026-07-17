@@ -124,7 +124,7 @@
       }
     },
     "be-the-whole-bitch": {
-      "sha": "9c4b7793bec8fcafdebfed03a3127c1bd2f3e842",
+      "sha": "a19da00eeb84c437b97e64b379161deb309124cd",
       "components": {
         "commands": [
           {
@@ -240,7 +240,7 @@
       }
     },
     "dehumanize": {
-      "sha": "ca896aac897a33c409ec997faf94fefbb46f03b8",
+      "sha": "054ac269860f6d8b131c50e6e2f007f31da82433",
       "components": {
         "commands": [
           {

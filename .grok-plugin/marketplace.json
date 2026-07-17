@@ -334,7 +334,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/be-the-whole-bitch.git",
-        "sha": "9c4b7793bec8fcafdebfed03a3127c1bd2f3e842"
+        "sha": "a19da00eeb84c437b97e64b379161deb309124cd"
       },
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
       "tags": [
@@ -352,7 +352,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git",
-        "sha": "ca896aac897a33c409ec997faf94fefbb46f03b8"
+        "sha": "054ac269860f6d8b131c50e6e2f007f31da82433"
       },
       "homepage": "https://github.com/88plug/dehumanize",
       "tags": [
