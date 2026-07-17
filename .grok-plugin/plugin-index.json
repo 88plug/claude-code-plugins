@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "amnesia": {
-      "sha": "a2ef8fedf37e28dfad073eaa9995061267d413a5",
+      "sha": "cc66b0069e03305aae5edc1aec09b7acde245bcc",
       "components": {
         "agents": [
           {
