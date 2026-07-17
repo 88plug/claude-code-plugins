@@ -45,7 +45,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-`v2026.7.37`
+[`v2026.7.37`](https://github.com/88plug/amnesia/commit/bfcddbb800f7 "commit bfcddbb") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
