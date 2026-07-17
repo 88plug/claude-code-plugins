@@ -45,7 +45,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-`v2026.7.47`
+`v2026.7.48`
 
 Seamless context continuity across Claude Code compaction.
 
