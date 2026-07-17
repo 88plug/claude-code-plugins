@@ -54,7 +54,7 @@ Seamless context continuity across Claude Code compaction.
 ```
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-`v2026.7.208`
+`v2026.7.209`
 
 Ultra-compressed communication mode.
 
