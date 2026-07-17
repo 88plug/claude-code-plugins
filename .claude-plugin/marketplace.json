@@ -328,6 +328,39 @@
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
       "version": "2026.7.18"
+    },
+    {
+      "name": "be-the-whole-bitch",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/be-the-whole-bitch.git"
+      },
+      "description": "Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator. Stop hook scores yield-back turns; next prompt gets a one-shot drive correction.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "authority",
+        "execution",
+        "guardrails",
+        "hooks"
+      ],
+      "homepage": "https://github.com/88plug/be-the-whole-bitch"
+    },
+    {
+      "name": "dehumanize",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/dehumanize.git"
+      },
+      "description": "Makes AI work like AI \u2014 no human time estimates, no asking for accessible data, no emotional labor.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "ai-discipline",
+        "anti-patterns",
+        "hooks"
+      ],
+      "homepage": "https://github.com/88plug/dehumanize"
     }
   ]
 }
