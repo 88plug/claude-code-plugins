@@ -32,8 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/amnesia.git",
-        "sha": "dee8c0c61f5c71324381f0f46e49afc4cce68dd2",
-        "path": "plugins/amnesia"
+        "sha": "e9f892d3913baa68d893999ceb6f14ac53377508"
       },
       "homepage": "https://github.com/88plug/amnesia",
       "tags": [
