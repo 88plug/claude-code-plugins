@@ -41,7 +41,15 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add .claude-plugin/marketplace.json .grok-plugin/ README.md
             git commit -m "chore: auto-sync catalog + regenerate README + Grok plugin-index"
-            git push
+            # Concurrent schedule + dispatch + path-push races are common; rebase and retry.
+            for i in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              echo "push rejected (race), pull --rebase attempt $i"
+              git pull --rebase origin main
+            done
+            exit 1
           else
             echo "already in sync"
           fi
