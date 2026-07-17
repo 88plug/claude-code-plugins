@@ -36,7 +36,7 @@ No environment variables, no API keys — it uses your existing setup.
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-`v2026.7.21`
+`v2026.7.22`
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
@@ -117,7 +117,7 @@ Simplify, then add lightness.
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-`v2026.7.24`
+`v2026.7.25`
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -126,7 +126,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.6`
+`v2026.7.7`
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
@@ -157,7 +157,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-`v2026.7.24`
+`v2026.7.25`
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -166,7 +166,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-`v2026.7.6`
+`v2026.7.7`
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 

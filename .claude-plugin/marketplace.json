@@ -25,7 +25,7 @@
         "usage-policy"
       ],
       "homepage": "https://github.com/88plug/recover-from-false-positive",
-      "version": "2026.7.21"
+      "version": "2026.7.22"
     },
     {
       "name": "amnesia",
@@ -205,7 +205,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.24"
+      "version": "2026.7.25"
     },
     {
       "name": "os-control-mcp",
@@ -226,7 +226,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.7.6"
+      "version": "2026.7.7"
     },
     {
       "name": "use-latest-version",
@@ -308,7 +308,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.7.24"
+      "version": "2026.7.25"
     },
     {
       "name": "trigger-my-training",
@@ -328,7 +328,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.7.6"
+      "version": "2026.7.7"
     }
   ]
 }
