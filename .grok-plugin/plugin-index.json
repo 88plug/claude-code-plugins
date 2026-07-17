@@ -39,7 +39,7 @@
       }
     },
     "amnesia": {
-      "sha": "e9f892d3913baa68d893999ceb6f14ac53377508",
+      "sha": "7a27b1fd69384ce6b23146d98f519fc2d0ddaf4f",
       "components": {
         "agents": [
           {
@@ -124,7 +124,7 @@
       }
     },
     "caveman-plus": {
-      "sha": "895a4ae4cb8969a934a47243cbdfc06a396864dc",
+      "sha": "e0ab535d3289ebe5eb3874f84b66ce9d77a27c46",
       "components": {
         "agents": [
           {
@@ -181,7 +181,7 @@
       }
     },
     "deepwiki": {
-      "sha": "31e68bf3244a3f6aeb8ab31f19c1af8c1038284a",
+      "sha": "7ceffb3b7730a6514b39048f21abe4a4791c15b1",
       "components": {
         "mcpServers": [
           {
@@ -192,7 +192,7 @@
       }
     },
     "deepwiki-index": {
-      "sha": "febb2c7272c5b648023718d4faa805bd3846efea",
+      "sha": "3325f8de0522cc89172ba7089ae1f9f0bd8fb1b1",
       "components": {
         "skills": [
           {
@@ -203,7 +203,7 @@
       }
     },
     "drift-detector": {
-      "sha": "2620cb3020f3396db3ab55d6df0ab5359a0d20da",
+      "sha": "e8795327b7fcd0c52eb65a2819eeac9456653652",
       "components": {
         "commands": [
           {
@@ -257,7 +257,7 @@
       }
     },
     "drive-remote-terminal": {
-      "sha": "a2771782ab5b02f14061b4950188979c3978ffe4",
+      "sha": "49d9fa4e42696cc9d165b2cbef9b9f90f84f7935",
       "components": {
         "skills": [
           {
@@ -268,7 +268,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "6a9ba656e1fb20b8bc5b7bd8096af0150131dc09",
+      "sha": "7fc4c5906b7266ba49dcd939680a28d1121690f0",
       "components": {
         "mcpServers": [
           {
@@ -285,7 +285,7 @@
       }
     },
     "project-prospector": {
-      "sha": "e1811114f835bf7453a594f4c4658d9219e909d8",
+      "sha": "db9edab12a4b4ad178bb9fdc4e9f63d10af5ede0",
       "components": {
         "skills": [
           {
@@ -296,7 +296,7 @@
       }
     },
     "recover-from-false-positive": {
-      "sha": "94935efc866504f9774ed65e5742bbf438ecaa67",
+      "sha": "9fc04dc7288c1c67e6b76d68523a56adef9cf6a3",
       "components": {
         "hooks": [
           {
@@ -319,7 +319,7 @@
       }
     },
     "scientific-method": {
-      "sha": "7bc41c99800088019506a6f4227e77178e71ab8c",
+      "sha": "d539bcf0f4120dfcc9be02429132f1e9e05e4d74",
       "components": {
         "agents": [
           {
@@ -388,7 +388,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "8cebd069525bfac5e89c10edce65d24b44b26aae",
+      "sha": "b0bfbf95473f5f5f3a617b7dc20172dd1cd90d04",
       "components": {
         "mcpServers": [
           {
@@ -405,7 +405,7 @@
       }
     },
     "searxng": {
-      "sha": "d4950711c8c66aa70b555dfa03825a1093a5e1a9",
+      "sha": "d645daaf614b5e0839be88dfec1ce5eb852a68ec",
       "components": {
         "mcpServers": [
           {
@@ -416,7 +416,7 @@
       }
     },
     "total-recall": {
-      "sha": "8900a4eb037393e682618d35f33b1901d996a77b",
+      "sha": "4587e309f254ca45ea18e2c27103d958d1656e7c",
       "components": {
         "commands": [
           {
@@ -521,7 +521,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "f6bbe5bdfd2eaa6314553ec11061f2c1c47ec0e1",
+      "sha": "714ca9b570a64c55825375c9c97ae113044e1f77",
       "components": {
         "agents": [
           {
@@ -581,7 +581,7 @@
       }
     },
     "use-latest-version": {
-      "sha": "ed7fe982cadc06e8d78c9bb6707d74d8abf7c53b",
+      "sha": "db93f531af3cd96691a6c82ef67380f491d4d918",
       "components": {
         "mcpServers": [
           {
