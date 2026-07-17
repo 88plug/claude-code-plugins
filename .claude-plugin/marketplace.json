@@ -87,7 +87,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.7.119"
+      "version": "2026.7.120"
     },
     {
       "name": "searxng",
@@ -328,7 +328,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.7.13"
+      "version": "2026.7.14"
     }
   ]
 }

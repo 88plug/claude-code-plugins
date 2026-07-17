@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.119`
+`v2026.7.120`
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -126,7 +126,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.13`
+`v2026.7.14`
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 

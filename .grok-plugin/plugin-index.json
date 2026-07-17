@@ -416,7 +416,7 @@
       }
     },
     "total-recall": {
-      "sha": "0e14ee510eb25fefd3c02bf26bfbcf8711ad1d69",
+      "sha": "5ebf25031d26b3351ca5e9fd2b1adededb52e548",
       "components": {
         "commands": [
           {
@@ -521,7 +521,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "b405e36119ebeb732d2eb74a19e6e79b668f6d17",
+      "sha": "4445fb85469ad3af7e20dfb968adc121c615ddb5",
       "components": {
         "agents": [
           {
