@@ -266,7 +266,7 @@
         "github"
       ],
       "homepage": "https://github.com/88plug/deepwiki-index",
-      "version": "2026.7.12"
+      "version": "2026.7.13"
     },
     {
       "name": "addlightness",
@@ -344,7 +344,8 @@
         "guardrails",
         "hooks"
       ],
-      "homepage": "https://github.com/88plug/be-the-whole-bitch"
+      "homepage": "https://github.com/88plug/be-the-whole-bitch",
+      "version": "2026.7.11"
     },
     {
       "name": "dehumanize",
@@ -360,7 +361,8 @@
         "anti-patterns",
         "hooks"
       ],
-      "homepage": "https://github.com/88plug/dehumanize"
+      "homepage": "https://github.com/88plug/dehumanize",
+      "version": "2026.7.11"
     }
   ]
 }

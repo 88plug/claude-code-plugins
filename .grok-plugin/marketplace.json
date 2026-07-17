@@ -254,7 +254,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git",
-        "sha": "3325f8de0522cc89172ba7089ae1f9f0bd8fb1b1"
+        "sha": "86493b93111095943c903b926a98f020d59c000c"
       },
       "homepage": "https://github.com/88plug/deepwiki-index",
       "tags": [
@@ -325,6 +325,41 @@
         "preflight",
         "irreversible-actions",
         "reasoning"
+      ]
+    },
+    {
+      "name": "be-the-whole-bitch",
+      "description": "Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator. Stop hook scores yield-back turns; next prompt gets a one-shot drive correction.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/be-the-whole-bitch.git",
+        "sha": "87c047f5f61baa8c472f3cb1803efbf46fe0bc2d"
+      },
+      "homepage": "https://github.com/88plug/be-the-whole-bitch",
+      "tags": [
+        "type:plugin",
+        "authority",
+        "execution",
+        "guardrails",
+        "hooks"
+      ]
+    },
+    {
+      "name": "dehumanize",
+      "description": "Makes AI work like AI \u2014 no human time estimates, no asking for accessible data, no emotional labor.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/dehumanize.git",
+        "sha": "742145e361cd7ac8f002d9ef05300e83cf414409"
+      },
+      "homepage": "https://github.com/88plug/dehumanize",
+      "tags": [
+        "type:plugin",
+        "ai-discipline",
+        "anti-patterns",
+        "hooks"
       ]
     }
   ]

@@ -6,7 +6,7 @@
 
 [![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
 [![license](https://img.shields.io/badge/license-FSL--1.1--ALv2-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-16-1f2328?style=flat-square)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-18-1f2328?style=flat-square)](#plugins)
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
@@ -99,7 +99,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 ```
 
 ### [deepwiki-index](https://github.com/88plug/deepwiki-index)
-`v2026.7.12`
+`v2026.7.13`
 
 Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
 
@@ -132,6 +132,24 @@ A ground-first reflex: the agent judges (from its own training, any domain) when
 
 ```sh
 /plugin install trigger-my-training@88plug
+```
+
+### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
+`v2026.7.11`
+
+Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
+
+```sh
+/plugin install be-the-whole-bitch@88plug
+```
+
+### [dehumanize](https://github.com/88plug/dehumanize)
+`v2026.7.11`
+
+Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
+
+```sh
+/plugin install dehumanize@88plug
 ```
 
 ## MCP servers

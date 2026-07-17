@@ -123,6 +123,43 @@
         ]
       }
     },
+    "be-the-whole-bitch": {
+      "sha": "87c047f5f61baa8c472f3cb1803efbf46fe0bc2d",
+      "components": {
+        "commands": [
+          {
+            "name": "audit",
+            "description": "Score the last assistant turn in the current session transcript for yield-back"
+          },
+          {
+            "name": "eval",
+            "description": "Run session-log replay simulator on past Claude Code transcripts"
+          },
+          {
+            "name": "status",
+            "description": "Show be-the-whole-bitch yield-back state for this session"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart",
+            "description": "startup|resume|clear|compact"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "be-the-whole-bitch",
+            "description": "Full execution authority on reversible work. You run commands, read outputs, iterate until done. Never hand the operato…"
+          }
+        ]
+      }
+    },
     "caveman-plus": {
       "sha": "e0ab535d3289ebe5eb3874f84b66ce9d77a27c46",
       "components": {
@@ -192,12 +229,52 @@
       }
     },
     "deepwiki-index": {
-      "sha": "3325f8de0522cc89172ba7089ae1f9f0bd8fb1b1",
+      "sha": "86493b93111095943c903b926a98f020d59c000c",
       "components": {
         "skills": [
           {
             "name": "deepwiki-index",
             "description": "Trigger DeepWiki indexing for a public GitHub repo — the page its \"Ask DeepWiki\" badge links to (deepwiki.com/<owner>/<…"
+          }
+        ]
+      }
+    },
+    "dehumanize": {
+      "sha": "742145e361cd7ac8f002d9ef05300e83cf414409",
+      "components": {
+        "commands": [
+          {
+            "name": "audit",
+            "description": "Scan current session logs for AI human-framing anti-patterns and report all violations."
+          },
+          {
+            "name": "fix",
+            "description": "Rewrite the last AI response to eliminate all human-framing language."
+          },
+          {
+            "name": "patterns",
+            "description": "List all registered anti-patterns with regex, severity, and examples."
+          },
+          {
+            "name": "status",
+            "description": "Show current session violation stats from state dir."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "dehumanize",
+            "description": "Strip human-shaped framing from AI work. Invoke when responses drift into man-hours/sprints/EOD time estimates, asking…"
           }
         ]
       }
