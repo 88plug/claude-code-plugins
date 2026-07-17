@@ -334,7 +334,7 @@
       }
     },
     "drive-remote-terminal": {
-      "sha": "49d9fa4e42696cc9d165b2cbef9b9f90f84f7935",
+      "sha": "f19d2c34d8ad4633eb539fad42d8bb6501d674d2",
       "components": {
         "skills": [
           {
@@ -465,7 +465,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "b0bfbf95473f5f5f3a617b7dc20172dd1cd90d04",
+      "sha": "8aeb1158a83dd98f3807acc1f9f5a7c96d07621e",
       "components": {
         "mcpServers": [
           {
@@ -493,7 +493,7 @@
       }
     },
     "total-recall": {
-      "sha": "4587e309f254ca45ea18e2c27103d958d1656e7c",
+      "sha": "bb9e9c47ef60f6ae6cfc9821ff94bcffe950c0cb",
       "components": {
         "commands": [
           {

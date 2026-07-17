@@ -86,7 +86,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.7.126"
+      "version": "2026.7.128"
     },
     {
       "name": "searxng",
@@ -164,7 +164,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.7.20"
+      "version": "2026.7.22"
     },
     {
       "name": "project-prospector",
@@ -204,7 +204,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.37"
+      "version": "2026.7.39"
     },
     {
       "name": "os-control-mcp",

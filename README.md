@@ -63,7 +63,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.126`
+`v2026.7.128`
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -81,7 +81,7 @@ Falsification-first investigation workflow: convert every assertion into a label
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-`v2026.7.20`
+`v2026.7.22`
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
@@ -175,7 +175,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-`v2026.7.37`
+`v2026.7.39`
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
