@@ -157,40 +157,52 @@ def _short(desc: str, limit: int = 170) -> str:
     return d[:limit].rsplit(" ", 1)[0].rstrip(" .,:;—-") + "…"
 
 
-# Mobile-first layout (researched 2026): no wide tables — GitHub never reflows
-# them, so they force horizontal scroll and clip columns on a phone. Each plugin
-# is a vertical stanza (heading + metadata line + short description + fenced
-# install block with a copy button). Catalog leads; the update essay collapses.
+# Catalog layout: per-plugin vertical stanzas (mobile-friendly; GitHub never reflows
+# wide tables). Marketplace-level features use a narrow ≤3-col table above the fold.
 HEADER = """<div align="center">
 
 # 88plug
 
-**Curated plugins for AI coding assistants. One marketplace. Two commands.**
+**Claude Code plugin marketplace for AI coding agents — curated plugins, agent skills, and MCP servers. Two commands to install.**
 
-[![marketplace](https://img.shields.io/badge/marketplace-88plug-1f2328?style=flat-square)](https://github.com/88plug/claude-code-plugins)
-[![license](https://img.shields.io/badge/license-FSL--1.1--ALv2-1f2328?style=flat-square)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat-square)](#plugins)
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
+[![sync](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml/badge.svg)](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml)
+[![License: FSL-1.1-ALv2](https://img.shields.io/badge/license-FSL--1.1--ALv2-blue?style=flat)](./LICENSE)
+[![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat)](#plugins)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A2BE2?style=flat)](https://github.com/88plug/claude-code-plugins)
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
 </div>
 
----
-
 ## Install
 
-```sh
-# 1. Add the marketplace (once per machine)
-/plugin marketplace add 88plug/claude-code-plugins
+Inside Claude Code, add the 88plug marketplace once, then install any plugin by name:
 
-# 2. Install any plugin below
+```text
+/plugin marketplace add 88plug/claude-code-plugins
 /plugin install <name>@88plug
 ```
 
-No environment variables, no API keys — it uses your existing setup.
+No environment variables. No API keys. Uses your existing Claude Code setup.
 
 > [!TIP]
 > Enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and you always get the latest at startup.
+
+## Why this marketplace
+
+88plug is a curated Claude Code plugin marketplace for developers who run AI coding agents all day. You get productivity plugins (memory, compaction, guardrails, investigation) and MCP servers (search, desktop control, package versions) without cloning repos or wiring config by hand.
+
+Each entry is a Claude Code plugin or MCP server in its own repo. This hub is only the catalog index — install with `/plugin install <name>@88plug`, then work. Versions are `YEAR.MONTH.BUILD`, auto-stamped so `claude plugin list` shows whether you are current.
+
+## Features
+
+| Area | What you get |
+| --- | --- |
+| Claude Code plugins | Hooks, skills, slash commands, and output styles for coding agents |
+| MCP servers | One-command MCP install for search, DeepWiki, desktop, OS, package versions |
+| Marketplace install | `/plugin marketplace add` once, then `/plugin install <name>@88plug` |
+| Rolling versions | `YEAR.MONTH.BUILD` auto-stamped so `claude plugin list` stays current |
+| Auto-update | Optional marketplace auto-update at Claude Code startup |
+| Zero config | No env vars or API keys for the catalog path itself |
 
 ## Plugins
 
@@ -215,7 +227,7 @@ the catalog and updates installed plugins at startup, then prompts `/reload-plug
 
 Prefer to do it by hand:
 
-```sh
+```text
 /plugin marketplace update 88plug
 /plugin update <name>@88plug
 /reload-plugins
@@ -231,7 +243,8 @@ one here, you're behind — update it.
 ## Philosophy
 
 Plugins should be invisible until you need them. Each one earns its slot by closing a
-specific failure mode in long-horizon AI-assisted work.
+specific failure mode in long-horizon AI-assisted work — compaction loss, stale package
+versions, yield-back, classifier false positives, and similar agent failure modes.
 
 ## Contributing
 
