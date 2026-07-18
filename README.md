@@ -50,7 +50,7 @@ Each entry is a Claude Code plugin or MCP server in its own repo. This hub is on
 `claude plugin list` shows, so you can tell at a glance if you're current.*
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-`v2026.7.30`
+`v2026.7.31`
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
@@ -59,7 +59,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-`v2026.7.49`
+`v2026.7.50`
 
 Seamless context continuity across Claude Code compaction.
 
@@ -68,7 +68,7 @@ Seamless context continuity across Claude Code compaction.
 ```
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-`v2026.7.213`
+`v2026.7.214`
 
 Ultra-compressed communication mode.
 
@@ -77,7 +77,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.145`
+`v2026.7.146`
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -86,7 +86,7 @@ Cross-session, cross-CLI memory for AI coding assistants.
 ```
 
 ### [scientific-method](https://github.com/88plug/scientific-method)
-`v2026.7.27`
+`v2026.7.28`
 
 Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
 
@@ -95,7 +95,7 @@ Falsification-first investigation workflow: convert every assertion into a label
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-`v2026.7.22`
+`v2026.7.23`
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
@@ -104,7 +104,7 @@ Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux
 ```
 
 ### [project-prospector](https://github.com/88plug/project-prospector)
-`v2026.7.21`
+`v2026.7.22`
 
 Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
 
@@ -113,7 +113,7 @@ Discover, catalog, and rank everything you've built or sketched on a machine via
 ```
 
 ### [deepwiki-index](https://github.com/88plug/deepwiki-index)
-`v2026.7.13`
+`v2026.7.14`
 
 Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
 
@@ -122,7 +122,7 @@ Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links t
 ```
 
 ### [addlightness](https://github.com/88plug/addlightness)
-`v2026.7.11`
+`v2026.7.12`
 
 Simplify, then add lightness.
 
@@ -131,7 +131,7 @@ Simplify, then add lightness.
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-`v2026.7.37`
+`v2026.7.38`
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -140,7 +140,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.18`
+`v2026.7.19`
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
@@ -149,7 +149,7 @@ A ground-first reflex: the agent judges (from its own training, any domain) when
 ```
 
 ### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
-`v2026.7.24`
+`v2026.7.25`
 
 Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
 
@@ -158,7 +158,7 @@ Enforce full agent authority on reversible work: run commands yourself, never yi
 ```
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-`v2026.7.21`
+`v2026.7.22`
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 
@@ -171,7 +171,7 @@ Makes AI work like AI — no human time estimates, no asking for accessible data
 *A single MCP server, one-command install.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-`v2026.7.41`
+`v2026.7.42`
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
@@ -180,7 +180,7 @@ Fast, token-efficient MCP for SearXNG metasearch.
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-`v2026.7.23`
+`v2026.7.24`
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
@@ -189,7 +189,7 @@ Talk to any public GitHub repo's auto-generated documentation via Cognition's ho
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-`v2026.7.39`
+`v2026.7.40`
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -198,7 +198,7 @@ Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, typ
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-`v2026.7.18`
+`v2026.7.19`
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 
@@ -207,7 +207,7 @@ The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd se
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-`v2026.7.35`
+`v2026.7.36`
 
 Stop suggesting stale package versions from training data.
 
