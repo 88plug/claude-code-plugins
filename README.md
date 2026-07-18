@@ -77,7 +77,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.146`
+`v2026.7.150`
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
