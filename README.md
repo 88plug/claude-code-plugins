@@ -178,7 +178,7 @@ grok plugin install be-the-whole-bitch@88plug --trust
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-[`v2026.7.25`](https://github.com/88plug/trigger-my-training/commit/2c1554594ce7 "commit 2c15545") · 1 skill · 6 commands · 1 agent · hooks
+[`v2026.7.26`](https://github.com/88plug/trigger-my-training/commit/7b7966afdd35 "commit 7b7966a") · 1 skill · 6 commands · 1 agent · hooks
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
