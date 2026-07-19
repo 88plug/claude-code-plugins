@@ -147,6 +147,7 @@ def main() -> int:
             "name": name,
             "description": entry.get("description", ""),
             "category": entry.get("category", "productivity"),
+            "author": {"name": "88plug"},
             "source": {
                 "source": "url",
                 "url": f"https://github.com/{repo}.git",
