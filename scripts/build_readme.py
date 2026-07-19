@@ -163,45 +163,60 @@ HEADER = """<div align="center">
 
 # 88plug
 
-**Claude Code plugin marketplace for AI coding agents — curated plugins, agent skills, and MCP servers. Two commands to install.**
+**Claude Code + Grok Build plugin marketplace — curated plugins, agent skills, and MCP servers. Two commands to install.**
 
 [![sync](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml/badge.svg)](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml)
 [![License: FSL-1.1-ALv2](https://img.shields.io/badge/license-FSL--1.1--ALv2-blue?style=flat)](./LICENSE)
 [![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat)](#plugins)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A2BE2?style=flat)](https://github.com/88plug/claude-code-plugins)
+[![Grok Build](https://img.shields.io/badge/Grok%20Build-marketplace-1f2328?style=flat)](https://github.com/xai-org/grok-build)
 [![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
 
 </div>
 
 ## Install
 
-Inside Claude Code, add the 88plug marketplace once, then install any plugin by name:
+### Claude Code
+
+Add the 88plug marketplace once, then install any plugin by name:
 
 ```text
 /plugin marketplace add 88plug/claude-code-plugins
 /plugin install <name>@88plug
 ```
 
-No environment variables. No API keys. Uses your existing Claude Code setup.
+### Grok Build
+
+Same catalog — Grok reads `.grok-plugin/marketplace.json` (SHA-pinned) automatically when you add this repo as a marketplace source:
+
+```text
+grok plugin marketplace add 88plug/claude-code-plugins
+grok plugin install <name>@88plug --trust
+```
+
+Or in the TUI: `/marketplace` → add source `88plug/claude-code-plugins` → select a plugin → `i`.
+
+No environment variables. No API keys for the catalog path. Uses your existing Claude Code or Grok Build setup.
 
 > [!TIP]
-> Enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and you always get the latest at startup.
+> **Claude:** enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update).
+> **Grok:** `grok plugin marketplace update` then `grok plugin update` to refresh pins and installed plugins.
 
 ## Why this marketplace
 
-88plug is a curated Claude Code plugin marketplace for developers who run AI coding agents all day. You get productivity plugins (memory, compaction, guardrails, investigation) and MCP servers (search, desktop control, package versions) without cloning repos or wiring config by hand.
+88plug is a curated plugin marketplace for developers who run AI coding agents all day — Claude Code and Grok Build. You get productivity plugins (memory, compaction, guardrails, investigation) and MCP servers (search, desktop control, package versions) without cloning repos or wiring config by hand.
 
-Each entry is a Claude Code plugin or MCP server in its own repo. This hub is only the catalog index — install with `/plugin install <name>@88plug`, then work. Versions are `YEAR.MONTH.BUILD`, auto-stamped so `claude plugin list` shows whether you are current.
+Each entry is a full plugin or MCP server in its own repo. This hub is only the catalog index — install with `/plugin install <name>@88plug` (Claude) or `grok plugin install <name>@88plug --trust` (Grok), then work. Claude versions are `YEAR.MONTH.BUILD` (rolling). Grok installs pin the exact commit SHA from `.grok-plugin/marketplace.json` and re-verify it after clone.
 
 ## Features
 
 | Area | What you get |
 | --- | --- |
-| Claude Code plugins | Hooks, skills, slash commands, and output styles for coding agents |
-| MCP servers | One-command MCP install for search, DeepWiki, desktop, OS, package versions |
-| Marketplace install | `/plugin marketplace add` once, then `/plugin install <name>@88plug` |
-| Rolling versions | `YEAR.MONTH.BUILD` auto-stamped so `claude plugin list` stays current |
-| Auto-update | Optional marketplace auto-update at Claude Code startup |
+| Claude Code + Grok Build | Same catalog; Grok uses SHA-pinned `.grok-plugin/` entries |
+| Plugins | Hooks, skills, slash commands, agents for coding agents |
+| MCP servers | One-command MCP for search, DeepWiki, desktop, OS, package versions |
+| Marketplace install | Add once, then install `<name>@88plug` |
+| Rolling + pinned | Claude: `YEAR.MONTH.BUILD`; Grok: full commit `sha` on every url source |
 | Zero config | No env vars or API keys for the catalog path itself |
 
 ## Plugins
