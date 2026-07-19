@@ -87,7 +87,7 @@ Recover Claude Code sessions after an Anthropic API output-classifier false posi
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-`v2026.7.52`
+`v2026.7.53`
 
 Seamless context continuity across Claude Code compaction.
 
@@ -105,7 +105,7 @@ Ultra-compressed communication mode.
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.153`
+`v2026.7.154`
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
@@ -159,7 +159,7 @@ Simplify, then add lightness.
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-`v2026.7.40`
+`v2026.7.41`
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -168,7 +168,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.22`
+`v2026.7.23`
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
@@ -186,7 +186,7 @@ Enforce full agent authority on reversible work: run commands yourself, never yi
 ```
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-`v2026.7.24`
+`v2026.7.25`
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 

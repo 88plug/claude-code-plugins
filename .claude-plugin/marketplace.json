@@ -44,7 +44,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.7.52"
+      "version": "2026.7.53"
     },
     {
       "name": "caveman-plus",
@@ -86,7 +86,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.7.153"
+      "version": "2026.7.154"
     },
     {
       "name": "searxng",
@@ -307,7 +307,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.7.40"
+      "version": "2026.7.41"
     },
     {
       "name": "trigger-my-training",
@@ -327,7 +327,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.7.22"
+      "version": "2026.7.23"
     },
     {
       "name": "be-the-whole-bitch",
@@ -362,7 +362,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/dehumanize",
-      "version": "2026.7.24"
+      "version": "2026.7.25"
     }
   ]
 }
