@@ -15,7 +15,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/recover-from-false-positive.git",
-        "sha": "b88df29962c6e7722da9f3533416d64afa98c560"
+        "sha": "cc2247c0782eb848dea6c576734badcf6d242ed5"
       },
       "homepage": "https://github.com/88plug/recover-from-false-positive",
       "keywords": [
@@ -47,7 +47,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/amnesia.git",
-        "sha": "4be80b6b02506c4017e2923817c8e306d2617eaa"
+        "sha": "17882568eba35f807ca7bbff0d6ea3b7f1c69893"
       },
       "homepage": "https://github.com/88plug/amnesia",
       "keywords": [
@@ -77,7 +77,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/caveman-plus.git",
-        "sha": "66f175edecca14e001a8acb12870fd7b1d20592b"
+        "sha": "8b8f267a56cf729c8d6e04d7f9341d3323600d16"
       },
       "homepage": "https://github.com/88plug/caveman-plus",
       "keywords": [
@@ -105,7 +105,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/total-recall.git",
-        "sha": "0ec47ee3113b9b0db76a8bd8cc72965a6302128f"
+        "sha": "6c525f614dc0f67492b6b2e8ebbb08554b89bd62"
       },
       "homepage": "https://github.com/88plug/total-recall",
       "keywords": [
@@ -145,7 +145,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/searxng-mcp.git",
-        "sha": "3f81a0040bb3de7a852b627f2810c20674dd36cb"
+        "sha": "e2b2664bb089b7f1061fc5e874c3673b77cf7026"
       },
       "homepage": "https://github.com/88plug/searxng-mcp",
       "keywords": [
@@ -178,7 +178,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki.git",
-        "sha": "16bda7fac07be610610ac3f9bf18365553e524ed"
+        "sha": "a1938d023d1c6549cce79e0e5816abef1e421539"
       },
       "homepage": "https://github.com/88plug/deepwiki",
       "keywords": [
@@ -210,7 +210,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/scientific-method.git",
-        "sha": "67c148b7db72125adf39300d49bf2c0ea5e7808d"
+        "sha": "bdc6e057cf4760b68758e16510132688bf6e97c6"
       },
       "homepage": "https://github.com/88plug/scientific-method",
       "keywords": [
@@ -239,7 +239,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drive-remote-terminal.git",
-        "sha": "07752c83129127d0e32ed938bc63d126c5120af5"
+        "sha": "11e94e73118c2b4f2debf44202bb9e2ec5e676df"
       },
       "homepage": "https://github.com/88plug/drive-remote-terminal",
       "keywords": [
@@ -271,7 +271,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/project-prospector.git",
-        "sha": "74b0e7e1861260a834319fbe8e310d09ba669bd4"
+        "sha": "47bf625650d7202eec1739dc03f86824a04fac93"
       },
       "homepage": "https://github.com/88plug/project-prospector",
       "keywords": [
@@ -303,7 +303,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/screen-mcp.git",
-        "sha": "d344631d752602cabd091dfbb3336ce30ae4aa6c"
+        "sha": "55f51df0209199dc4a47e18283871737f694d1be"
       },
       "homepage": "https://github.com/88plug/screen-mcp",
       "keywords": [
@@ -335,7 +335,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git",
-        "sha": "3e2eda2b34183947665baf83394462501cf03cb1"
+        "sha": "7f8585fcf509b4fa8a590a6f2f97cbea389ead78"
       },
       "homepage": "https://github.com/88plug/os-control-mcp",
       "keywords": [
@@ -369,7 +369,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/use-latest-version-mcp.git",
-        "sha": "e19d46ec729dc8baac7426fe4c73d8e35cca0621"
+        "sha": "453c5e76ff6fa713f88da6d485eb842c4527f559"
       },
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
       "keywords": [
@@ -407,7 +407,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git",
-        "sha": "998e34615d7663709623e79e76bb0dc8ed72aa96"
+        "sha": "0809eb5337f232424ee1f8480289ffc11b344023"
       },
       "homepage": "https://github.com/88plug/deepwiki-index",
       "keywords": [
@@ -437,7 +437,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/addlightness.git",
-        "sha": "891182ed3bedb645ab95c4e3478671765054f1ab"
+        "sha": "007dd1b72f0187ced88d8c57cc79ecccc376e4ad"
       },
       "homepage": "https://github.com/88plug/addlightness",
       "keywords": [
@@ -473,7 +473,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drift-detector.git",
-        "sha": "a75db5168b9b5af894b620786dd909ac0a08ffdb"
+        "sha": "40cbe6195fdcdc84e1c2a4d71847604caaebd6c6"
       },
       "homepage": "https://github.com/88plug/drift-detector",
       "keywords": [
@@ -503,7 +503,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/trigger-my-training.git",
-        "sha": "72de228f86dec579ee5ffef46692befd82ff7200"
+        "sha": "c330127be1829ccee8a74fce216d24b5994dd2aa"
       },
       "homepage": "https://github.com/88plug/trigger-my-training",
       "keywords": [
@@ -535,7 +535,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/be-the-whole-bitch.git",
-        "sha": "c5db65616f601cf57eaf3d7142c420a0773b1e2f"
+        "sha": "ff5b8fc4588c12105f49a04519edb02f8a017782"
       },
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
       "keywords": [
@@ -563,7 +563,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git",
-        "sha": "48f1c4341e5be18b708eeccb58a962619c59be97"
+        "sha": "30fb9afc6b326064d685ebe61b074e18452961f4"
       },
       "homepage": "https://github.com/88plug/dehumanize",
       "keywords": [
