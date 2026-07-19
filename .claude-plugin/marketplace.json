@@ -144,7 +144,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/scientific-method",
-      "version": "2026.7.31"
+      "version": "2026.7.32"
     },
     {
       "name": "drive-remote-terminal",
@@ -345,7 +345,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
-      "version": "2026.7.29"
+      "version": "2026.7.30"
     },
     {
       "name": "dehumanize",
@@ -362,7 +362,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/dehumanize",
-      "version": "2026.7.26"
+      "version": "2026.7.27"
     }
   ]
 }

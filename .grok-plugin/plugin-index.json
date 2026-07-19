@@ -124,7 +124,7 @@
       }
     },
     "be-the-whole-bitch": {
-      "sha": "9b88c44969abba7aab9a4c9e61c56bf00e026930",
+      "sha": "7e6fe42f2bcdf0ed25c6d75d4c928304051f4094",
       "components": {
         "commands": [
           {
@@ -258,7 +258,7 @@
       }
     },
     "dehumanize": {
-      "sha": "52e46f0b6aa79c31e2a6f46d185d846ecc959589",
+      "sha": "e9a3b9e325d2f77335057fe87600787ccb7867bf",
       "components": {
         "commands": [
           {
@@ -414,7 +414,7 @@
       }
     },
     "scientific-method": {
-      "sha": "4b0920508d9cc4a52383ae10ec13eb2e4771a1d9",
+      "sha": "9630fad77a3e014b83c614a74bd4731298ca10a2",
       "components": {
         "agents": [
           {

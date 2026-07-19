@@ -124,7 +124,7 @@ grok plugin install caveman-plus@88plug --trust
 ## Investigation & recovery
 
 ### [scientific-method](https://github.com/88plug/scientific-method)
-[`v2026.7.31`](https://github.com/88plug/scientific-method/commit/4b0920508d9c "commit 4b09205") · 1 skill · 7 commands · 5 agents · hooks
+[`v2026.7.32`](https://github.com/88plug/scientific-method/commit/9630fad77a3e "commit 9630fad") · 1 skill · 7 commands · 5 agents · hooks
 
 Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
 
@@ -152,7 +152,7 @@ grok plugin install recover-from-false-positive@88plug --trust
 ## Guardrails & authority
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-[`v2026.7.26`](https://github.com/88plug/dehumanize/commit/52e46f0b6aa7 "commit 52e46f0") · 1 skill · 4 commands · hooks
+[`v2026.7.27`](https://github.com/88plug/dehumanize/commit/e9a3b9e325d2 "commit e9a3b9e") · 1 skill · 4 commands · hooks
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 
@@ -165,7 +165,7 @@ grok plugin install dehumanize@88plug --trust
 ```
 
 ### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
-[`v2026.7.29`](https://github.com/88plug/be-the-whole-bitch/commit/9b88c44969ab "commit 9b88c44") · 1 skill · 3 commands · hooks
+[`v2026.7.30`](https://github.com/88plug/be-the-whole-bitch/commit/7e6fe42f2bcd "commit 7e6fe42") · 1 skill · 3 commands · hooks
 
 Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
 
