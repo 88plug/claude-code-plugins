@@ -5,11 +5,19 @@ Keeps the Grok-native catalog in sync with the authoritative
 .claude-plugin/marketplace.json while resolving full commit SHAs for
 content-addressable installs (Grok re-verifies HEAD == sha after clone).
 
-Grok Build contract (xai-org/grok-build, crate xai-grok-plugin-marketplace):
-  - Prefer `.grok-plugin/marketplace.json` over Claude layout
-  - url sources MUST pin a 40-char lowercase hex `sha` (never tags/HEAD)
-  - `keywords` drive request matching; `tags` are display metadata
-  - `plugin-index.json` components only attach when index sha == catalog sha
+Grok Build contract (validated vs xai-org/grok-build + plugin-marketplace):
+
+  Publisher (required for remote url sources):
+    - Full 40-char lowercase hex `sha` on every url entry (official validate-catalog.py)
+    - Grok CLI re-verifies HEAD == sha after clone when pin present
+
+  Runtime (git_install / installer):
+    - Pin present → fetch-by-sha + ShaMismatch guard
+    - Pin absent → mutable ref clone (fallback); require_sha can refuse
+
+  Dual catalog: Grok prefers `.grok-plugin/`; Claude catalog may stay rolling (no sha).
+  keywords = matcher; tags = display; optional domains = URL-paste matching.
+  plugin-index sha must match catalog pin or TUI hides components.
 
 Run manually or from CI before generate-grok-plugin-index.py.
 """
@@ -27,6 +35,11 @@ GROK_DIR = Path(".grok-plugin")
 GROK_MKT = GROK_DIR / "marketplace.json"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 GITHUB_REPO_RE = re.compile(r"github\.com[:/]+([^/]+/[^/.]+)")
+
+# Product hosts for Grok URL-paste matching (optional; skip github.com noise).
+PRODUCT_DOMAINS: dict[str, list[str]] = {
+    "deepwiki": ["deepwiki.com"],
+}
 
 
 def resolve_sha(repo: str) -> str:
@@ -164,9 +177,10 @@ def main() -> int:
         if "tags" in entry and entry["tags"]:
             grok_entry["tags"] = entry["tags"]
 
-        # Optional domains (official uses these for URL paste matching)
-        if entry.get("domains"):
-            grok_entry["domains"] = entry["domains"]
+        # Optional domains (Grok IndexEntry.domains — URL paste matching)
+        domains = entry.get("domains") or PRODUCT_DOMAINS.get(name)
+        if domains:
+            grok_entry["domains"] = list(domains)
 
         grok_plugins.append(grok_entry)
 
