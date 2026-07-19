@@ -27,7 +27,7 @@ REFS = ("HEAD", "main", "master")
 def _repo_of(src):
     if src.get("source") == "github" and src.get("repo"):
         return src["repo"]
-    if src.get("source") == "git-subdir" and src.get("url"):
+    if src.get("source") in ("git-subdir", "url") and src.get("url"):
         import re as _re
         m = _re.search(r"github\.com[:/]+([^/]+/[^/.]+)", src["url"])
         return m.group(1) if m else ""
@@ -234,20 +234,22 @@ Each entry is a full plugin or MCP server in its own repo. This hub is only the 
 
 ## Plugins
 
-*Claude Code UX surfaces — hooks, skills, commands, output styles. Each version is
-`YEAR.MONTH.BUILD`, auto-stamped and linked to the exact commit; it's what
-`claude plugin list` shows, so you can tell at a glance if you're current.*
+*Hooks, skills, commands, output styles. Claude versions are `YEAR.MONTH.BUILD`
+(what `claude plugin list` shows). Grok installs pin the full commit SHA from
+`.grok-plugin/marketplace.json`. Each card has both install commands.*
 
 {plugin_blocks}
 
 ## MCP servers
 
-*A single MCP server, one-command install.*
+*A single MCP server — Claude or Grok, one command each.*
 
 {mcp_blocks}
 
 <details>
 <summary><b>Updating &amp; versioning</b></summary>
+
+### Claude Code
 
 Third-party marketplaces have auto-update **off by default**. Turn it on once
 (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and Claude Code refreshes
@@ -262,9 +264,28 @@ Prefer to do it by hand:
 ```
 
 Org-wide, an admin can add `88plug` to `extraKnownMarketplaces` with auto-update enabled
-in managed settings. Versions are `YEAR.MONTH.BUILD` (auto-stamped, increasing every
-release); the linked hash is the exact commit. If your installed version differs from the
-one here, you're behind — update it.
+in managed settings.
+
+### Grok Build
+
+Refresh the marketplace (new SHA pins), then update installed plugins:
+
+```text
+grok plugin marketplace update
+grok plugin update
+```
+
+Or reinstall one plugin to the current catalog pin:
+
+```text
+grok plugin install <name>@88plug --trust
+```
+
+### Versions
+
+Claude: `YEAR.MONTH.BUILD` (auto-stamped; linked hash is the exact commit).
+Grok: full commit `sha` in `.grok-plugin/marketplace.json`, re-verified after clone.
+If your installed version or pin differs from the catalog, update it.
 
 </details>
 
@@ -306,7 +327,13 @@ def _stanza(name, homepage, ver, desc, surfaces, repo=None, sha=None) -> str:
     return (f"{head}\n"
             f"{meta}\n\n"
             f"{_short(desc)}\n\n"
-            f"```sh\n/plugin install {name}@88plug\n```")
+            f"```text\n"
+            f"# Claude Code\n"
+            f"/plugin install {name}@88plug\n"
+            f"\n"
+            f"# Grok Build\n"
+            f"grok plugin install {name}@88plug --trust\n"
+            f"```")
 
 
 def main() -> int:

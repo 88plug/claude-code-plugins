@@ -73,178 +73,252 @@ Each entry is a full plugin or MCP server in its own repo. This hub is only the 
 
 ## Plugins
 
-*Claude Code UX surfaces — hooks, skills, commands, output styles. Each version is
-`YEAR.MONTH.BUILD`, auto-stamped and linked to the exact commit; it's what
-`claude plugin list` shows, so you can tell at a glance if you're current.*
+*Hooks, skills, commands, output styles. Claude versions are `YEAR.MONTH.BUILD`
+(what `claude plugin list` shows). Grok installs pin the full commit SHA from
+`.grok-plugin/marketplace.json`. Each card has both install commands.*
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-`v2026.7.33`
+[`v2026.7.33`](https://github.com/88plug/recover-from-false-positive/commit/cc2247c0782e "commit cc2247c") · 1 skill · hooks
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
-```sh
+```text
+# Claude Code
 /plugin install recover-from-false-positive@88plug
+
+# Grok Build
+grok plugin install recover-from-false-positive@88plug --trust
 ```
 
 ### [amnesia](https://github.com/88plug/amnesia)
-`v2026.7.53`
+[`v2026.7.53`](https://github.com/88plug/amnesia/commit/c29f6b5bf926 "commit c29f6b5") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
-```sh
+```text
+# Claude Code
 /plugin install amnesia@88plug
+
+# Grok Build
+grok plugin install amnesia@88plug --trust
 ```
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-`v2026.7.216`
+[`v2026.7.216`](https://github.com/88plug/caveman-plus/commit/8b8f267a56cf "commit 8b8f267") · 7 skills · 3 agents
 
 Ultra-compressed communication mode.
 
-```sh
+```text
+# Claude Code
 /plugin install caveman-plus@88plug
+
+# Grok Build
+grok plugin install caveman-plus@88plug --trust
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-`v2026.7.154`
+[`v2026.7.154`](https://github.com/88plug/total-recall/commit/6c46a0b52068 "commit 6c46a0b") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
-```sh
+```text
+# Claude Code
 /plugin install total-recall@88plug
+
+# Grok Build
+grok plugin install total-recall@88plug --trust
 ```
 
 ### [scientific-method](https://github.com/88plug/scientific-method)
-`v2026.7.30`
+[`v2026.7.30`](https://github.com/88plug/scientific-method/commit/bdc6e057cf47 "commit bdc6e05") · 1 skill · 7 commands · 5 agents · hooks
 
 Falsification-first investigation workflow: convert every assertion into a labeled falsifiable hypothesis, predict before measuring, run controlled experiments, verify…
 
-```sh
+```text
+# Claude Code
 /plugin install scientific-method@88plug
+
+# Grok Build
+grok plugin install scientific-method@88plug --trust
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-`v2026.7.25`
+[`v2026.7.25`](https://github.com/88plug/drive-remote-terminal/commit/11e94e73118c "commit 11e94e7") · 1 skill
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
-```sh
+```text
+# Claude Code
 /plugin install drive-remote-terminal@88plug
+
+# Grok Build
+grok plugin install drive-remote-terminal@88plug --trust
 ```
 
 ### [project-prospector](https://github.com/88plug/project-prospector)
-`v2026.7.24`
+[`v2026.7.24`](https://github.com/88plug/project-prospector/commit/47bf625650d7 "commit 47bf625") · 1 skill
 
 Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
 
-```sh
+```text
+# Claude Code
 /plugin install project-prospector@88plug
+
+# Grok Build
+grok plugin install project-prospector@88plug --trust
 ```
 
 ### [deepwiki-index](https://github.com/88plug/deepwiki-index)
-`v2026.7.16`
+[`v2026.7.16`](https://github.com/88plug/deepwiki-index/commit/0809eb5337f2 "commit 0809eb5") · 1 skill
 
 Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
 
-```sh
+```text
+# Claude Code
 /plugin install deepwiki-index@88plug
+
+# Grok Build
+grok plugin install deepwiki-index@88plug --trust
 ```
 
 ### [addlightness](https://github.com/88plug/addlightness)
-`v2026.7.14`
+[`v2026.7.14`](https://github.com/88plug/addlightness/commit/007dd1b72f01 "commit 007dd1b") · 3 skills · 2 agents
 
 Simplify, then add lightness.
 
-```sh
+```text
+# Claude Code
 /plugin install addlightness@88plug
+
+# Grok Build
+grok plugin install addlightness@88plug --trust
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-`v2026.7.41`
+[`v2026.7.41`](https://github.com/88plug/drift-detector/commit/418d00bd927b "commit 418d00b") · MCP server · 1 skill · 6 commands
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
-```sh
+```text
+# Claude Code
 /plugin install drift-detector@88plug
+
+# Grok Build
+grok plugin install drift-detector@88plug --trust
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.23`
+[`v2026.7.23`](https://github.com/88plug/trigger-my-training/commit/97fe3a97a6b9 "commit 97fe3a9") · 1 skill · 6 commands · 1 agent · hooks
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
-```sh
+```text
+# Claude Code
 /plugin install trigger-my-training@88plug
+
+# Grok Build
+grok plugin install trigger-my-training@88plug --trust
 ```
 
 ### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
-`v2026.7.28`
+[`v2026.7.28`](https://github.com/88plug/be-the-whole-bitch/commit/ff5b8fc4588c "commit ff5b8fc") · 1 skill · 3 commands · hooks
 
 Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
 
-```sh
+```text
+# Claude Code
 /plugin install be-the-whole-bitch@88plug
+
+# Grok Build
+grok plugin install be-the-whole-bitch@88plug --trust
 ```
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-`v2026.7.25`
+[`v2026.7.25`](https://github.com/88plug/dehumanize/commit/3b3fe60651aa "commit 3b3fe60") · 1 skill · 4 commands · hooks
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 
-```sh
+```text
+# Claude Code
 /plugin install dehumanize@88plug
+
+# Grok Build
+grok plugin install dehumanize@88plug --trust
 ```
 
 ## MCP servers
 
-*A single MCP server, one-command install.*
+*A single MCP server — Claude or Grok, one command each.*
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-`v2026.7.44`
+[`v2026.7.44`](https://github.com/88plug/searxng-mcp/commit/e2b2664bb089 "commit e2b2664") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
-```sh
+```text
+# Claude Code
 /plugin install searxng@88plug
+
+# Grok Build
+grok plugin install searxng@88plug --trust
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-`v2026.7.26`
+[`v2026.7.26`](https://github.com/88plug/deepwiki/commit/a1938d023d1c "commit a1938d0") · MCP server
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
-```sh
+```text
+# Claude Code
 /plugin install deepwiki@88plug
+
+# Grok Build
+grok plugin install deepwiki@88plug --trust
 ```
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-`v2026.7.42`
+[`v2026.7.42`](https://github.com/88plug/screen-mcp/commit/55f51df02091 "commit 55f51df") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
-```sh
+```text
+# Claude Code
 /plugin install screen-mcp@88plug
+
+# Grok Build
+grok plugin install screen-mcp@88plug --trust
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-`v2026.7.21`
+[`v2026.7.21`](https://github.com/88plug/os-control-mcp/commit/7f8585fcf509 "commit 7f8585f") · MCP server · 1 skill
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 
-```sh
+```text
+# Claude Code
 /plugin install os-control-mcp@88plug
+
+# Grok Build
+grok plugin install os-control-mcp@88plug --trust
 ```
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-`v2026.7.39`
+[`v2026.7.39`](https://github.com/88plug/use-latest-version-mcp/commit/453c5e76ff6f "commit 453c5e7") · MCP server
 
 Stop suggesting stale package versions from training data.
 
-```sh
+```text
+# Claude Code
 /plugin install use-latest-version@88plug
+
+# Grok Build
+grok plugin install use-latest-version@88plug --trust
 ```
 
 <details>
 <summary><b>Updating &amp; versioning</b></summary>
+
+### Claude Code
 
 Third-party marketplaces have auto-update **off by default**. Turn it on once
 (`/plugin` → Marketplaces → **88plug** → Enable auto-update) and Claude Code refreshes
@@ -259,9 +333,28 @@ Prefer to do it by hand:
 ```
 
 Org-wide, an admin can add `88plug` to `extraKnownMarketplaces` with auto-update enabled
-in managed settings. Versions are `YEAR.MONTH.BUILD` (auto-stamped, increasing every
-release); the linked hash is the exact commit. If your installed version differs from the
-one here, you're behind — update it.
+in managed settings.
+
+### Grok Build
+
+Refresh the marketplace (new SHA pins), then update installed plugins:
+
+```text
+grok plugin marketplace update
+grok plugin update
+```
+
+Or reinstall one plugin to the current catalog pin:
+
+```text
+grok plugin install <name>@88plug --trust
+```
+
+### Versions
+
+Claude: `YEAR.MONTH.BUILD` (auto-stamped; linked hash is the exact commit).
+Grok: full commit `sha` in `.grok-plugin/marketplace.json`, re-verified after clone.
+If your installed version or pin differs from the catalog, update it.
 
 </details>
 
