@@ -155,7 +155,7 @@ Detects when Claude drifts away from your active output contract (a terse person
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-`v2026.7.21`
+`v2026.7.22`
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
