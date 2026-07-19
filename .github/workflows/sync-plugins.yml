@@ -12,6 +12,10 @@ on:
       - "scripts/build_readme.py"
       - "scripts/generate-grok-catalog.py"
       - "scripts/generate-grok-plugin-index.py"
+      - "scripts/check-grok-pins-fresh.py"
+      - "scripts/run-official-grok-validate.sh"
+      - "scripts/vendor/**"
+      - "scripts/stranger-smoke.sh"
 permissions:
   contents: write
 jobs:
@@ -38,6 +42,10 @@ jobs:
         run: python scripts/validate-catalog.py
       - name: Verify plugin-index is current
         run: python scripts/generate-grok-plugin-index.py --check
+      - name: Official Grok catalog validate (.grok-plugin only)
+        run: bash scripts/run-official-grok-validate.sh
+      - name: Pin freshness (sha == origin HEAD)
+        run: python scripts/check-grok-pins-fresh.py
       - name: Commit if changed
         run: |
           if ! git diff --quiet -- .claude-plugin/marketplace.json .grok-plugin/ README.md; then

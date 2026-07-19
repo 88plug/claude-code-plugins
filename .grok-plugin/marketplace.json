@@ -47,7 +47,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/amnesia.git",
-        "sha": "17882568eba35f807ca7bbff0d6ea3b7f1c69893"
+        "sha": "c29f6b5bf926edb22b300b4bbf2181586aa69e7f"
       },
       "homepage": "https://github.com/88plug/amnesia",
       "keywords": [
@@ -105,7 +105,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/total-recall.git",
-        "sha": "6c525f614dc0f67492b6b2e8ebbb08554b89bd62"
+        "sha": "6c46a0b5206811aae13215b884f98ea87bbfaf8f"
       },
       "homepage": "https://github.com/88plug/total-recall",
       "keywords": [
@@ -473,7 +473,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drift-detector.git",
-        "sha": "40cbe6195fdcdc84e1c2a4d71847604caaebd6c6"
+        "sha": "418d00bd927b1cff983bb5b57a06248486e7e9fb"
       },
       "homepage": "https://github.com/88plug/drift-detector",
       "keywords": [
@@ -503,7 +503,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/trigger-my-training.git",
-        "sha": "62eae564cc81ea30e41288e74a32d9eed91d1e60"
+        "sha": "97fe3a97a6b97026cf6a97062d1d2b8bebd70e26"
       },
       "homepage": "https://github.com/88plug/trigger-my-training",
       "keywords": [
@@ -563,7 +563,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git",
-        "sha": "30fb9afc6b326064d685ebe61b074e18452961f4"
+        "sha": "3b3fe60651aa6c6ba30d57bfa5a2e07299d5f829"
       },
       "homepage": "https://github.com/88plug/dehumanize",
       "keywords": [

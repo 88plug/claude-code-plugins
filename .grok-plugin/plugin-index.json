@@ -39,7 +39,7 @@
       }
     },
     "amnesia": {
-      "sha": "17882568eba35f807ca7bbff0d6ea3b7f1c69893",
+      "sha": "c29f6b5bf926edb22b300b4bbf2181586aa69e7f",
       "components": {
         "agents": [
           {
@@ -177,6 +177,24 @@
             "description": "Diff/branch/file reviewer. One line per finding, severity-tagged, no praise, no scope creep. Output format `path:line:…"
           }
         ],
+        "commands": [
+          {
+            "name": "caveman",
+            "description": "Switch caveman intensity level (lite/full/ultra/wenyan)"
+          },
+          {
+            "name": "caveman-commit",
+            "description": "Generate terse caveman-style commit message"
+          },
+          {
+            "name": "caveman-init",
+            "description": "Drop the always-on caveman activation rule into the current repo for every IDE agent"
+          },
+          {
+            "name": "caveman-review",
+            "description": "One-line code review comments"
+          }
+        ],
         "hooks": [
           {
             "name": "SessionStart"
@@ -240,7 +258,7 @@
       }
     },
     "dehumanize": {
-      "sha": "30fb9afc6b326064d685ebe61b074e18452961f4",
+      "sha": "3b3fe60651aa6c6ba30d57bfa5a2e07299d5f829",
       "components": {
         "commands": [
           {
@@ -280,7 +298,7 @@
       }
     },
     "drift-detector": {
-      "sha": "40cbe6195fdcdc84e1c2a4d71847604caaebd6c6",
+      "sha": "418d00bd927b1cff983bb5b57a06248486e7e9fb",
       "components": {
         "commands": [
           {
@@ -493,7 +511,7 @@
       }
     },
     "total-recall": {
-      "sha": "6c525f614dc0f67492b6b2e8ebbb08554b89bd62",
+      "sha": "6c46a0b5206811aae13215b884f98ea87bbfaf8f",
       "components": {
         "commands": [
           {
@@ -598,7 +616,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "62eae564cc81ea30e41288e74a32d9eed91d1e60",
+      "sha": "97fe3a97a6b97026cf6a97062d1d2b8bebd70e26",
       "components": {
         "agents": [
           {

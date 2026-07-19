@@ -202,6 +202,19 @@ No environment variables. No API keys for the catalog path. Uses your existing C
 > **Claude:** enable auto-update once (`/plugin` → Marketplaces → **88plug** → Enable auto-update).
 > **Grok:** `grok plugin marketplace update` then `grok plugin update` to refresh pins and installed plugins.
 
+### Hardened Grok installs (`require_sha`)
+
+Every 88plug plugin is published with a **full commit SHA** in `.grok-plugin/marketplace.json`.
+Grok re-verifies `HEAD == sha` after clone. To refuse unpinned remotes from *any* marketplace:
+
+```toml
+# ~/.grok/config.toml
+[marketplace]
+require_sha = true
+```
+
+or `GROK_MARKETPLACE_REQUIRE_SHA=1`. Default is off; 88plug catalogs already pin so this is safe for our entries.
+
 ## Why this marketplace
 
 88plug is a curated plugin marketplace for developers who run AI coding agents all day — Claude Code and Grok Build. You get productivity plugins (memory, compaction, guardrails, investigation) and MCP servers (search, desktop control, package versions) without cloning repos or wiring config by hand.

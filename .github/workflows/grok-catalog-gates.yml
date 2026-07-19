@@ -1,0 +1,44 @@
+name: grok-catalog-gates
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "15 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".grok-plugin/**"
+      - "scripts/check-grok-pins-fresh.py"
+      - "scripts/validate-catalog.py"
+      - "scripts/run-official-grok-validate.sh"
+      - "scripts/vendor/xai-validate-catalog.py"
+      - "scripts/stranger-smoke.sh"
+      - "scripts/generate-grok-catalog.py"
+      - "scripts/generate-grok-plugin-index.py"
+      - ".github/workflows/grok-catalog-gates.yml"
+  pull_request:
+    paths:
+      - ".grok-plugin/**"
+      - "scripts/**"
+      - ".github/workflows/grok-catalog-gates.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.3.0
+        with:
+          python-version: "3.13"
+      - name: Validate dual catalogs (88plug)
+        run: python scripts/validate-catalog.py
+      - name: Official Grok validate (.grok-plugin only)
+        run: bash scripts/run-official-grok-validate.sh
+      - name: Pin freshness (catalog sha == origin HEAD)
+        run: python scripts/check-grok-pins-fresh.py
+      - name: plugin-index --check
+        run: python scripts/generate-grok-plugin-index.py --check
+      - name: Stranger smoke (archetypes)
+        run: bash scripts/stranger-smoke.sh

@@ -218,6 +218,42 @@ def scan_markdown_dir(root: Path, dirname: str, manifest_key: str, manifest: dic
     return items
 
 
+def scan_toml_commands(root: Path) -> list[dict]:
+    """Codex/OpenCode-style slash commands under commands/*.toml (e.g. caveman-plus)."""
+    base = root / "commands"
+    if not base.is_dir():
+        return []
+    items = []
+    for path in sorted(base.glob("*.toml")):
+        if not path.is_file() or not contained(path, root):
+            continue
+        try:
+            text = read_text_limited(path)
+        except OSError:
+            continue
+        # description = "..." or description = '''...'''
+        desc = ""
+        m = re.search(
+            r'(?m)^\s*description\s*=\s*"""(.*?)"""',
+            text,
+            re.S,
+        ) or re.search(
+            r"(?m)^\s*description\s*=\s*'''(.*?)'''",
+            text,
+            re.S,
+        ) or re.search(
+            r'(?m)^\s*description\s*=\s*"([^"]*)"',
+            text,
+        ) or re.search(
+            r"(?m)^\s*description\s*=\s*'([^']*)'",
+            text,
+        )
+        if m:
+            desc = clean(m.group(1).replace("\n", " "))
+        items.append(make_item(path.stem, desc))
+    return items
+
+
 def transport_hint(config: dict) -> str:
     if not isinstance(config, dict):
         return ""
@@ -290,9 +326,16 @@ def scan_lsp_servers(root: Path, manifest: dict) -> list[dict]:
 
 def scan_plugin(root: Path) -> dict:
     manifest = load_manifest(root)
+    commands = scan_markdown_dir(root, "commands", "commands", manifest)
+    # Merge toml commands (caveman-plus etc.) without clobbering md names
+    seen = {c["name"] for c in commands}
+    for item in scan_toml_commands(root):
+        if item["name"] not in seen:
+            commands.append(item)
+            seen.add(item["name"])
     categories = {
         "skills": scan_skills(root, manifest),
-        "commands": scan_markdown_dir(root, "commands", "commands", manifest),
+        "commands": commands,
         "agents": scan_markdown_dir(root, "agents", "agents", manifest),
         "mcpServers": scan_mcp_servers(root, manifest),
         "hooks": scan_hooks(root, manifest),
