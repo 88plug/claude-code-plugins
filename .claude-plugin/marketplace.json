@@ -25,7 +25,7 @@
         "usage-policy"
       ],
       "homepage": "https://github.com/88plug/recover-from-false-positive",
-      "version": "2026.7.34"
+      "version": "2026.7.35"
     },
     {
       "name": "amnesia",
@@ -44,7 +44,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.7.54"
+      "version": "2026.7.55"
     },
     {
       "name": "caveman-plus",
@@ -62,7 +62,7 @@
         "caveman"
       ],
       "homepage": "https://github.com/88plug/caveman-plus",
-      "version": "2026.7.217"
+      "version": "2026.7.218"
     },
     {
       "name": "total-recall",
@@ -125,7 +125,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "2026.7.27"
+      "version": "2026.7.28"
     },
     {
       "name": "scientific-method",
@@ -164,7 +164,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.7.26"
+      "version": "2026.7.27"
     },
     {
       "name": "project-prospector",
@@ -184,7 +184,7 @@
         "multi-agent"
       ],
       "homepage": "https://github.com/88plug/project-prospector",
-      "version": "2026.7.25"
+      "version": "2026.7.26"
     },
     {
       "name": "screen-mcp",
@@ -204,7 +204,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.43"
+      "version": "2026.7.44"
     },
     {
       "name": "os-control-mcp",
@@ -225,7 +225,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.7.22"
+      "version": "2026.7.23"
     },
     {
       "name": "use-latest-version",
@@ -247,7 +247,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.7.40"
+      "version": "2026.7.41"
     },
     {
       "name": "deepwiki-index",
@@ -266,7 +266,7 @@
         "github"
       ],
       "homepage": "https://github.com/88plug/deepwiki-index",
-      "version": "2026.7.17"
+      "version": "2026.7.18"
     },
     {
       "name": "addlightness",
@@ -307,7 +307,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.7.42"
+      "version": "2026.7.43"
     },
     {
       "name": "trigger-my-training",
@@ -327,7 +327,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.7.24"
+      "version": "2026.7.25"
     },
     {
       "name": "be-the-whole-bitch",
@@ -345,7 +345,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
-      "version": "2026.7.30"
+      "version": "2026.7.31"
     },
     {
       "name": "dehumanize",
@@ -362,7 +362,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/dehumanize",
-      "version": "2026.7.27"
+      "version": "2026.7.28"
     }
   ]
 }

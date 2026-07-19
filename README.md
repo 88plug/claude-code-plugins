@@ -81,7 +81,7 @@ your problem.*
 ## Memory & continuity
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.7.54`](https://github.com/88plug/amnesia/commit/b5674a5cfa4a "commit b5674a5") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.7.55`](https://github.com/88plug/amnesia/commit/44aeb47fb11d "commit 44aeb47") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code compaction.
 
@@ -109,7 +109,7 @@ grok plugin install total-recall@88plug --trust
 ## Token & output style
 
 ### [caveman-plus](https://github.com/88plug/caveman-plus)
-[`v2026.7.217`](https://github.com/88plug/caveman-plus/commit/c3f10e4f3aa2 "commit c3f10e4") · 7 skills · 3 agents
+[`v2026.7.218`](https://github.com/88plug/caveman-plus/commit/7b5f101ac58f "commit 7b5f101") · 7 skills · 3 agents
 
 Ultra-compressed communication mode.
 
@@ -137,7 +137,7 @@ grok plugin install scientific-method@88plug --trust
 ```
 
 ### [recover-from-false-positive](https://github.com/88plug/recover-from-false-positive)
-[`v2026.7.34`](https://github.com/88plug/recover-from-false-positive/commit/c65574744b9d "commit c655747") · 1 skill · hooks
+[`v2026.7.35`](https://github.com/88plug/recover-from-false-positive/commit/0c40c8e24892 "commit 0c40c8e") · 1 skill · hooks
 
 Recover Claude Code sessions after an Anthropic API output-classifier false positive (the "cyber-related safeguards" / "appears to violate our Usage Policy" hard failure).
 
@@ -152,7 +152,7 @@ grok plugin install recover-from-false-positive@88plug --trust
 ## Guardrails & authority
 
 ### [dehumanize](https://github.com/88plug/dehumanize)
-[`v2026.7.27`](https://github.com/88plug/dehumanize/commit/e9a3b9e325d2 "commit e9a3b9e") · 1 skill · 4 commands · hooks
+[`v2026.7.28`](https://github.com/88plug/dehumanize/commit/a9d2f525b8bb "commit a9d2f52") · 1 skill · 4 commands · hooks
 
 Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.
 
@@ -165,7 +165,7 @@ grok plugin install dehumanize@88plug --trust
 ```
 
 ### [be-the-whole-bitch](https://github.com/88plug/be-the-whole-bitch)
-[`v2026.7.30`](https://github.com/88plug/be-the-whole-bitch/commit/7e6fe42f2bcd "commit 7e6fe42") · 1 skill · 3 commands · hooks
+[`v2026.7.31`](https://github.com/88plug/be-the-whole-bitch/commit/e30bcfce0c9b "commit e30bcfc") · 1 skill · 3 commands · hooks
 
 Enforce full agent authority on reversible work: run commands yourself, never yield instructions back to the operator.
 
@@ -178,7 +178,7 @@ grok plugin install be-the-whole-bitch@88plug --trust
 ```
 
 ### [trigger-my-training](https://github.com/88plug/trigger-my-training)
-[`v2026.7.24`](https://github.com/88plug/trigger-my-training/commit/1195236f9742 "commit 1195236") · 1 skill · 6 commands · 1 agent · hooks
+[`v2026.7.25`](https://github.com/88plug/trigger-my-training/commit/2c1554594ce7 "commit 2c15545") · 1 skill · 6 commands · 1 agent · hooks
 
 A ground-first reflex: the agent judges (from its own training, any domain) when a request is complex/irreversible, grounds before acting, and is hard-blocked from the…
 
@@ -191,7 +191,7 @@ grok plugin install trigger-my-training@88plug --trust
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-[`v2026.7.42`](https://github.com/88plug/drift-detector/commit/4f9fb2449f65 "commit 4f9fb24") · MCP server · 1 skill · 6 commands
+[`v2026.7.43`](https://github.com/88plug/drift-detector/commit/4209dcf24d90 "commit 4209dcf") · MCP server · 1 skill · 6 commands
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -221,7 +221,7 @@ grok plugin install addlightness@88plug --trust
 ## Discovery & remote work
 
 ### [project-prospector](https://github.com/88plug/project-prospector)
-[`v2026.7.25`](https://github.com/88plug/project-prospector/commit/68facd487238 "commit 68facd4") · 1 skill
+[`v2026.7.26`](https://github.com/88plug/project-prospector/commit/311b862246fe "commit 311b862") · 1 skill
 
 Discover, catalog, and rank everything you've built or sketched on a machine via a two-pass parallel read-only sweep: a clustered project catalog plus blind-spot agents…
 
@@ -234,7 +234,7 @@ grok plugin install project-prospector@88plug --trust
 ```
 
 ### [drive-remote-terminal](https://github.com/88plug/drive-remote-terminal)
-[`v2026.7.26`](https://github.com/88plug/drive-remote-terminal/commit/2e51b54adbb6 "commit 2e51b54") · 1 skill
+[`v2026.7.27`](https://github.com/88plug/drive-remote-terminal/commit/6fbd7bf2a89a "commit 6fbd7bf") · 1 skill
 
 Operate and observe an interactive full-screen TUI on a REMOTE machine over tmux/screen + SSH by driving it like a human: type with send-keys, screenshot with…
 
@@ -247,7 +247,7 @@ grok plugin install drive-remote-terminal@88plug --trust
 ```
 
 ### [deepwiki-index](https://github.com/88plug/deepwiki-index)
-[`v2026.7.17`](https://github.com/88plug/deepwiki-index/commit/fcd0bc1b6289 "commit fcd0bc1") · 1 skill
+[`v2026.7.18`](https://github.com/88plug/deepwiki-index/commit/8d7a043e8d60 "commit 8d7a043") · 1 skill
 
 Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human…
 
@@ -275,7 +275,7 @@ grok plugin install searxng@88plug --trust
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-[`v2026.7.27`](https://github.com/88plug/deepwiki/commit/09e017b7e73a "commit 09e017b") · MCP server
+[`v2026.7.28`](https://github.com/88plug/deepwiki/commit/318e58cc539c "commit 318e58c") · MCP server
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
@@ -290,7 +290,7 @@ grok plugin install deepwiki@88plug --trust
 ## Desktop & OS MCP
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.7.43`](https://github.com/88plug/screen-mcp/commit/df7853a2882c "commit df7853a") · MCP server · 1 skill
+[`v2026.7.44`](https://github.com/88plug/screen-mcp/commit/72cc979870b5 "commit 72cc979") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -303,7 +303,7 @@ grok plugin install screen-mcp@88plug --trust
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-[`v2026.7.22`](https://github.com/88plug/os-control-mcp/commit/9d298c6642a3 "commit 9d298c6") · MCP server · 1 skill
+[`v2026.7.23`](https://github.com/88plug/os-control-mcp/commit/c03a2bfecb30 "commit c03a2bf") · MCP server · 1 skill
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 
@@ -318,7 +318,7 @@ grok plugin install os-control-mcp@88plug --trust
 ## Package versions MCP
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-[`v2026.7.40`](https://github.com/88plug/use-latest-version-mcp/commit/58b93cb6d683 "commit 58b93cb") · MCP server
+[`v2026.7.41`](https://github.com/88plug/use-latest-version-mcp/commit/fb134a44ec7c "commit fb134a4") · MCP server
 
 Stop suggesting stale package versions from training data.
 

@@ -39,7 +39,7 @@
       }
     },
     "amnesia": {
-      "sha": "b5674a5cfa4a30dbdcfdc12e689a3bcdf226549d",
+      "sha": "44aeb47fb11dc4ed23cd564387e8fc29a1c56210",
       "components": {
         "agents": [
           {
@@ -124,7 +124,7 @@
       }
     },
     "be-the-whole-bitch": {
-      "sha": "7e6fe42f2bcdf0ed25c6d75d4c928304051f4094",
+      "sha": "e30bcfce0c9bd74a7203485bbda47ab47aff49c7",
       "components": {
         "commands": [
           {
@@ -161,7 +161,7 @@
       }
     },
     "caveman-plus": {
-      "sha": "c3f10e4f3aa2a9164a8d6623d9237d323cbe2cc1",
+      "sha": "7b5f101ac58f1b7b50f946039feff5394309a930",
       "components": {
         "agents": [
           {
@@ -236,7 +236,7 @@
       }
     },
     "deepwiki": {
-      "sha": "09e017b7e73ad9ca3fd417f9eeaf431b0e7db2dc",
+      "sha": "318e58cc539c0145db9c0ba45b72ecec5ecf74cc",
       "components": {
         "mcpServers": [
           {
@@ -247,7 +247,7 @@
       }
     },
     "deepwiki-index": {
-      "sha": "fcd0bc1b62898732efd313c42af6cc24ad31c71a",
+      "sha": "8d7a043e8d60e073dbc33c4bba5bc6553cd0066d",
       "components": {
         "skills": [
           {
@@ -258,7 +258,7 @@
       }
     },
     "dehumanize": {
-      "sha": "e9a3b9e325d2f77335057fe87600787ccb7867bf",
+      "sha": "a9d2f525b8bbd8284eae9be673e18328170a7f09",
       "components": {
         "commands": [
           {
@@ -298,7 +298,7 @@
       }
     },
     "drift-detector": {
-      "sha": "4f9fb2449f659ad89e2bbe7051b42194cf6b1a59",
+      "sha": "4209dcf24d905a8d9efb95bfb957eef7df9da837",
       "components": {
         "commands": [
           {
@@ -352,7 +352,7 @@
       }
     },
     "drive-remote-terminal": {
-      "sha": "2e51b54adbb65f0fccf357caf94b14cf024bbb0c",
+      "sha": "6fbd7bf2a89ab165cc0b711a8a8836086d9f6171",
       "components": {
         "skills": [
           {
@@ -363,7 +363,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "9d298c6642a3fbc7f21bfd0982e819d066580406",
+      "sha": "c03a2bfecb3082f376828a198cbc59d61a33edb8",
       "components": {
         "mcpServers": [
           {
@@ -380,7 +380,7 @@
       }
     },
     "project-prospector": {
-      "sha": "68facd4872381f69f1397848baa2dd9222a72ccb",
+      "sha": "311b862246feff75390ed54923816032e443e180",
       "components": {
         "skills": [
           {
@@ -391,7 +391,7 @@
       }
     },
     "recover-from-false-positive": {
-      "sha": "c65574744b9d35a28810b597e14ddb6a8b2b35b2",
+      "sha": "0c40c8e2489241ef0c0992834c8eb10b4505681d",
       "components": {
         "hooks": [
           {
@@ -483,7 +483,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "df7853a2882c3c89bce71e47b9a306333bf51f4b",
+      "sha": "72cc979870b555e1eaef26303d3a4f042fd6e918",
       "components": {
         "mcpServers": [
           {
@@ -616,7 +616,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "1195236f97421a8817895867412d519ab26c651d",
+      "sha": "2c1554594ce7a002caf9383805ef7aadc13794f6",
       "components": {
         "agents": [
           {
@@ -676,7 +676,7 @@
       }
     },
     "use-latest-version": {
-      "sha": "58b93cb6d683cf3262b4c2be515cab6939ffb7bd",
+      "sha": "fb134a44ec7cf10fb3b76f80dfc6a50434a478bb",
       "components": {
         "mcpServers": [
           {

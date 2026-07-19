@@ -15,7 +15,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/recover-from-false-positive.git",
-        "sha": "c65574744b9d35a28810b597e14ddb6a8b2b35b2"
+        "sha": "0c40c8e2489241ef0c0992834c8eb10b4505681d"
       },
       "homepage": "https://github.com/88plug/recover-from-false-positive",
       "keywords": [
@@ -47,7 +47,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/amnesia.git",
-        "sha": "b5674a5cfa4a30dbdcfdc12e689a3bcdf226549d"
+        "sha": "44aeb47fb11dc4ed23cd564387e8fc29a1c56210"
       },
       "homepage": "https://github.com/88plug/amnesia",
       "keywords": [
@@ -77,7 +77,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/caveman-plus.git",
-        "sha": "c3f10e4f3aa2a9164a8d6623d9237d323cbe2cc1"
+        "sha": "7b5f101ac58f1b7b50f946039feff5394309a930"
       },
       "homepage": "https://github.com/88plug/caveman-plus",
       "keywords": [
@@ -178,7 +178,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki.git",
-        "sha": "09e017b7e73ad9ca3fd417f9eeaf431b0e7db2dc"
+        "sha": "318e58cc539c0145db9c0ba45b72ecec5ecf74cc"
       },
       "homepage": "https://github.com/88plug/deepwiki",
       "keywords": [
@@ -239,7 +239,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drive-remote-terminal.git",
-        "sha": "2e51b54adbb65f0fccf357caf94b14cf024bbb0c"
+        "sha": "6fbd7bf2a89ab165cc0b711a8a8836086d9f6171"
       },
       "homepage": "https://github.com/88plug/drive-remote-terminal",
       "keywords": [
@@ -271,7 +271,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/project-prospector.git",
-        "sha": "68facd4872381f69f1397848baa2dd9222a72ccb"
+        "sha": "311b862246feff75390ed54923816032e443e180"
       },
       "homepage": "https://github.com/88plug/project-prospector",
       "keywords": [
@@ -303,7 +303,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/screen-mcp.git",
-        "sha": "df7853a2882c3c89bce71e47b9a306333bf51f4b"
+        "sha": "72cc979870b555e1eaef26303d3a4f042fd6e918"
       },
       "homepage": "https://github.com/88plug/screen-mcp",
       "keywords": [
@@ -335,7 +335,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git",
-        "sha": "9d298c6642a3fbc7f21bfd0982e819d066580406"
+        "sha": "c03a2bfecb3082f376828a198cbc59d61a33edb8"
       },
       "homepage": "https://github.com/88plug/os-control-mcp",
       "keywords": [
@@ -369,7 +369,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/use-latest-version-mcp.git",
-        "sha": "58b93cb6d683cf3262b4c2be515cab6939ffb7bd"
+        "sha": "fb134a44ec7cf10fb3b76f80dfc6a50434a478bb"
       },
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
       "keywords": [
@@ -407,7 +407,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git",
-        "sha": "fcd0bc1b62898732efd313c42af6cc24ad31c71a"
+        "sha": "8d7a043e8d60e073dbc33c4bba5bc6553cd0066d"
       },
       "homepage": "https://github.com/88plug/deepwiki-index",
       "keywords": [
@@ -473,7 +473,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drift-detector.git",
-        "sha": "4f9fb2449f659ad89e2bbe7051b42194cf6b1a59"
+        "sha": "4209dcf24d905a8d9efb95bfb957eef7df9da837"
       },
       "homepage": "https://github.com/88plug/drift-detector",
       "keywords": [
@@ -503,7 +503,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/trigger-my-training.git",
-        "sha": "1195236f97421a8817895867412d519ab26c651d"
+        "sha": "2c1554594ce7a002caf9383805ef7aadc13794f6"
       },
       "homepage": "https://github.com/88plug/trigger-my-training",
       "keywords": [
@@ -535,7 +535,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/be-the-whole-bitch.git",
-        "sha": "7e6fe42f2bcdf0ed25c6d75d4c928304051f4094"
+        "sha": "e30bcfce0c9bd74a7203485bbda47ab47aff49c7"
       },
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
       "keywords": [
@@ -563,7 +563,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git",
-        "sha": "e9a3b9e325d2f77335057fe87600787ccb7867bf"
+        "sha": "a9d2f525b8bbd8284eae9be673e18328170a7f09"
       },
       "homepage": "https://github.com/88plug/dehumanize",
       "keywords": [
