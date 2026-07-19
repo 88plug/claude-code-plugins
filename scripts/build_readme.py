@@ -167,7 +167,7 @@ HEADER = """<div align="center">
 
 [![sync](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml/badge.svg)](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml)
 [![License: FSL-1.1-ALv2](https://img.shields.io/badge/license-FSL--1.1--ALv2-blue?style=flat)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat)](#plugins)
+[![plugins](https://img.shields.io/badge/plugins-{count}-1f2328?style=flat)](#catalog)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A2BE2?style=flat)](https://github.com/88plug/claude-code-plugins)
 [![Grok Build](https://img.shields.io/badge/Grok%20Build-marketplace-1f2328?style=flat)](https://github.com/xai-org/grok-build)
 [![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
@@ -232,17 +232,14 @@ Each entry is a full plugin or MCP server in its own repo. This hub is only the 
 | Rolling + pinned | Claude: `YEAR.MONTH.BUILD`; Grok: full commit `sha` on every url source |
 | Zero config | No env vars or API keys for the catalog path itself |
 
-## Plugins
+## Catalog
 
-*Hooks, skills, commands, output styles. Claude versions are `YEAR.MONTH.BUILD`
-(what `claude plugin list` shows). Grok installs pin the full commit SHA from
-`.grok-plugin/marketplace.json`. Each card has both install commands.*
+*Claude versions are `YEAR.MONTH.BUILD` (what `claude plugin list` shows). Grok
+installs pin the full commit SHA from `.grok-plugin/marketplace.json`. Each card
+has Claude and Grok install commands. Grouped by job — scan the H2 that matches
+your problem.*
 
 {plugin_blocks}
-
-## MCP servers
-
-*A single MCP server — Claude or Grok, one command each.*
 
 {mcp_blocks}
 
@@ -312,6 +309,28 @@ FSL-1.1-ALv2. See [LICENSE](./LICENSE).
 """
 
 
+# Category H2s for catalog scanability (Wave 7 growth SEO). Order is display order.
+# Unlisted plugins fall into "Other plugins" / "Other MCP servers".
+PLUGIN_CATEGORIES: list[tuple[str, list[str]]] = [
+    ("Memory & continuity", ["amnesia", "total-recall"]),
+    ("Token & output style", ["caveman-plus"]),
+    ("Investigation & recovery", ["scientific-method", "recover-from-false-positive"]),
+    ("Guardrails & authority", [
+        "dehumanize", "be-the-whole-bitch", "trigger-my-training", "drift-detector",
+    ]),
+    ("Code quality", ["addlightness"]),
+    ("Discovery & remote work", [
+        "project-prospector", "drive-remote-terminal", "deepwiki-index",
+    ]),
+]
+
+MCP_CATEGORIES: list[tuple[str, list[str]]] = [
+    ("Search & research MCP", ["searxng", "deepwiki"]),
+    ("Desktop & OS MCP", ["screen-mcp", "os-control-mcp"]),
+    ("Package versions MCP", ["use-latest-version"]),
+]
+
+
 def _stanza(name, homepage, ver, desc, surfaces, repo=None, sha=None) -> str:
     head = f"### [{name}]({homepage})" if homepage else f"### {name}"
     bits = []
@@ -336,10 +355,31 @@ def _stanza(name, homepage, ver, desc, surfaces, repo=None, sha=None) -> str:
             f"```")
 
 
+def _categorize(
+    items: dict[str, str],
+    categories: list[tuple[str, list[str]]],
+    other_title: str,
+) -> str:
+    """Render stanzas under ## H2 category headings. Orphans → other_title."""
+    placed: set[str] = set()
+    parts: list[str] = []
+    for title, names in categories:
+        blocks = [items[n] for n in names if n in items]
+        if not blocks:
+            continue
+        placed.update(n for n in names if n in items)
+        parts.append(f"## {title}\n\n" + "\n\n".join(blocks))
+    orphans = [items[n] for n in items if n not in placed]
+    if orphans:
+        parts.append(f"## {other_title}\n\n" + "\n\n".join(orphans))
+    return "\n\n".join(parts)
+
+
 def main() -> int:
     data = json.loads(MKT.read_text())
     plugins = data.get("plugins", [])
-    plugin_blocks, mcp_blocks = [], []
+    plugin_items: dict[str, str] = {}
+    mcp_items: dict[str, str] = {}
     n_repo = n_surfaced = 0
     for e in plugins:
         name = e["name"]
@@ -354,7 +394,10 @@ def main() -> int:
             n_repo += 1
             n_surfaced += 1 if surfaces else 0
         block = _stanza(name, homepage, ver, desc, surfaces, repo=repo, sha=sha)
-        (mcp_blocks if tag0 == "type:mcp" else plugin_blocks).append(block)
+        if tag0 == "type:mcp":
+            mcp_items[name] = block
+        else:
+            plugin_items[name] = block
         print(f"  {name}: {('v'+ver) if ver else (sha or 'rolling')} [{tag0}] surfaces='{surfaces}'", file=sys.stderr)
 
     # Abort rather than commit a degraded README: if every repo-backed plugin
@@ -364,10 +407,13 @@ def main() -> int:
               "rate-limited/unreachable. Refusing to overwrite README.", file=sys.stderr)
         return 1
 
+    plugin_blocks = _categorize(plugin_items, PLUGIN_CATEGORIES, "Other plugins")
+    mcp_blocks = _categorize(mcp_items, MCP_CATEGORIES, "Other MCP servers")
+
     out = HEADER.format(
         count=len(plugins),
-        plugin_blocks="\n\n".join(plugin_blocks),
-        mcp_blocks="\n\n".join(mcp_blocks),
+        plugin_blocks=plugin_blocks,
+        mcp_blocks=mcp_blocks,
     )
     old = README.read_text() if README.exists() else ""
     if out != old:
