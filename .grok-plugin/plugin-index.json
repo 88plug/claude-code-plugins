@@ -511,7 +511,7 @@
       }
     },
     "total-recall": {
-      "sha": "4001c4766bb15aa7ded04a876ec38a850d5ee021",
+      "sha": "e399ec3019057b28d5658cbd2b150d1a354d2779",
       "components": {
         "commands": [
           {
@@ -610,7 +610,7 @@
           },
           {
             "name": "total-recall:llm-setup",
-            "description": "One-time setup for total-recall's optional local-LLM refinement layer — installs ollama (if missing) and pulls the conf…"
+            "description": "One-time setup for total-recall's product-owned ollama — installs the managed binary if needed and pulls default models…"
           }
         ]
       }

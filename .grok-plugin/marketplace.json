@@ -39,7 +39,7 @@
     },
     {
       "name": "amnesia",
-      "description": "Seamless context continuity across Claude Code compaction. Four background layers (continuous tool-call capture, mechanical PostCompact handoff, async Opus 4.7 enrichment at --effort max, async Stop-hook refinement, and preemptive snapshot before the next compact) keep the agent's working state intact across every compaction and resume. All summarization is isolated from CLAUDE.md/auto-memory and invisible to the user.",
+      "description": "Seamless context continuity across Claude Code and Grok compaction. Multi-layer background capture (continuous tool-call capture, mechanical PostCompact handoff, async Opus 4.7 enrichment at --effort max, async Stop-hook refinement, and preemptive snapshot before the next compact) keeps the agent working state intact across every compaction and resume. All summarization is isolated from CLAUDE.md/auto-memory and invisible to the user.",
       "category": "productivity",
       "author": {
         "name": "88plug"
@@ -97,7 +97,7 @@
     },
     {
       "name": "total-recall",
-      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 10 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. Hybrid FTS5 + ollama dense recall (qwen3-embedding:0.6b); worktree-aware project scoping; post-compaction coding-continuity packet. Optional local-LLM refinement (ollama, off by default). The operator becomes the source of truth; the model stops re-asking what they already told it.",
+      "description": "Cross-session, cross-CLI memory for AI coding assistants. Mines transcripts from 10 supported CLI clients. Surfaces operator identity / decisions / bans / corrections / goals / voice via 26 MCP tools, 6 hooks (SessionStart signpost + SessionStart compact-restore + UserPromptSubmit retrieval + Stop/PostCompact re-index + PreCompact continuity-seed), 15 slash commands, and 3 skills. Hybrid FTS5 + ollama dense recall (qwen3-embedding:0.6b, default-on; TOTAL_RECALL_EMBED_MODEL unset is correct). Product ollama auto-provisions refine (qwen3.5:2b; TOTAL_RECALL_LLM_PROVIDER=none to disable). Worktree-aware project scoping; post-compaction coding-continuity packet. The operator becomes the source of truth; the model stops re-asking what they already told it.",
       "category": "productivity",
       "author": {
         "name": "88plug"
@@ -105,7 +105,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/total-recall.git",
-        "sha": "4001c4766bb15aa7ded04a876ec38a850d5ee021"
+        "sha": "e399ec3019057b28d5658cbd2b150d1a354d2779"
       },
       "homepage": "https://github.com/88plug/total-recall",
       "keywords": [

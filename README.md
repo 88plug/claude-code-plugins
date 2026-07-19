@@ -83,7 +83,7 @@ your problem.*
 ### [amnesia](https://github.com/88plug/amnesia)
 [`v2026.7.55`](https://github.com/88plug/amnesia/commit/44aeb47fb11d "commit 44aeb47") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
-Seamless context continuity across Claude Code compaction.
+Seamless context continuity across Claude Code and Grok compaction.
 
 ```text
 # Claude Code
@@ -94,7 +94,7 @@ grok plugin install amnesia@88plug --trust
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.7.155`](https://github.com/88plug/total-recall/commit/4001c4766bb1 "commit 4001c47") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.7.158`](https://github.com/88plug/total-recall/commit/e399ec301905 "commit e399ec3") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
