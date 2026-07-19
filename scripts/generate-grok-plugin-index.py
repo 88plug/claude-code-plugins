@@ -10,8 +10,11 @@ servers. Clients use this to show what a plugin contains before installing it.
 The output is deterministic — sorted keys, items sorted by name, no
 timestamps — so CI can regenerate it and fail on any diff.
 
-Generate:       python3 scripts/generate-plugin-index.py
-Verify (CI):    python3 scripts/generate-plugin-index.py --check
+Generate:       python3 scripts/generate-grok-plugin-index.py
+Verify (CI):    python3 scripts/generate-grok-plugin-index.py --check
+
+When hub `sources/<repo>` is checked out at the pinned sha, scan it in place
+(fast path for local fleet work). Otherwise shallow-fetch the pin (CI path).
 """
 
 from __future__ import annotations
@@ -26,6 +29,7 @@ from pathlib import Path
 
 INDEX_PATH = Path(".grok-plugin/plugin-index.json")
 CATALOG_PATH = Path(".grok-plugin/marketplace.json")
+SOURCES_DIR = Path("sources")
 
 MAX_ITEMS_PER_CATEGORY = 50
 MAX_STRING_LEN = 120
@@ -34,11 +38,18 @@ MAX_JSON_BYTES = 1 << 20
 FETCH_ATTEMPTS = 3
 
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+GITHUB_REPO_RE = re.compile(r"github\.com[:/]+([^/]+/[^/.]+)")
 
 MANIFEST_PATHS = [
     Path(".grok-plugin/plugin.json"),
     Path(".claude-plugin/plugin.json"),
 ]
+
+# Grok install name → local sources/ checkout dir when they differ
+INSTALL_TO_SOURCE_DIR = {
+    "searxng": "searxng-mcp",
+    "use-latest-version": "use-latest-version-mcp",
+}
 
 CONTROL_CHARS_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
@@ -332,6 +343,40 @@ def resolve_local(repo_root: Path, path: str, name: str) -> Path:
     return resolved
 
 
+def local_sources_root(repo_root: Path, name: str, url: str, sha: str) -> Path | None:
+    """If sources/<repo> is at exactly `sha`, return that path for in-place scan."""
+    m = GITHUB_REPO_RE.search(url or "")
+    repo_slug = m.group(1).removesuffix(".git").split("/")[-1] if m else None
+    candidates = []
+    if name in INSTALL_TO_SOURCE_DIR:
+        candidates.append(INSTALL_TO_SOURCE_DIR[name])
+    if repo_slug:
+        candidates.append(repo_slug)
+    candidates.append(name)
+    seen: set[str] = set()
+    for dirname in candidates:
+        if dirname in seen:
+            continue
+        seen.add(dirname)
+        local = repo_root / SOURCES_DIR / dirname
+        if not (local / ".git").exists() and not (local / ".git").is_file():
+            if not local.is_dir():
+                continue
+        if not local.is_dir():
+            continue
+        try:
+            head = subprocess.check_output(
+                ["git", "-C", str(local), "rev-parse", "HEAD"],
+                text=True,
+                timeout=10,
+            ).strip()
+        except Exception:
+            continue
+        if head == sha:
+            return local
+    return None
+
+
 def resolve_source(entry: dict, repo_root: Path, tmp_root: Path, idx: int) -> tuple[Path, str | None]:
     """Return (plugin root dir, pinned sha or None for local sources)."""
     name = entry.get("name", "<unnamed>")
@@ -354,10 +399,25 @@ def resolve_source(entry: dict, repo_root: Path, tmp_root: Path, idx: int) -> tu
                     f"plugin '{name}': sha {sha!r} is not a 40-character "
                     f"lowercase hex commit sha"
                 )
+            subdir = source.get("path") if isinstance(source.get("path"), str) else None
+
+            local = local_sources_root(repo_root, name, url, sha)
+            if local is not None:
+                root = local
+                if subdir:
+                    resolved = resolve_inside(local, subdir)
+                    if resolved is None or not resolved.is_dir():
+                        raise RuntimeError(
+                            f"plugin '{name}': local sources path not found: {subdir!r}"
+                        )
+                    root = resolved
+                print(f"  {name}: local sources @ {sha[:10]}", flush=True)
+                return root, sha
+
             dest = tmp_root / f"plugin-{idx}"
+            print(f"  {name}: fetch {url}@{sha[:10]}", flush=True)
             fetch_pinned(url, sha, dest)
-            subdir = source.get("path")
-            if isinstance(subdir, str) and subdir:
+            if subdir:
                 resolved = resolve_inside(dest, subdir)
                 if resolved is None:
                     raise RuntimeError(
@@ -390,6 +450,18 @@ def generate(repo_root: Path) -> dict:
             record: dict = {}
             if sha:
                 record["sha"] = sha
+            # Align with official plugin_catalog: optional version from manifest
+            for rel in MANIFEST_PATHS:
+                mpath = resolve_inside(root, rel)
+                if mpath and mpath.is_file():
+                    data = load_json_file(mpath)
+                    if isinstance(data, dict):
+                        ver = data.get("version")
+                        if isinstance(ver, str) and ver.strip():
+                            record["version"] = ver.strip()
+                        elif isinstance(ver, (int, float)) and not isinstance(ver, bool):
+                            record["version"] = str(ver)
+                    break
             record["components"] = scan_plugin(root)
             plugins_out[name] = record
     return {
@@ -417,7 +489,7 @@ def main() -> int:
         if committed != output.encode("utf-8"):
             print(
                 f"ERROR: {INDEX_PATH} is out of date. "
-                f"Run `python3 scripts/generate-plugin-index.py` and commit the result.",
+                f"Run `python3 scripts/generate-grok-plugin-index.py` and commit the result.",
                 file=sys.stderr,
             )
             return 1

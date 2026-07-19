@@ -1,6 +1,6 @@
 {
   "name": "88plug",
-  "description": "Curated plugins by 88plug for Grok and Claude Code.",
+  "description": "Curated plugins by 88plug for Grok Build and Claude Code.",
   "owner": {
     "name": "88plug"
   },
@@ -15,6 +15,15 @@
         "sha": "88bdbb766bb7394b521d146d5570cfbda423dadc"
       },
       "homepage": "https://github.com/88plug/recover-from-false-positive",
+      "keywords": [
+        "classifier",
+        "false-positive",
+        "session-recovery",
+        "jsonl",
+        "log-repair",
+        "usage-policy",
+        "recover-from-false-positive"
+      ],
       "tags": [
         "type:plugin",
         "classifier",
@@ -35,6 +44,14 @@
         "sha": "3382188d84716e2926c34baa63b21ff4d34be296"
       },
       "homepage": "https://github.com/88plug/amnesia",
+      "keywords": [
+        "context",
+        "compaction",
+        "memory",
+        "continuity",
+        "hooks",
+        "amnesia"
+      ],
       "tags": [
         "type:plugin",
         "context",
@@ -54,6 +71,13 @@
         "sha": "b8bbcc804272d54050da8ee2e4fd39654c0f4e44"
       },
       "homepage": "https://github.com/88plug/caveman-plus",
+      "keywords": [
+        "tokens",
+        "compression",
+        "output-style",
+        "caveman",
+        "caveman-plus"
+      ],
       "tags": [
         "type:plugin",
         "tokens",
@@ -72,6 +96,19 @@
         "sha": "2d0781509546c57fe669e6ab5062ed3fef05ffef"
       },
       "homepage": "https://github.com/88plug/total-recall",
+      "keywords": [
+        "memory",
+        "context",
+        "cross-session",
+        "cross-cli",
+        "operator-profile",
+        "mcp",
+        "hooks",
+        "data-mining",
+        "goose",
+        "grok",
+        "total-recall"
+      ],
       "tags": [
         "type:plugin",
         "memory",
@@ -96,6 +133,16 @@
         "sha": "b1b1a3da01284743f551a52940e87afb66181169"
       },
       "homepage": "https://github.com/88plug/searxng-mcp",
+      "keywords": [
+        "search",
+        "searxng",
+        "metasearch",
+        "mcp",
+        "privacy",
+        "self-hosted",
+        "searxng-mcp",
+        "web search"
+      ],
       "tags": [
         "type:mcp",
         "search",
@@ -116,6 +163,13 @@
         "sha": "a40bbafb1b2f0e67cf378b88d5d1744feba4e0c5"
       },
       "homepage": "https://github.com/88plug/deepwiki",
+      "keywords": [
+        "deepwiki",
+        "documentation",
+        "github",
+        "research",
+        "mcp"
+      ],
       "tags": [
         "type:mcp",
         "deepwiki",
@@ -135,6 +189,13 @@
         "sha": "68499aff732eb8d843743023423414a4ea592e40"
       },
       "homepage": "https://github.com/88plug/scientific-method",
+      "keywords": [
+        "scientific-method",
+        "investigation",
+        "verification",
+        "falsification",
+        "reasoning"
+      ],
       "tags": [
         "type:plugin",
         "scientific-method",
@@ -154,6 +215,15 @@
         "sha": "40fb4b86a685b0deff934f2d83081f00f38a5ba2"
       },
       "homepage": "https://github.com/88plug/drive-remote-terminal",
+      "keywords": [
+        "tmux",
+        "screen",
+        "ssh",
+        "tui",
+        "remote",
+        "automation",
+        "drive-remote-terminal"
+      ],
       "tags": [
         "type:plugin",
         "tmux",
@@ -174,6 +244,15 @@
         "sha": "9a81eaafbae0786308ada805c276f2df0b344866"
       },
       "homepage": "https://github.com/88plug/project-prospector",
+      "keywords": [
+        "project-discovery",
+        "catalog",
+        "ranking",
+        "filesystem-audit",
+        "novelty",
+        "multi-agent",
+        "project-prospector"
+      ],
       "tags": [
         "type:plugin",
         "project-discovery",
@@ -194,6 +273,15 @@
         "sha": "738823cf580e877cb2d5d0e075f60493893f6f61"
       },
       "homepage": "https://github.com/88plug/screen-mcp",
+      "keywords": [
+        "wayland",
+        "gnome",
+        "screenshot",
+        "desktop-automation",
+        "ocr",
+        "portal",
+        "screen-mcp"
+      ],
       "tags": [
         "type:mcp",
         "wayland",
@@ -214,6 +302,16 @@
         "sha": "a85e35d9698d89e110c430b2b7989cb87712c2f0"
       },
       "homepage": "https://github.com/88plug/os-control-mcp",
+      "keywords": [
+        "linux",
+        "systemd",
+        "dbus",
+        "journald",
+        "logind",
+        "devops",
+        "automation",
+        "os-control-mcp"
+      ],
       "tags": [
         "type:mcp",
         "linux",
@@ -235,6 +333,19 @@
         "sha": "96626af53c9db0f150ab7eb9877c66f5c7cd2546"
       },
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
+      "keywords": [
+        "package-versions",
+        "dependencies",
+        "npm",
+        "pypi",
+        "registries",
+        "outdated",
+        "upgrade",
+        "mcp",
+        "use-latest-version",
+        "use-latest-version-mcp",
+        "dependency versions"
+      ],
       "tags": [
         "type:mcp",
         "package-versions",
@@ -257,6 +368,14 @@
         "sha": "1f90888d85669614c85e8a10722fd67152a73c30"
       },
       "homepage": "https://github.com/88plug/deepwiki-index",
+      "keywords": [
+        "deepwiki",
+        "documentation",
+        "indexing",
+        "automation",
+        "github",
+        "deepwiki-index"
+      ],
       "tags": [
         "type:plugin",
         "deepwiki",
@@ -276,6 +395,17 @@
         "sha": "fc58cc1b87fa49b7c3d6214c83d39db94179e3aa"
       },
       "homepage": "https://github.com/88plug/addlightness",
+      "keywords": [
+        "code-quality",
+        "refactoring",
+        "performance",
+        "benchmarking",
+        "dead-code",
+        "complexity",
+        "code-weight",
+        "ai-code-cleanup",
+        "addlightness"
+      ],
       "tags": [
         "type:plugin",
         "code-quality",
@@ -298,6 +428,14 @@
         "sha": "e0b81a1aec666b70680926bd2762e1b96405ee87"
       },
       "homepage": "https://github.com/88plug/drift-detector",
+      "keywords": [
+        "drift-detection",
+        "guardrails",
+        "instruction-following",
+        "llm-monitoring",
+        "persona",
+        "drift-detector"
+      ],
       "tags": [
         "type:plugin",
         "drift-detection",
@@ -317,6 +455,15 @@
         "sha": "1ac55b3bccdd9d41cf8cd4cdd1671fcb2057770a"
       },
       "homepage": "https://github.com/88plug/trigger-my-training",
+      "keywords": [
+        "agent-safety",
+        "guardrails",
+        "grounding",
+        "preflight",
+        "irreversible-actions",
+        "reasoning",
+        "trigger-my-training"
+      ],
       "tags": [
         "type:plugin",
         "agent-safety",
@@ -337,6 +484,13 @@
         "sha": "13c09282eade6c6442026088cbbbe69f304df10e"
       },
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
+      "keywords": [
+        "authority",
+        "execution",
+        "guardrails",
+        "hooks",
+        "be-the-whole-bitch"
+      ],
       "tags": [
         "type:plugin",
         "authority",
@@ -355,6 +509,12 @@
         "sha": "09347b8841ba634f373dd3b07a034cdcd0919cb8"
       },
       "homepage": "https://github.com/88plug/dehumanize",
+      "keywords": [
+        "ai-discipline",
+        "anti-patterns",
+        "hooks",
+        "dehumanize"
+      ],
       "tags": [
         "type:plugin",
         "ai-discipline",

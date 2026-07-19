@@ -30,10 +30,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/build_readme.py
-      - name: Generate Grok catalog (shas + metadata from Claude catalog)
+      - name: Generate Grok catalog (shas + keywords from Claude catalog)
         run: python scripts/generate-grok-catalog.py
       - name: Generate Grok plugin index (rich components for TUI Marketplace)
         run: python scripts/generate-grok-plugin-index.py
+      - name: Validate catalogs (Grok SHA pins + Claude/Grok parity)
+        run: python scripts/validate-catalog.py
+      - name: Verify plugin-index is current
+        run: python scripts/generate-grok-plugin-index.py --check
       - name: Commit if changed
         run: |
           if ! git diff --quiet -- .claude-plugin/marketplace.json .grok-plugin/ README.md; then
