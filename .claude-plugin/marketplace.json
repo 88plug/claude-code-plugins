@@ -25,7 +25,7 @@
         "usage-policy"
       ],
       "homepage": "https://github.com/88plug/recover-from-false-positive",
-      "version": "2026.7.33"
+      "version": "2026.7.34"
     },
     {
       "name": "amnesia",
@@ -44,7 +44,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.7.53"
+      "version": "2026.7.54"
     },
     {
       "name": "caveman-plus",
@@ -62,7 +62,7 @@
         "caveman"
       ],
       "homepage": "https://github.com/88plug/caveman-plus",
-      "version": "2026.7.216"
+      "version": "2026.7.217"
     },
     {
       "name": "total-recall",
@@ -86,7 +86,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.7.154"
+      "version": "2026.7.155"
     },
     {
       "name": "searxng",
@@ -106,7 +106,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.7.44"
+      "version": "2026.7.45"
     },
     {
       "name": "deepwiki",
@@ -125,7 +125,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/deepwiki",
-      "version": "2026.7.26"
+      "version": "2026.7.27"
     },
     {
       "name": "scientific-method",
@@ -144,7 +144,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/scientific-method",
-      "version": "2026.7.30"
+      "version": "2026.7.31"
     },
     {
       "name": "drive-remote-terminal",
@@ -164,7 +164,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/drive-remote-terminal",
-      "version": "2026.7.25"
+      "version": "2026.7.26"
     },
     {
       "name": "project-prospector",
@@ -184,7 +184,7 @@
         "multi-agent"
       ],
       "homepage": "https://github.com/88plug/project-prospector",
-      "version": "2026.7.24"
+      "version": "2026.7.25"
     },
     {
       "name": "screen-mcp",
@@ -204,7 +204,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.42"
+      "version": "2026.7.43"
     },
     {
       "name": "os-control-mcp",
@@ -225,7 +225,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.7.21"
+      "version": "2026.7.22"
     },
     {
       "name": "use-latest-version",
@@ -247,7 +247,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.7.39"
+      "version": "2026.7.40"
     },
     {
       "name": "deepwiki-index",
@@ -266,7 +266,7 @@
         "github"
       ],
       "homepage": "https://github.com/88plug/deepwiki-index",
-      "version": "2026.7.16"
+      "version": "2026.7.17"
     },
     {
       "name": "addlightness",
@@ -288,7 +288,7 @@
         "ai-code-cleanup"
       ],
       "homepage": "https://github.com/88plug/addlightness",
-      "version": "2026.7.14"
+      "version": "2026.7.15"
     },
     {
       "name": "drift-detector",
@@ -307,7 +307,7 @@
         "persona"
       ],
       "homepage": "https://github.com/88plug/drift-detector",
-      "version": "2026.7.41"
+      "version": "2026.7.42"
     },
     {
       "name": "trigger-my-training",
@@ -327,7 +327,7 @@
         "reasoning"
       ],
       "homepage": "https://github.com/88plug/trigger-my-training",
-      "version": "2026.7.23"
+      "version": "2026.7.24"
     },
     {
       "name": "be-the-whole-bitch",
@@ -345,7 +345,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/be-the-whole-bitch",
-      "version": "2026.7.28"
+      "version": "2026.7.29"
     },
     {
       "name": "dehumanize",
@@ -362,7 +362,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/dehumanize",
-      "version": "2026.7.25"
+      "version": "2026.7.26"
     }
   ]
 }

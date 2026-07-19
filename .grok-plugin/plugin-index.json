@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "addlightness": {
-      "sha": "007dd1b72f0187ced88d8c57cc79ecccc376e4ad",
+      "sha": "6828e78fd17e0cfbf77cf744112b45b710871eb2",
       "components": {
         "agents": [
           {
@@ -39,7 +39,7 @@
       }
     },
     "amnesia": {
-      "sha": "c29f6b5bf926edb22b300b4bbf2181586aa69e7f",
+      "sha": "b5674a5cfa4a30dbdcfdc12e689a3bcdf226549d",
       "components": {
         "agents": [
           {
@@ -124,7 +124,7 @@
       }
     },
     "be-the-whole-bitch": {
-      "sha": "ff5b8fc4588c12105f49a04519edb02f8a017782",
+      "sha": "9b88c44969abba7aab9a4c9e61c56bf00e026930",
       "components": {
         "commands": [
           {
@@ -161,7 +161,7 @@
       }
     },
     "caveman-plus": {
-      "sha": "8b8f267a56cf729c8d6e04d7f9341d3323600d16",
+      "sha": "c3f10e4f3aa2a9164a8d6623d9237d323cbe2cc1",
       "components": {
         "agents": [
           {
@@ -236,7 +236,7 @@
       }
     },
     "deepwiki": {
-      "sha": "a1938d023d1c6549cce79e0e5816abef1e421539",
+      "sha": "09e017b7e73ad9ca3fd417f9eeaf431b0e7db2dc",
       "components": {
         "mcpServers": [
           {
@@ -247,7 +247,7 @@
       }
     },
     "deepwiki-index": {
-      "sha": "0809eb5337f232424ee1f8480289ffc11b344023",
+      "sha": "fcd0bc1b62898732efd313c42af6cc24ad31c71a",
       "components": {
         "skills": [
           {
@@ -258,7 +258,7 @@
       }
     },
     "dehumanize": {
-      "sha": "3b3fe60651aa6c6ba30d57bfa5a2e07299d5f829",
+      "sha": "52e46f0b6aa79c31e2a6f46d185d846ecc959589",
       "components": {
         "commands": [
           {
@@ -298,7 +298,7 @@
       }
     },
     "drift-detector": {
-      "sha": "418d00bd927b1cff983bb5b57a06248486e7e9fb",
+      "sha": "4f9fb2449f659ad89e2bbe7051b42194cf6b1a59",
       "components": {
         "commands": [
           {
@@ -352,7 +352,7 @@
       }
     },
     "drive-remote-terminal": {
-      "sha": "11e94e73118c2b4f2debf44202bb9e2ec5e676df",
+      "sha": "2e51b54adbb65f0fccf357caf94b14cf024bbb0c",
       "components": {
         "skills": [
           {
@@ -363,7 +363,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "7f8585fcf509b4fa8a590a6f2f97cbea389ead78",
+      "sha": "9d298c6642a3fbc7f21bfd0982e819d066580406",
       "components": {
         "mcpServers": [
           {
@@ -380,7 +380,7 @@
       }
     },
     "project-prospector": {
-      "sha": "47bf625650d7202eec1739dc03f86824a04fac93",
+      "sha": "68facd4872381f69f1397848baa2dd9222a72ccb",
       "components": {
         "skills": [
           {
@@ -391,7 +391,7 @@
       }
     },
     "recover-from-false-positive": {
-      "sha": "cc2247c0782eb848dea6c576734badcf6d242ed5",
+      "sha": "c65574744b9d35a28810b597e14ddb6a8b2b35b2",
       "components": {
         "hooks": [
           {
@@ -414,7 +414,7 @@
       }
     },
     "scientific-method": {
-      "sha": "bdc6e057cf4760b68758e16510132688bf6e97c6",
+      "sha": "4b0920508d9cc4a52383ae10ec13eb2e4771a1d9",
       "components": {
         "agents": [
           {
@@ -483,7 +483,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "55f51df0209199dc4a47e18283871737f694d1be",
+      "sha": "df7853a2882c3c89bce71e47b9a306333bf51f4b",
       "components": {
         "mcpServers": [
           {
@@ -500,7 +500,7 @@
       }
     },
     "searxng": {
-      "sha": "e2b2664bb089b7f1061fc5e874c3673b77cf7026",
+      "sha": "5c4597e552833e9b9a14842e3db83fe592009c5b",
       "components": {
         "mcpServers": [
           {
@@ -511,7 +511,7 @@
       }
     },
     "total-recall": {
-      "sha": "6c46a0b5206811aae13215b884f98ea87bbfaf8f",
+      "sha": "4001c4766bb15aa7ded04a876ec38a850d5ee021",
       "components": {
         "commands": [
           {
@@ -616,7 +616,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "97fe3a97a6b97026cf6a97062d1d2b8bebd70e26",
+      "sha": "1195236f97421a8817895867412d519ab26c651d",
       "components": {
         "agents": [
           {
@@ -676,7 +676,7 @@
       }
     },
     "use-latest-version": {
-      "sha": "453c5e76ff6fa713f88da6d485eb842c4527f559",
+      "sha": "58b93cb6d683cf3262b4c2be515cab6939ffb7bd",
       "components": {
         "mcpServers": [
           {
