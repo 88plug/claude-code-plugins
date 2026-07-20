@@ -616,7 +616,7 @@
       }
     },
     "trigger-my-training": {
-      "sha": "7b7966afdd354aa10b05477fe803303b6df35fc8",
+      "sha": "3388a53d940b9e8746853b075a240d684da60e49",
       "components": {
         "agents": [
           {
