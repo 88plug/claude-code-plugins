@@ -161,7 +161,7 @@
       }
     },
     "break-dogma": {
-      "sha": "1e899f9871521888d7d53ffb536985649b92db6e",
+      "sha": "3c45133c2b6968a5f08b2b6f6561b1143cede2b5",
       "components": {
         "commands": [
           {
@@ -261,7 +261,7 @@
       }
     },
     "cynefin": {
-      "sha": "0642a989929ae23ed41e9377efa1f3630c751ea0",
+      "sha": "12fc2c6aefbc53674a586128193249481ef59ee5",
       "components": {
         "commands": [
           {
@@ -413,7 +413,7 @@
       }
     },
     "flip-the-script": {
-      "sha": "77a2633a62a185a575e9f918d5b374500c79407e",
+      "sha": "e75b4a3d724c6a5a9fd86e1cc0d635f9aec6055d",
       "components": {
         "commands": [
           {
@@ -438,7 +438,7 @@
       }
     },
     "herlihy": {
-      "sha": "2e3ca9db39cdd00fa4a3825edf462d5444c7a0cf",
+      "sha": "e79b21f37d243059ec5948f21bce2cac9c777ba1",
       "components": {
         "commands": [
           {
@@ -464,7 +464,7 @@
       }
     },
     "ooda": {
-      "sha": "feb0f21f1e4b1e7bb594003ac54bfd50babd13a1",
+      "sha": "9980e2c0787966089ba371629728e869d403b385",
       "components": {
         "commands": [
           {
@@ -813,7 +813,7 @@
       }
     },
     "world-first": {
-      "sha": "2d86a1159ae568832d881a23808fb2b32c227cae",
+      "sha": "e624cd63624001e4e27c154c0d099ce7881c76ec",
       "components": {
         "commands": [
           {

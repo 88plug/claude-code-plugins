@@ -380,7 +380,7 @@
         "grounding"
       ],
       "homepage": "https://github.com/88plug/flip-the-script",
-      "version": "2026.7.1"
+      "version": "2026.7.2"
     },
     {
       "name": "break-dogma",
@@ -398,7 +398,7 @@
         "invention"
       ],
       "homepage": "https://github.com/88plug/break-dogma",
-      "version": "2026.7.1"
+      "version": "2026.7.2"
     },
     {
       "name": "world-first",
@@ -416,7 +416,7 @@
         "provenance"
       ],
       "homepage": "https://github.com/88plug/world-first",
-      "version": "2026.7.1"
+      "version": "2026.7.2"
     },
     {
       "name": "herlihy",
@@ -434,7 +434,7 @@
         "atomics"
       ],
       "homepage": "https://github.com/88plug/herlihy",
-      "version": "2026.7.1"
+      "version": "2026.7.2"
     },
     {
       "name": "cynefin",
@@ -452,7 +452,7 @@
         "complexity"
       ],
       "homepage": "https://github.com/88plug/cynefin",
-      "version": "2026.7.1"
+      "version": "2026.7.2"
     },
     {
       "name": "ooda",
@@ -470,7 +470,7 @@
         "strategy"
       ],
       "homepage": "https://github.com/88plug/ooda",
-      "version": "2026.7.1"
+      "version": "2026.7.3"
     }
   ]
 }

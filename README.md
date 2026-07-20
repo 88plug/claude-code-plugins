@@ -262,7 +262,7 @@ grok plugin install deepwiki-index@88plug --trust
 ## Other plugins
 
 ### [flip-the-script](https://github.com/88plug/flip-the-script)
-[`v2026.7.1`](https://github.com/88plug/flip-the-script/commit/77a2633a62a1 "commit 77a2633") · 1 skill · 1 command
+[`v2026.7.2`](https://github.com/88plug/flip-the-script/commit/e75b4a3d724c "commit e75b4a3") · 1 skill · 1 command
 
 Installs a standing self-distrust prior: the model treats its own unverified recall as stale and overconfident by default, and routes any…
 
@@ -275,7 +275,7 @@ grok plugin install flip-the-script@88plug --trust
 ```
 
 ### [break-dogma](https://github.com/88plug/break-dogma)
-[`v2026.7.1`](https://github.com/88plug/break-dogma/commit/1e899f987152 "commit 1e899f9") · 1 skill · 1 command
+[`v2026.7.2`](https://github.com/88plug/break-dogma/commit/3c45133c2b69 "commit 3c45133") · 1 skill · 1 command
 
 Installs a standing assumption-testing prior: before adopting any borrowed component/runtime/algorithm or accepting any asserted limit ('compute-bound', 'you need X'…
 
@@ -288,7 +288,7 @@ grok plugin install break-dogma@88plug --trust
 ```
 
 ### [world-first](https://github.com/88plug/world-first)
-[`v2026.7.1`](https://github.com/88plug/world-first/commit/2d86a1159ae5 "commit 2d86a11") · 1 skill · 1 command
+[`v2026.7.2`](https://github.com/88plug/world-first/commit/e624cd636240 "commit e624cd6") · 1 skill · 1 command
 
 Guards every novelty or superlative claim before it ships: when a turn asserts a first/fastest/novel/record/'nobody has done this', a UserPromptSubmit hook fires the…
 
@@ -301,7 +301,7 @@ grok plugin install world-first@88plug --trust
 ```
 
 ### [herlihy](https://github.com/88plug/herlihy)
-[`v2026.7.1`](https://github.com/88plug/herlihy/commit/2e3ca9db39cd "commit 2e3ca9d") · 1 skill · 1 command
+[`v2026.7.2`](https://github.com/88plug/herlihy/commit/e79b21f37d24 "commit e79b21f") · 1 skill · 1 command
 
 Fires the wait-free/lock-free doctrine exactly when you touch concurrency code: a PreToolUse hook inspects Write/Edit content and, when it sees a lock, atomic, CAS…
 
@@ -314,7 +314,7 @@ grok plugin install herlihy@88plug --trust
 ```
 
 ### [cynefin](https://github.com/88plug/cynefin)
-[`v2026.7.1`](https://github.com/88plug/cynefin/commit/0642a989929a "commit 0642a98") · 1 skill · 1 command
+[`v2026.7.2`](https://github.com/88plug/cynefin/commit/12fc2c6aefbc "commit 12fc2c6") · 1 skill · 1 command
 
 Routes any decision, problem, or approach through Dave Snowden's Cynefin framework before you act: read the constraints, place the domain (Clear / Complicated / Complex…
 
@@ -327,7 +327,7 @@ grok plugin install cynefin@88plug --trust
 ```
 
 ### [ooda](https://github.com/88plug/ooda)
-[`v2026.7.1`](https://github.com/88plug/ooda/commit/feb0f21f1e4b "commit feb0f21") · 1 skill · 1 command
+[`v2026.7.3`](https://github.com/88plug/ooda/commit/9980e2c07879 "commit 9980e2c") · 1 skill · 1 command
 
 Routes any decision, action, or iteration through John Boyd's real OODA loop — Observe (measure, don't assume), Orient (the schwerpunkt: reframe against stale models and…
 
