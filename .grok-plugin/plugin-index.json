@@ -160,6 +160,31 @@
         ]
       }
     },
+    "break-dogma": {
+      "sha": "1e899f9871521888d7d53ffb536985649b92db6e",
+      "components": {
+        "commands": [
+          {
+            "name": "test",
+            "description": "Test an inherited assumption or asserted limit with the break-dogma procedure."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "break-dogma",
+            "description": "Use when an inherited assumption is steering a decision and nobody has checked whether it still holds HERE — \"that's ho…"
+          }
+        ]
+      }
+    },
     "caveman-plus": {
       "sha": "7b5f101ac58f1b7b50f946039feff5394309a930",
       "components": {
@@ -231,6 +256,31 @@
           {
             "name": "caveman-stats",
             "description": "Show real token usage and estimated savings for the current session. Reads directly from the Claude Code session log —…"
+          }
+        ]
+      }
+    },
+    "cynefin": {
+      "sha": "0642a989929ae23ed41e9377efa1f3630c751ea0",
+      "components": {
+        "commands": [
+          {
+            "name": "route",
+            "description": "Route a decision or problem through the Cynefin domains."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "cynefin",
+            "description": "Use before choosing how to solve a problem, make a decision, plan work, diagnose a bug or incident, or pick between app…"
           }
         ]
       }
@@ -358,6 +408,82 @@
           {
             "name": "drive-remote-terminal",
             "description": "Operate and observe an interactive, full-screen terminal program (a TUI) on a REMOTE machine over SSH by hosting it in…"
+          }
+        ]
+      }
+    },
+    "flip-the-script": {
+      "sha": "77a2633a62a185a575e9f918d5b374500c79407e",
+      "components": {
+        "commands": [
+          {
+            "name": "check",
+            "description": "Run the flip-the-script self-distrust check on a claim you are about to assert."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "flip-the-script",
+            "description": "Use when about to assert a fact that has an exact external answer and the answer came from memory rather than a checked…"
+          }
+        ]
+      }
+    },
+    "herlihy": {
+      "sha": "2e3ca9db39cdd00fa4a3825edf462d5444c7a0cf",
+      "components": {
+        "commands": [
+          {
+            "name": "check",
+            "description": "Run the Herlihy wait-free/lock-free checklist on concurrency code."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "PreToolUse",
+            "description": "Write|Edit|MultiEdit"
+          },
+          {
+            "name": "SessionStart"
+          }
+        ],
+        "skills": [
+          {
+            "name": "herlihy",
+            "description": "Use when atomicizing any subsystem or removing a concurrency constraint — a lock, a Mutex/RwLock, a blocking wait, a se…"
+          }
+        ]
+      }
+    },
+    "ooda": {
+      "sha": "feb0f21f1e4b1e7bb594003ac54bfd50babd13a1",
+      "components": {
+        "commands": [
+          {
+            "name": "loop",
+            "description": "Run the real OODA loop on a decision, action, or stuck problem."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "ooda",
+            "description": "Use before deciding, acting, iterating, planning, diagnosing, or competing — whenever a move should be driven by a fast…"
           }
         ]
       }
@@ -682,6 +808,31 @@
           {
             "name": "use-latest-version",
             "description": "stdio"
+          }
+        ]
+      }
+    },
+    "world-first": {
+      "sha": "2d86a1159ae568832d881a23808fb2b32c227cae",
+      "components": {
+        "commands": [
+          {
+            "name": "audit",
+            "description": "Audit a novelty / first / fastest claim for overclaim with the world-first discipline."
+          }
+        ],
+        "hooks": [
+          {
+            "name": "SessionStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "skills": [
+          {
+            "name": "world-first",
+            "description": "Use when the goal is to produce and defensibly claim a genuine world-first, invention, novel algorithm/protocol/kernel/…"
           }
         ]
       }

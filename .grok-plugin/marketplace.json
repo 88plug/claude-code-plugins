@@ -578,6 +578,172 @@
         "anti-patterns",
         "hooks"
       ]
+    },
+    {
+      "name": "flip-the-script",
+      "description": "Installs a standing self-distrust prior: the model treats its own unverified recall as stale and overconfident by default, and routes any version/API/current-state/exact-number/long-tail claim to EXTERNAL ground truth (docs, search, read-the-source, measure, or a fresh-context check) before asserting. Fires deterministically every turn via a UserPromptSubmit hook, primed once at SessionStart. Confidence is not evidence; internal second-guessing alone does not fix a wrong recall \u2014 the fix is external verification. Calibrated, not paralytic: distrusts hard where recall is unreliable, stays quiet on stable well-known facts.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/flip-the-script.git",
+        "sha": "77a2633a62a185a575e9f918d5b374500c79407e"
+      },
+      "homepage": "https://github.com/88plug/flip-the-script",
+      "keywords": [
+        "guardrails",
+        "hallucination",
+        "verification",
+        "grounding",
+        "flip-the-script"
+      ],
+      "tags": [
+        "type:plugin",
+        "guardrails",
+        "hallucination",
+        "verification",
+        "grounding"
+      ]
+    },
+    {
+      "name": "break-dogma",
+      "description": "Installs a standing assumption-testing prior: before adopting any borrowed component/runtime/algorithm or accepting any asserted limit ('compute-bound', 'you need X', 'that's how everyone does it'), the model names it as a falsifiable claim and checks whether the constraint is actually load-bearing in THIS regime or cargo-culted from another. Fires every turn via a UserPromptSubmit hook, primed at SessionStart. The external sibling of flip-the-script: that distrusts your own recall, this distrusts inherited assumptions. Routes a broken dogma to invention; a surviving one is a logged result. Calibrated, not contrarian \u2014 reuse leaves that aren't the moat.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/break-dogma.git",
+        "sha": "1e899f9871521888d7d53ffb536985649b92db6e"
+      },
+      "homepage": "https://github.com/88plug/break-dogma",
+      "keywords": [
+        "guardrails",
+        "assumptions",
+        "first-principles",
+        "invention",
+        "break-dogma"
+      ],
+      "tags": [
+        "type:plugin",
+        "guardrails",
+        "assumptions",
+        "first-principles",
+        "invention"
+      ]
+    },
+    {
+      "name": "world-first",
+      "description": "Guards every novelty or superlative claim before it ships: when a turn asserts a first/fastest/novel/record/'nobody has done this', a UserPromptSubmit hook fires the invention discipline \u2014 confirmed-limit entry, the removed-constraint test, refute-then-build vs a tuned baseline, provenance search, scope to the measured delta, certify. Primed once at SessionStart. Turns 'we invented X / it's the fastest' from an assertion into a proven-or-scoped claim. Kills overclaim, reinventing prior art, and premature-first-before-refute.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/world-first.git",
+        "sha": "2d86a1159ae568832d881a23808fb2b32c227cae"
+      },
+      "homepage": "https://github.com/88plug/world-first",
+      "keywords": [
+        "invention",
+        "novelty",
+        "prior-art",
+        "provenance",
+        "world-first"
+      ],
+      "tags": [
+        "type:plugin",
+        "invention",
+        "novelty",
+        "prior-art",
+        "provenance"
+      ]
+    },
+    {
+      "name": "herlihy",
+      "description": "Fires the wait-free/lock-free doctrine exactly when you touch concurrency code: a PreToolUse hook inspects Write/Edit content and, when it sees a lock, atomic, CAS, fetch-add, spawn, channel, or CUDA sync, injects (non-blocking) the Herlihy checklist \u2014 pick the primitive by consensus number, fix the linearization point, claim only the progress guarantee you can prove, choose reclamation by reader lifetime, know the impossibility walls. Primed once at SessionStart. Grounded in Herlihy's published corpus (consensus hierarchy, linearizability, universal construction, Pass-the-Buck), with the NOT-Herlihy attributions flagged.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/herlihy.git",
+        "sha": "2e3ca9db39cdd00fa4a3825edf462d5444c7a0cf"
+      },
+      "homepage": "https://github.com/88plug/herlihy",
+      "keywords": [
+        "concurrency",
+        "lock-free",
+        "wait-free",
+        "atomics",
+        "herlihy"
+      ],
+      "tags": [
+        "type:plugin",
+        "concurrency",
+        "lock-free",
+        "wait-free",
+        "atomics"
+      ]
+    },
+    {
+      "name": "cynefin",
+      "description": "Routes any decision, problem, or approach through Dave Snowden's Cynefin framework before you act: read the constraints, place the domain (Clear / Complicated / Complex / Chaotic \u2014 or admit Disorder), and apply the matching response (sense-categorize / sense-analyze / probe-sense / act-sense). Fires a conditional UserPromptSubmit nudge on decision/problem/incident language, primed at SessionStart. Enforces sense-making not categorization (never a 2x2), a safe-to-fail probe portfolio in the Complex domain, and the Clear-to-Chaotic cliff warning.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/cynefin.git",
+        "sha": "0642a989929ae23ed41e9377efa1f3630c751ea0"
+      },
+      "homepage": "https://github.com/88plug/cynefin",
+      "keywords": [
+        "cynefin",
+        "sense-making",
+        "decision-making",
+        "complexity"
+      ],
+      "tags": [
+        "type:plugin",
+        "cynefin",
+        "sense-making",
+        "decision-making",
+        "complexity"
+      ]
+    },
+    {
+      "name": "ooda",
+      "description": "Routes any decision, action, or iteration through John Boyd's real OODA loop \u2014 Observe (measure, don't assume), Orient (the schwerpunkt: reframe against stale models and bias \u2014 the highest-leverage step), Decide (pick one lever as a hypothesis), Act (ship it as a test, re-observe), loop fast. Fires a conditional UserPromptSubmit nudge on decide/act/iterate/plan/compete language, primed at SessionStart. Boyd-faithful: not a 4-box speed circle \u2014 Orient dominates, and tempo means unpredictable rhythm that outpaces the problem, not raw haste.",
+      "category": "productivity",
+      "author": {
+        "name": "88plug"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/ooda.git",
+        "sha": "feb0f21f1e4b1e7bb594003ac54bfd50babd13a1"
+      },
+      "homepage": "https://github.com/88plug/ooda",
+      "keywords": [
+        "ooda",
+        "decision-making",
+        "boyd",
+        "strategy"
+      ],
+      "tags": [
+        "type:plugin",
+        "ooda",
+        "decision-making",
+        "boyd",
+        "strategy"
+      ]
     }
   ]
 }

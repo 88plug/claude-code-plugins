@@ -212,7 +212,7 @@
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git"
       },
-      "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) — all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
+      "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) \u2014 all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
       "category": "productivity",
       "tags": [
         "type:mcp",
@@ -255,7 +255,7 @@
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git"
       },
-      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
+      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -353,7 +353,7 @@
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git"
       },
-      "description": "Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.",
+      "description": "Makes AI work like AI \u2014 no human time estimates, no asking for accessible data, no emotional labor.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -370,7 +370,7 @@
         "source": "url",
         "url": "https://github.com/88plug/flip-the-script.git"
       },
-      "description": "Self-distrust prior — routes version/API/current-state/exact-number claims to external verification before asserting. UserPromptSubmit hook + SessionStart primer.",
+      "description": "Installs a standing self-distrust prior: the model treats its own unverified recall as stale and overconfident by default, and routes any version/API/current-state/exact-number/long-tail claim to EXTERNAL ground truth (docs, search, read-the-source, measure, or a fresh-context check) before asserting. Fires deterministically every turn via a UserPromptSubmit hook, primed once at SessionStart. Confidence is not evidence; internal second-guessing alone does not fix a wrong recall \u2014 the fix is external verification. Calibrated, not paralytic: distrusts hard where recall is unreliable, stays quiet on stable well-known facts.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -379,7 +379,8 @@
         "verification",
         "grounding"
       ],
-      "homepage": "https://github.com/88plug/flip-the-script"
+      "homepage": "https://github.com/88plug/flip-the-script",
+      "version": "2026.7.1"
     },
     {
       "name": "break-dogma",
@@ -387,7 +388,7 @@
         "source": "url",
         "url": "https://github.com/88plug/break-dogma.git"
       },
-      "description": "Assumption-testing prior — before adopting a borrowed component or accepting an asserted limit, name it as a falsifiable claim and test whether it is load-bearing here or cargo-culted.",
+      "description": "Installs a standing assumption-testing prior: before adopting any borrowed component/runtime/algorithm or accepting any asserted limit ('compute-bound', 'you need X', 'that's how everyone does it'), the model names it as a falsifiable claim and checks whether the constraint is actually load-bearing in THIS regime or cargo-culted from another. Fires every turn via a UserPromptSubmit hook, primed at SessionStart. The external sibling of flip-the-script: that distrusts your own recall, this distrusts inherited assumptions. Routes a broken dogma to invention; a surviving one is a logged result. Calibrated, not contrarian \u2014 reuse leaves that aren't the moat.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -396,7 +397,8 @@
         "first-principles",
         "invention"
       ],
-      "homepage": "https://github.com/88plug/break-dogma"
+      "homepage": "https://github.com/88plug/break-dogma",
+      "version": "2026.7.1"
     },
     {
       "name": "world-first",
@@ -404,7 +406,7 @@
         "source": "url",
         "url": "https://github.com/88plug/world-first.git"
       },
-      "description": "Novelty-claim guardrail — the moment a turn asserts a first/fastest/novel/record it fires the invention discipline: confirmed-limit, removed-constraint test, provenance search, scope to the measured delta.",
+      "description": "Guards every novelty or superlative claim before it ships: when a turn asserts a first/fastest/novel/record/'nobody has done this', a UserPromptSubmit hook fires the invention discipline \u2014 confirmed-limit entry, the removed-constraint test, refute-then-build vs a tuned baseline, provenance search, scope to the measured delta, certify. Primed once at SessionStart. Turns 'we invented X / it's the fastest' from an assertion into a proven-or-scoped claim. Kills overclaim, reinventing prior art, and premature-first-before-refute.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -413,7 +415,8 @@
         "prior-art",
         "provenance"
       ],
-      "homepage": "https://github.com/88plug/world-first"
+      "homepage": "https://github.com/88plug/world-first",
+      "version": "2026.7.1"
     },
     {
       "name": "herlihy",
@@ -421,7 +424,7 @@
         "source": "url",
         "url": "https://github.com/88plug/herlihy.git"
       },
-      "description": "Wait-free/lock-free doctrine — a PreToolUse hook fires the Herlihy concurrency checklist (consensus number, linearization point, progress guarantee, reclamation) when you edit lock/atomic/CAS/CUDA code.",
+      "description": "Fires the wait-free/lock-free doctrine exactly when you touch concurrency code: a PreToolUse hook inspects Write/Edit content and, when it sees a lock, atomic, CAS, fetch-add, spawn, channel, or CUDA sync, injects (non-blocking) the Herlihy checklist \u2014 pick the primitive by consensus number, fix the linearization point, claim only the progress guarantee you can prove, choose reclamation by reader lifetime, know the impossibility walls. Primed once at SessionStart. Grounded in Herlihy's published corpus (consensus hierarchy, linearizability, universal construction, Pass-the-Buck), with the NOT-Herlihy attributions flagged.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -430,7 +433,8 @@
         "wait-free",
         "atomics"
       ],
-      "homepage": "https://github.com/88plug/herlihy"
+      "homepage": "https://github.com/88plug/herlihy",
+      "version": "2026.7.1"
     },
     {
       "name": "cynefin",
@@ -438,7 +442,7 @@
         "source": "url",
         "url": "https://github.com/88plug/cynefin.git"
       },
-      "description": "Cynefin decision-routing — read the constraints, place the domain (Clear/Complicated/Complex/Chaotic or Disorder), apply the matching response, and for Complex design a safe-to-fail probe. Sense-making, not a 2x2.",
+      "description": "Routes any decision, problem, or approach through Dave Snowden's Cynefin framework before you act: read the constraints, place the domain (Clear / Complicated / Complex / Chaotic \u2014 or admit Disorder), and apply the matching response (sense-categorize / sense-analyze / probe-sense / act-sense). Fires a conditional UserPromptSubmit nudge on decision/problem/incident language, primed at SessionStart. Enforces sense-making not categorization (never a 2x2), a safe-to-fail probe portfolio in the Complex domain, and the Clear-to-Chaotic cliff warning.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -447,7 +451,8 @@
         "decision-making",
         "complexity"
       ],
-      "homepage": "https://github.com/88plug/cynefin"
+      "homepage": "https://github.com/88plug/cynefin",
+      "version": "2026.7.1"
     },
     {
       "name": "ooda",
@@ -455,7 +460,7 @@
         "source": "url",
         "url": "https://github.com/88plug/ooda.git"
       },
-      "description": "OODA loop router (John Boyd) — Observe (measure), Orient (the schwerpunkt: reframe against stale models), Decide (one lever as a hypothesis), Act (ship a test), loop fast. Not a 4-box speed circle; Orient dominates.",
+      "description": "Routes any decision, action, or iteration through John Boyd's real OODA loop \u2014 Observe (measure, don't assume), Orient (the schwerpunkt: reframe against stale models and bias \u2014 the highest-leverage step), Decide (pick one lever as a hypothesis), Act (ship it as a test, re-observe), loop fast. Fires a conditional UserPromptSubmit nudge on decide/act/iterate/plan/compete language, primed at SessionStart. Boyd-faithful: not a 4-box speed circle \u2014 Orient dominates, and tempo means unpredictable rhythm that outpaces the problem, not raw haste.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -464,7 +469,8 @@
         "boyd",
         "strategy"
       ],
-      "homepage": "https://github.com/88plug/ooda"
+      "homepage": "https://github.com/88plug/ooda",
+      "version": "2026.7.1"
     }
   ]
 }

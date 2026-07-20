@@ -6,7 +6,7 @@
 
 [![sync](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml/badge.svg)](https://github.com/88plug/claude-code-plugins/actions/workflows/sync-plugins.yml)
 [![License: FSL-1.1-ALv2](https://img.shields.io/badge/license-FSL--1.1--ALv2-blue?style=flat)](./LICENSE)
-[![plugins](https://img.shields.io/badge/plugins-18-1f2328?style=flat)](#catalog)
+[![plugins](https://img.shields.io/badge/plugins-24-1f2328?style=flat)](#catalog)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A2BE2?style=flat)](https://github.com/88plug/claude-code-plugins)
 [![Grok Build](https://img.shields.io/badge/Grok%20Build-marketplace-1f2328?style=flat)](https://github.com/xai-org/grok-build)
 [![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/88plug/claude-code-plugins)
@@ -257,6 +257,86 @@ Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links t
 
 # Grok Build
 grok plugin install deepwiki-index@88plug --trust
+```
+
+## Other plugins
+
+### [flip-the-script](https://github.com/88plug/flip-the-script)
+[`v2026.7.1`](https://github.com/88plug/flip-the-script/commit/77a2633a62a1 "commit 77a2633") · 1 skill · 1 command
+
+Installs a standing self-distrust prior: the model treats its own unverified recall as stale and overconfident by default, and routes any…
+
+```text
+# Claude Code
+/plugin install flip-the-script@88plug
+
+# Grok Build
+grok plugin install flip-the-script@88plug --trust
+```
+
+### [break-dogma](https://github.com/88plug/break-dogma)
+[`v2026.7.1`](https://github.com/88plug/break-dogma/commit/1e899f987152 "commit 1e899f9") · 1 skill · 1 command
+
+Installs a standing assumption-testing prior: before adopting any borrowed component/runtime/algorithm or accepting any asserted limit ('compute-bound', 'you need X'…
+
+```text
+# Claude Code
+/plugin install break-dogma@88plug
+
+# Grok Build
+grok plugin install break-dogma@88plug --trust
+```
+
+### [world-first](https://github.com/88plug/world-first)
+[`v2026.7.1`](https://github.com/88plug/world-first/commit/2d86a1159ae5 "commit 2d86a11") · 1 skill · 1 command
+
+Guards every novelty or superlative claim before it ships: when a turn asserts a first/fastest/novel/record/'nobody has done this', a UserPromptSubmit hook fires the…
+
+```text
+# Claude Code
+/plugin install world-first@88plug
+
+# Grok Build
+grok plugin install world-first@88plug --trust
+```
+
+### [herlihy](https://github.com/88plug/herlihy)
+[`v2026.7.1`](https://github.com/88plug/herlihy/commit/2e3ca9db39cd "commit 2e3ca9d") · 1 skill · 1 command
+
+Fires the wait-free/lock-free doctrine exactly when you touch concurrency code: a PreToolUse hook inspects Write/Edit content and, when it sees a lock, atomic, CAS…
+
+```text
+# Claude Code
+/plugin install herlihy@88plug
+
+# Grok Build
+grok plugin install herlihy@88plug --trust
+```
+
+### [cynefin](https://github.com/88plug/cynefin)
+[`v2026.7.1`](https://github.com/88plug/cynefin/commit/0642a989929a "commit 0642a98") · 1 skill · 1 command
+
+Routes any decision, problem, or approach through Dave Snowden's Cynefin framework before you act: read the constraints, place the domain (Clear / Complicated / Complex…
+
+```text
+# Claude Code
+/plugin install cynefin@88plug
+
+# Grok Build
+grok plugin install cynefin@88plug --trust
+```
+
+### [ooda](https://github.com/88plug/ooda)
+[`v2026.7.1`](https://github.com/88plug/ooda/commit/feb0f21f1e4b "commit feb0f21") · 1 skill · 1 command
+
+Routes any decision, action, or iteration through John Boyd's real OODA loop — Observe (measure, don't assume), Orient (the schwerpunkt: reframe against stale models and…
+
+```text
+# Claude Code
+/plugin install ooda@88plug
+
+# Grok Build
+grok plugin install ooda@88plug --trust
 ```
 
 ## Search & research MCP
