@@ -212,7 +212,7 @@
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git"
       },
-      "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) \u2014 all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
+      "description": "The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications, drive D-Bus, and manage power (suspend/reboot/poweroff) — all through structured interfaces (systemctl/loginctl/journalctl/busctl), never raw PID hacks. Pure standard library, zero pip deps. A self-preservation guard refuses severing actions on units the agent depends on (dbus, logind, sshd, network, tailscaled, the session, goosed) unless force=true. Ships the MCP server plus a control-os skill. The system-service counterpart to screen-mcp's GUI control.",
       "category": "productivity",
       "tags": [
         "type:mcp",
@@ -255,7 +255,7 @@
         "source": "url",
         "url": "https://github.com/88plug/deepwiki-index.git"
       },
-      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo \u2014 no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
+      "description": "Index a public GitHub repo's DeepWiki (the page the 'Ask DeepWiki' badge links to) hands-free, and do it autonomously after publishing or updating a repo — no human clicking. Encodes the verified deepwiki.com trigger (api.devin.ai/ada/index_public_repo, reCAPTCHA v2-invisible) and the trusted-browser path: drive the real desktop browser (screen-mcp) or run the bundled Playwright helper with a real Chrome profile so the captcha passes silently, then poll the public status API to completed.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -353,7 +353,7 @@
         "source": "url",
         "url": "https://github.com/88plug/dehumanize.git"
       },
-      "description": "Makes AI work like AI \u2014 no human time estimates, no asking for accessible data, no emotional labor.",
+      "description": "Makes AI work like AI — no human time estimates, no asking for accessible data, no emotional labor.",
       "category": "productivity",
       "tags": [
         "type:plugin",
@@ -363,6 +363,108 @@
       ],
       "homepage": "https://github.com/88plug/dehumanize",
       "version": "2026.7.28"
+    },
+    {
+      "name": "flip-the-script",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/flip-the-script.git"
+      },
+      "description": "Self-distrust prior — routes version/API/current-state/exact-number claims to external verification before asserting. UserPromptSubmit hook + SessionStart primer.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "guardrails",
+        "hallucination",
+        "verification",
+        "grounding"
+      ],
+      "homepage": "https://github.com/88plug/flip-the-script"
+    },
+    {
+      "name": "break-dogma",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/break-dogma.git"
+      },
+      "description": "Assumption-testing prior — before adopting a borrowed component or accepting an asserted limit, name it as a falsifiable claim and test whether it is load-bearing here or cargo-culted.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "guardrails",
+        "assumptions",
+        "first-principles",
+        "invention"
+      ],
+      "homepage": "https://github.com/88plug/break-dogma"
+    },
+    {
+      "name": "world-first",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/world-first.git"
+      },
+      "description": "Novelty-claim guardrail — the moment a turn asserts a first/fastest/novel/record it fires the invention discipline: confirmed-limit, removed-constraint test, provenance search, scope to the measured delta.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "invention",
+        "novelty",
+        "prior-art",
+        "provenance"
+      ],
+      "homepage": "https://github.com/88plug/world-first"
+    },
+    {
+      "name": "herlihy",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/herlihy.git"
+      },
+      "description": "Wait-free/lock-free doctrine — a PreToolUse hook fires the Herlihy concurrency checklist (consensus number, linearization point, progress guarantee, reclamation) when you edit lock/atomic/CAS/CUDA code.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "concurrency",
+        "lock-free",
+        "wait-free",
+        "atomics"
+      ],
+      "homepage": "https://github.com/88plug/herlihy"
+    },
+    {
+      "name": "cynefin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/cynefin.git"
+      },
+      "description": "Cynefin decision-routing — read the constraints, place the domain (Clear/Complicated/Complex/Chaotic or Disorder), apply the matching response, and for Complex design a safe-to-fail probe. Sense-making, not a 2x2.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "cynefin",
+        "sense-making",
+        "decision-making",
+        "complexity"
+      ],
+      "homepage": "https://github.com/88plug/cynefin"
+    },
+    {
+      "name": "ooda",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/88plug/ooda.git"
+      },
+      "description": "OODA loop router (John Boyd) — Observe (measure), Orient (the schwerpunkt: reframe against stale models), Decide (one lever as a hypothesis), Act (ship a test), loop fast. Not a 4-box speed circle; Orient dominates.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "ooda",
+        "decision-making",
+        "boyd",
+        "strategy"
+      ],
+      "homepage": "https://github.com/88plug/ooda"
     }
   ]
 }
