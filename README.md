@@ -370,7 +370,7 @@ grok plugin install deepwiki@88plug --trust
 ## Desktop & OS MCP
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.7.46`](https://github.com/88plug/screen-mcp/commit/454dbccc558c "commit 454dbcc") · MCP server · 1 skill
+[`v2026.7.50`](https://github.com/88plug/screen-mcp/commit/4abf1425a04e "commit 4abf142") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -383,7 +383,7 @@ grok plugin install screen-mcp@88plug --trust
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-[`v2026.7.23`](https://github.com/88plug/os-control-mcp/commit/c03a2bfecb30 "commit c03a2bf") · MCP server · 1 skill
+[`v2026.7.28`](https://github.com/88plug/os-control-mcp/commit/892007f58a31 "commit 892007f") · MCP server · 2 skills
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 

@@ -489,7 +489,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "c03a2bfecb3082f376828a198cbc59d61a33edb8",
+      "sha": "892007f58a319f8278af679ef1e21a456a198482",
       "components": {
         "mcpServers": [
           {
@@ -501,6 +501,10 @@
           {
             "name": "control-os",
             "description": "Control and inspect the local Linux host through systemd, journald, logind, and D-Bus via the os-control MCP. Use this…"
+          },
+          {
+            "name": "cross-layer-verify",
+            "description": "Verify that an action actually worked by fusing TWO independent senses onto the machine — the GUI (screen-mcp's pixel-c…"
           }
         ]
       }
@@ -609,7 +613,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "454dbccc558caf281b514b7189b225fe8f5ce0c4",
+      "sha": "4abf1425a04e33be03149eb5645ca840b21800d9",
       "components": {
         "mcpServers": [
           {
