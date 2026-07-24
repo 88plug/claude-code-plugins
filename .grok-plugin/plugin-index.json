@@ -489,7 +489,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "892007f58a319f8278af679ef1e21a456a198482",
+      "sha": "46ab369f7558712471d27665acc065ec7701c307",
       "components": {
         "mcpServers": [
           {
@@ -613,7 +613,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "d6a7bde48d2945297c364c09fa6226438015f925",
+      "sha": "8e66b12e34dd9e207daba9372204356c1143d461",
       "components": {
         "mcpServers": [
           {

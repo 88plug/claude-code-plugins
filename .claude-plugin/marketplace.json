@@ -204,7 +204,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.52"
+      "version": "2026.7.55"
     },
     {
       "name": "os-control-mcp",
@@ -225,7 +225,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.7.28"
+      "version": "2026.7.31"
     },
     {
       "name": "use-latest-version",
