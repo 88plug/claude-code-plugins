@@ -342,7 +342,7 @@ grok plugin install ooda@88plug --trust
 ## Search & research MCP
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.7.45`](https://github.com/88plug/searxng-mcp/commit/5c4597e55283 "commit 5c4597e") · MCP server
+[`v2026.7.61`](https://github.com/88plug/searxng-mcp/commit/a7fc3de8f309 "commit a7fc3de") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
