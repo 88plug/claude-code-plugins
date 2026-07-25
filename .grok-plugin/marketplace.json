@@ -303,7 +303,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/screen-mcp.git",
-        "sha": "931ba4a66a198137d902dc45b166a18b047e1965"
+        "sha": "485eda4d20264c52e6f64e44eb5e74ffcf4fc2b0"
       },
       "homepage": "https://github.com/88plug/screen-mcp",
       "keywords": [
@@ -335,7 +335,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/os-control-mcp.git",
-        "sha": "46ab369f7558712471d27665acc065ec7701c307"
+        "sha": "adbd6ad6463b5668d61b1d2be65c48a907125e6e"
       },
       "homepage": "https://github.com/88plug/os-control-mcp",
       "keywords": [
