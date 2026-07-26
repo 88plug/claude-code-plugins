@@ -613,7 +613,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "d11f5824b2d898aee80194ec840a66ae7e074b00",
+      "sha": "2a738141524bd160abbffbab67924a188629f423",
       "components": {
         "mcpServers": [
           {
