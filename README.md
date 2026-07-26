@@ -370,7 +370,7 @@ grok plugin install deepwiki@88plug --trust
 ## Desktop & OS MCP
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.7.92`](https://github.com/88plug/screen-mcp/commit/fad21a202887 "commit fad21a2") · MCP server · 1 skill
+[`v2026.7.93`](https://github.com/88plug/screen-mcp/commit/d11f5824b2d8 "commit d11f582") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
