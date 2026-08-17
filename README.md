@@ -191,7 +191,7 @@ grok plugin install trigger-my-training@88plug --trust
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-[`v2026.7.43`](https://github.com/88plug/drift-detector/commit/4209dcf24d90 "commit 4209dcf") · MCP server · 1 skill · 6 commands
+[`v2026.7.43`](https://github.com/88plug/drift-detector/commit/4209dcf24d90 "commit 4209dcf") · 1 skill · 6 commands
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 
@@ -355,7 +355,7 @@ grok plugin install searxng@88plug --trust
 ```
 
 ### [deepwiki](https://github.com/88plug/deepwiki)
-[`v2026.7.28`](https://github.com/88plug/deepwiki/commit/318e58cc539c "commit 318e58c") · MCP server
+[`v2026.7.28`](https://github.com/88plug/deepwiki/commit/318e58cc539c "commit 318e58c")
 
 Talk to any public GitHub repo's auto-generated documentation via Cognition's hosted DeepWiki MCP.
 
@@ -370,7 +370,7 @@ grok plugin install deepwiki@88plug --trust
 ## Desktop & OS MCP
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.7.94`](https://github.com/88plug/screen-mcp/commit/2a738141524b "commit 2a73814") · MCP server · 1 skill
+[`v2026.7.94`](https://github.com/88plug/screen-mcp/commit/2a738141524b "commit 2a73814") · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
