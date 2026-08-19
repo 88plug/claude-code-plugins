@@ -310,6 +310,28 @@
       "version": "2026.7.43"
     },
     {
+      "name": "minions",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/88plug/claude-code-plugins.git",
+        "path": "plugins/minions"
+      },
+      "description": "Unattended one-shot coding agents driven by Blueprints — state machines that interleave deterministic steps with agentic nodes. Modeled after Stripe's Minions architecture: pre-hydrate all context, implement, lint, verify, retry once, submit. The agent proposes; you decide.",
+      "category": "productivity",
+      "tags": [
+        "type:plugin",
+        "unattended",
+        "blueprint",
+        "one-shot",
+        "coding-agent",
+        "stripe-minions",
+        "state-machine",
+        "pre-hydration"
+      ],
+      "homepage": "https://github.com/88plug/claude-code-plugins/tree/main/plugins/minions",
+      "version": "2026.7.1"
+    },
+    {
       "name": "trigger-my-training",
       "source": {
         "source": "url",
