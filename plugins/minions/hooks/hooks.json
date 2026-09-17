@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/bin/minion-prehydrate.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

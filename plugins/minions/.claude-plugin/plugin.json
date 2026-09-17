@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "minions",
+  "displayName": "Minions",
+  "description": "Unattended one-shot coding agents driven by Blueprints — state machines that interleave deterministic steps with agentic nodes. Modeled after Stripe's Minions architecture: pre-hydrate all context, implement, lint, verify, retry once, submit. The agent proposes; you decide.",
+  "author": {
+    "name": "88plug",
+    "email": "claude@cryptoandcoffee.com"
+  },
+  "homepage": "https://github.com/88plug/claude-code-plugins/tree/main/plugins/minions",
+  "repository": "https://github.com/88plug/claude-code-plugins.git",
+  "license": "FSL-1.1-ALv2",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "anthropic",
+    "ai",
+    "llm",
+    "ai-agents",
+    "developer-tools",
+    "productivity",
+    "automation",
+    "cli",
+    "claude-code-plugin",
+    "claude-skills",
+    "unattended",
+    "blueprint",
+    "minions",
+    "one-shot",
+    "coding-agent",
+    "stripe-minions"
+  ],
+  "hooks": "./hooks/hooks.json"
+}
