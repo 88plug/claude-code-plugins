@@ -342,7 +342,7 @@ grok plugin install ooda@88plug --trust
 ## Search & research MCP
 
 ### [searxng](https://github.com/88plug/searxng-mcp)
-[`v2026.7.61`](https://github.com/88plug/searxng-mcp/commit/a7fc3de8f309 "commit a7fc3de") · MCP server
+[`v2026.9.62`](https://github.com/88plug/searxng-mcp/commit/908ad1747b3b "commit 908ad17") · MCP server
 
 Fast, token-efficient MCP for SearXNG metasearch.
 
@@ -370,7 +370,7 @@ grok plugin install deepwiki@88plug --trust
 ## Desktop & OS MCP
 
 ### [screen-mcp](https://github.com/88plug/screen-mcp)
-[`v2026.7.94`](https://github.com/88plug/screen-mcp/commit/2a738141524b "commit 2a73814") · MCP server · 1 skill
+[`v2026.9.96`](https://github.com/88plug/screen-mcp/commit/14b88dee70db "commit 14b88de") · MCP server · 1 skill
 
 Eyes and hands on a Linux Wayland desktop: screenshot any monitor and click, type, scroll, drag, and read any visible app over xdg-desktop-portal (RemoteDesktop +…
 
@@ -383,7 +383,7 @@ grok plugin install screen-mcp@88plug --trust
 ```
 
 ### [os-control-mcp](https://github.com/88plug/os-control-mcp)
-[`v2026.7.32`](https://github.com/88plug/os-control-mcp/commit/adbd6ad6463b "commit adbd6ad") · MCP server · 2 skills
+[`v2026.9.33`](https://github.com/88plug/os-control-mcp/commit/05045ae2395c "commit 05045ae") · MCP server · 2 skills
 
 The sanctioned OS 'motor cortex' for an agent on a Linux box: control systemd services/timers, query journald, read host resources/processes, send desktop notifications…
 
@@ -398,7 +398,7 @@ grok plugin install os-control-mcp@88plug --trust
 ## Package versions MCP
 
 ### [use-latest-version](https://github.com/88plug/use-latest-version-mcp)
-[`v2026.7.41`](https://github.com/88plug/use-latest-version-mcp/commit/fb134a44ec7c "commit fb134a4") · MCP server
+[`v2026.9.42`](https://github.com/88plug/use-latest-version-mcp/commit/02a3503d5cc0 "commit 02a3503") · MCP server
 
 Stop suggesting stale package versions from training data.
 

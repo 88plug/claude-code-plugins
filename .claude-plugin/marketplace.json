@@ -106,7 +106,7 @@
         "self-hosted"
       ],
       "homepage": "https://github.com/88plug/searxng-mcp",
-      "version": "2026.7.61"
+      "version": "2026.9.62"
     },
     {
       "name": "deepwiki",
@@ -204,7 +204,7 @@
         "portal"
       ],
       "homepage": "https://github.com/88plug/screen-mcp",
-      "version": "2026.7.94"
+      "version": "2026.9.96"
     },
     {
       "name": "os-control-mcp",
@@ -225,7 +225,7 @@
         "automation"
       ],
       "homepage": "https://github.com/88plug/os-control-mcp",
-      "version": "2026.7.32"
+      "version": "2026.9.33"
     },
     {
       "name": "use-latest-version",
@@ -247,7 +247,7 @@
         "mcp"
       ],
       "homepage": "https://github.com/88plug/use-latest-version-mcp",
-      "version": "2026.7.41"
+      "version": "2026.9.42"
     },
     {
       "name": "deepwiki-index",

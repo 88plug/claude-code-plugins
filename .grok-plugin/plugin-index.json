@@ -489,7 +489,7 @@
       }
     },
     "os-control-mcp": {
-      "sha": "adbd6ad6463b5668d61b1d2be65c48a907125e6e",
+      "sha": "05045ae2395cd13cc9499dd35a8c2cadbf337f70",
       "components": {
         "mcpServers": [
           {
@@ -613,7 +613,7 @@
       }
     },
     "screen-mcp": {
-      "sha": "2a738141524bd160abbffbab67924a188629f423",
+      "sha": "14b88dee70db3a72281b566494e94ccf87258c28",
       "components": {
         "mcpServers": [
           {
@@ -630,7 +630,7 @@
       }
     },
     "searxng": {
-      "sha": "a7fc3de8f3098ac3764cc12d1638913214c7ddb9",
+      "sha": "908ad1747b3b4d39975793aa08381dbffd021c25",
       "components": {
         "mcpServers": [
           {
@@ -806,7 +806,7 @@
       }
     },
     "use-latest-version": {
-      "sha": "fb134a44ec7cf10fb3b76f80dfc6a50434a478bb",
+      "sha": "02a3503d5cc0c2e037593a560dd15f6c8b939925",
       "components": {
         "mcpServers": [
           {
