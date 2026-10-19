@@ -94,7 +94,7 @@ grok plugin install amnesia@88plug --trust
 ```
 
 ### [total-recall](https://github.com/88plug/total-recall)
-[`v2026.9.179`](https://github.com/88plug/total-recall/commit/743baca7819a "commit 743baca") · MCP server · 3 skills · 15 commands · hooks
+[`v2026.10.180`](https://github.com/88plug/total-recall/commit/d3711e166437 "commit d3711e1") · MCP server · 3 skills · 15 commands · hooks
 
 Cross-session, cross-CLI memory for AI coding assistants.
 
