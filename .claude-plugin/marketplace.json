@@ -44,7 +44,7 @@
         "hooks"
       ],
       "homepage": "https://github.com/88plug/amnesia",
-      "version": "2026.10.57"
+      "version": "2026.10.58"
     },
     {
       "name": "caveman-plus",
@@ -86,7 +86,7 @@
         "grok"
       ],
       "homepage": "https://github.com/88plug/total-recall",
-      "version": "2026.10.184"
+      "version": "2026.10.185"
     },
     {
       "name": "searxng",

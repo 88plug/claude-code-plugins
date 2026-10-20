@@ -39,7 +39,7 @@
       }
     },
     "amnesia": {
-      "sha": "fd8fe98808b51b49dcc7737a07093e754e1ef88c",
+      "sha": "450f965a664693c804cb58860091d5daac918aa9",
       "components": {
         "agents": [
           {
@@ -641,7 +641,7 @@
       }
     },
     "total-recall": {
-      "sha": "f7551287d9b8049d010014c8cc8266c7b2d11577",
+      "sha": "e18f1253ec796f39f7246dcfd55e36620d45116b",
       "components": {
         "commands": [
           {
