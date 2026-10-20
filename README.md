@@ -81,7 +81,7 @@ your problem.*
 ## Memory & continuity
 
 ### [amnesia](https://github.com/88plug/amnesia)
-[`v2026.10.56`](https://github.com/88plug/amnesia/commit/248159fbcaa5 "commit 248159f") · MCP server · 1 skill · 8 commands · 1 agent · hooks
+[`v2026.10.57`](https://github.com/88plug/amnesia/commit/fd8fe98808b5 "commit fd8fe98") · MCP server · 1 skill · 8 commands · 1 agent · hooks
 
 Seamless context continuity across Claude Code and Grok compaction.
 
