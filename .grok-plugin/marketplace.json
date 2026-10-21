@@ -473,7 +473,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/88plug/drift-detector.git",
-        "sha": "4209dcf24d905a8d9efb95bfb957eef7df9da837"
+        "sha": "5b047d606e6f59099ba52b489b3f056aead2379d"
       },
       "homepage": "https://github.com/88plug/drift-detector",
       "keywords": [

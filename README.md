@@ -191,7 +191,7 @@ grok plugin install trigger-my-training@88plug --trust
 ```
 
 ### [drift-detector](https://github.com/88plug/drift-detector)
-[`v2026.7.43`](https://github.com/88plug/drift-detector/commit/4209dcf24d90 "commit 4209dcf") · MCP server · 1 skill · 6 commands
+[`v2026.10.44`](https://github.com/88plug/drift-detector/commit/5b047d606e6f "commit 5b047d6") · MCP server · 1 skill · 6 commands
 
 Detects when Claude drifts away from your active output contract (a terse persona, hard formatting/length rules, an in-character voice) and quietly steers it back.
 

@@ -348,7 +348,7 @@
       }
     },
     "drift-detector": {
-      "sha": "4209dcf24d905a8d9efb95bfb957eef7df9da837",
+      "sha": "5b047d606e6f59099ba52b489b3f056aead2379d",
       "components": {
         "commands": [
           {
